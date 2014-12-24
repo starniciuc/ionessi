@@ -1,0 +1,29 @@
+footer{
+    background: #d5e2ec;
+    height: 200px;
+    
+    .logo{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    p{
+        color: #8295a1;
+        font-size: 16px;
+        font-family: $font-open;
+    }
+    a{
+        color: #004e7c;
+         font-size: 16px;
+        font-family: $font-open;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 45px;
+        li{
+            padding-bottom: 10px;
+        }
+    }
+}
+
