@@ -164,6 +164,21 @@ ul.social-buttons li a:hover span { border: 0; }
 .bootstrap-select .dropdown-menu .dropdown-menu.inner.selectpicker li a:hover { background: none; background-color: #c8d4dd; }
 .bootstrap-select .dropdown-menu .dropdown-menu.inner.selectpicker li.selected a { background: none; background-color: #c8d4dd; }
 
+.info-shop { margin-top: 35px; }
+
+.tool-shop { padding: 0; margin: 0; }
+.tool-shop li { display: inline-block; margin: 5px; }
+
+.info-section { background-color: #e7edf2; padding: 15px; margin-bottom: 5px; min-height: 170px; }
+.info-section p { color: #000000; font-size: 18px; font-family: "Open Sans", sans-serif; font-weight: 300; margin-bottom: 5px; }
+.info-section p.title { margin-bottom: 10px; color: #7c7c7c; }
+
+.shop-image img { width: 100%; }
+
+p.date { color: #848484; font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 300; }
+
+.map { margin: 20px 0; border: 1px solid #cccccc; }
+
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }
 footer p { color: #8295a1; font-size: 16px; font-family: "Open Sans", sans-serif; }

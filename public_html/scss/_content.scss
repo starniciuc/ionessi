@@ -685,7 +685,7 @@ ul.social-buttons{
         border: 0;
         border-radius: 0;
         box-shadow: none;
-        
+
         .dropdown-menu.inner.selectpicker{
             padding: 0;
             margin: 0;
@@ -693,7 +693,7 @@ ul.social-buttons{
             border-bottom: 5px solid #c7d5dd;
             list-style: none;
             box-shadow: none;
-            
+
             li{
                 display: block;
                 width: 100%;
@@ -723,4 +723,50 @@ ul.social-buttons{
             }
         }
     }
+}
+.info-shop{
+    margin-top: 35px;  
+}
+.tool-shop{
+    padding: 0;
+    margin: 0;
+
+    li{
+        display: inline-block;
+        margin: 5px;
+    }
+}
+.info-section{
+    background-color: #e7edf2;
+    padding: 15px;
+    margin-bottom: 5px;
+    min-height: 170px;
+    
+    p{
+        color: #000000;
+        font-size: 18px;
+        font-family: $font-open;
+        font-weight: 300;
+        margin-bottom: 5px;
+
+        &.title{
+            margin-bottom: 10px;
+            color: #7c7c7c;
+        }
+    }
+}
+.shop-image{
+    img{
+        width: 100%;
+    }
+}
+p.date{
+    color: #848484;
+    font-size: 14px;
+    font-family: $font-open;
+    font-weight: 300;
+}
+.map{
+    margin: 20px 0;
+    border: 1px solid #cccccc;
 }
