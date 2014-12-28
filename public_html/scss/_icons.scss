@@ -55,4 +55,22 @@
             @include opacity(1);
         }
     }
+    
+    &.card{
+        background: url("../img/shop-icon.png") no-repeat 0 0;
+        width: 30px;
+        height: 25px;
+    }
+    
+    &.cash{
+        background: url("../img/shop-icon.png") no-repeat -32px 0;
+        width: 30px;
+        height: 25px;
+    }
+    
+    &.shop{
+        background: url("../img/shop-icon.png") no-repeat -64px 0;
+        width: 115px;
+        height: 25px;
+    }
 }

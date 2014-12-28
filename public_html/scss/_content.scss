@@ -426,12 +426,12 @@ main{
             }
         }
     }
+    h5{
+        font-size: 24px;
+        color: #000000;
+        font-family: $font-open;
+    }
     .share-block{
-        h5{
-            font-size: 24px;
-            color: #000000;
-            font-family: $font-open;
-        }
         margin-bottom: 20px;
     }
 }
@@ -533,11 +533,13 @@ ul.social-buttons{
 }
 .query-block{
     border-top: 1px solid #b4b4b4;
-    padding: 10px;
+    padding: 15px 15px 30px;
+    margin-top: 10px;
 
     .ask{
         position: relative;
         padding-left: 120px;
+        margin-bottom: 20px;
 
         .name-block{
             position: absolute;
@@ -550,6 +552,7 @@ ul.social-buttons{
                 font-size: 16px;
                 font-weight: 600;
                 margin: 0;
+                margin-bottom: 5px;
             }
             p.date{
                 color: #828282;
@@ -567,8 +570,157 @@ ul.social-buttons{
             font-weight: 300;
         }
     }
-    
+
     .answer{
+        position: relative;
+        padding-left: 240px; 
+
+        .type-block{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            p{
+                color: #828282;
+                font-family: $font-open;
+                font-size: 16px;
+                font-weight: 300; 
+            }
+        }
+
+        .name-block{
+            position: absolute;
+            top: 0px;
+            left: 120px;
+            p{
+                color: #000000;
+                font-family: $font-open;
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+
+        p{
+            color: #000000;
+            font-family: $font-open;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+}
+.shop-list{
+    background-color: #e7edf2;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    a.name{
+        color: #004e7c;
+        font-family: $font-open;
+        font-size: 24px;
+
+        &:hover{
+            text-decoration: underline;
+            color: #004e7c;
+        }
+    }
+
+    p{
+        color: #000000;
+        font-size: 18px;
+        font-family: $font-open;
+        font-weight: 300;
+        margin-bottom: 5px;
+
+        &.title{
+            margin-bottom: 10px;
+            color: #7c7c7c;
+        }
+    }
+
+    .tool-shop{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        li{
+            display: inline-block;
+            margin: 5px;
+        }
+    }
+}
+.select-city{
+    float: right;
+    margin-top: 30px;
+
+    span.name{
+        color: #000000;
+        font-size: 16px;
+        font-family: $font-open;
+        font-weight: 300;
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+}
+.bootstrap-select{
+
+    .selectpicker.btn-default{
+        border: 0;
+        border-radius: 0;
+        background: none;
+        background-color: #e7edf2;
+        color: #000000;
+        font-size: 16px;
+        font-family: $font-open;
+        font-weight: 300;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    .dropdown-menu{
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
         
+        .dropdown-menu.inner.selectpicker{
+            padding: 0;
+            margin: 0;
+            background-color: #e5eef3;
+            border-bottom: 5px solid #c7d5dd;
+            list-style: none;
+            box-shadow: none;
+            
+            li{
+                display: block;
+                width: 100%;
+
+                a{
+                    display: block;
+                    padding: 4px 15px;
+                    color: #000000;
+                    font-family: $font-open;
+                    font-weight: 300;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    @include transition(background 0.35s);
+
+                    &:hover{
+                        background: none;
+                        background-color: #c8d4dd;
+                    }
+                }
+
+                &.selected{
+                    a{
+                        background: none;
+                        background-color: #c8d4dd;
+                    }
+                }
+            }
+        }
     }
 }
