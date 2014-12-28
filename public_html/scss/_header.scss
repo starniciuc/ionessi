@@ -79,7 +79,11 @@ header{
         position: relative;
         margin-right: 25px;
         float: right;
-        
+        & > a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
         .icon.cart{
             position: absolute;
             left: 0; 

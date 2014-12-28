@@ -1,10 +1,18 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Dec 23, 2014, 9:05:13 PM
-    Author     : Mihai
-*/
-
+.btn-subscribe{
+    border:0;
+    background: none;
+    height: 35px;
+    color: $white;
+    font-size: 16px;
+    font-family: $font-open;
+    background-color: #accfea;
+    border-radius: 0;
+    box-shadow: none;
+    @include opacity(1);
+    @include transition(opacity 0.35s);
+    
+    &:hover{
+        opacity: 0.8;
+        color: $white;
+    }
+}

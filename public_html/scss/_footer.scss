@@ -1,9 +1,9 @@
 footer{
     background: #d5e2ec;
-    height: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
     .logo{
-        margin-top: 30px;
         margin-bottom: 15px;
     }
     p{
@@ -13,16 +13,46 @@ footer{
     }
     a{
         color: #004e7c;
-         font-size: 16px;
+        font-size: 16px;
         font-family: $font-open;
     }
     ul{
         list-style: none;
         padding: 0;
         margin: 0;
-        margin-top: 45px;
+        margin-top: 40px;
         li{
             padding-bottom: 10px;
+        }
+    }
+    .subscribe{
+        
+        h4{
+            font-size: 16px;
+            font-family: $font-open;
+            color: #8295a1;
+        }
+        
+        .submit-form{
+            position: relative;
+
+            input.form-control{
+                border: 0;
+                height: 35px;
+                border-radius: 0;
+                @include box-shadow(none);
+                padding-right: 100px;
+                color: #91a3af;
+                font-size: 16px;
+                font-family: $font-open;
+            }
+            
+            .btn-subscribe{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
         }
     }
 }

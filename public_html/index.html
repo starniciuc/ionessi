@@ -35,11 +35,12 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="cart-block">
-                            <div class="icon cart"></div>
-                            <a href="#" class="cart">Корзина</a>
-                            <p>78 000 руб.</p>
+                            <a href="#">
+                                <div class="icon cart"></div>
+                                <p class="cart">Корзина</p>
+                                <p>78 000 руб.</p>
+                            </a>
                         </div>
-
                         <div class="user-block">
                             <div class="icon user"></div>
                             <a href="#" class="login">Войти</a>
@@ -64,7 +65,17 @@
                         <div class="navbar-collapse collapse">
                             <ul class="menu">
                                 <li><a href="#">Акции и новости <span>всегда что-то новое</span></a></li>
-                                <li><a href="#">Каталог <span>4500 товаров</span></a></li>
+                                <li>
+                                    <a href="#">Каталог <span>4500 товаров</span></a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Демисезонные</a></li>
+                                        <li><a href="#">Осень-весна</a></li>
+                                        <li><a href="#">Зимние</a></li>
+                                        <li><a href="#">NEXT</a></li>
+                                        <li><a href="#">Еще пункт</a></li>
+                                        <li><a href="#">И еще один на всякий</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Покупателям <span>важно знать</span></a></li>
                                 <li><a href="#">О компании <span>мы рядом</span></a></li>
                                 <li><a href="#">Магазины <span>найдите ближайший</span></a></li>
@@ -81,12 +92,27 @@
                         <div class="slider">
                             <div class="slide">
                                 <img src="img/slide1.png" alt="slide1">
+                                <div class="info-slide">
+                                    <h3>Для теплых прогулок</h3>
+                                    <h2>Зимний сезон 2014—15</h2>
+                                    <h4>Погода меняется, наступает время теплой обуви.</h4>
+                                </div>     
                             </div>
                             <div class="slide">
                                 <img src="img/slide2.png" alt="slide2">
+                                <div class="info-slide">
+                                    <h3>Зима близко</h3>
+                                    <h2>Пришло время надевать сапоги</h2>
+                                    <h4>Сапоги сами себя не наденут</h4>
+                                </div>       
                             </div>
                             <div class="slide">
                                 <img src="img/slide3.png" alt="slide@">
+                                <div class="info-slide">
+                                    <h3>Угадайте что?</h3>
+                                    <h2>Летние скидки</h2>
+                                    <h4>Сандали, босоножки, шлепки,балетки и много чего еще</h4>
+                                </div>        
                             </div>
                             <div class="slide">
                                 <img src="img/slide4.png" alt="slide4">
@@ -98,39 +124,44 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="category-item">
-                                        <div class="logo">
-                                            <img src="img/cat1.png" alt="cat1">
-                                        </div>
-
-                                        <a href="#">Новинки</a>
+                                        <a href="#">
+                                            <div class="logo">
+                                                <img src="img/cat1.png" alt="cat1">
+                                            </div>                                        
+                                            Новинки
+                                        </a>
                                     </div>
                                     <div class="category-item">
-                                        <div class="logo">
-                                            <img src="img/cat2.png" alt="cat1">
-                                        </div>
-
-                                        <a href="#">Зимняя обувь</a>
+                                        <a href="#">
+                                            <div class="logo">
+                                                <img src="img/cat2.png" alt="cat1">
+                                            </div>
+                                            Зимняя обувь
+                                        </a>
                                     </div>
                                     <div class="category-item">
-                                        <div class="logo">
-                                            <img src="img/cat3.png" alt="cat1">
-                                        </div>
-
-                                        <a href="#">Демисезон</a>
+                                        <a href="#">
+                                            <div class="logo">
+                                                <img src="img/cat3.png" alt="cat1">
+                                            </div>
+                                            Демисезон
+                                        </a>
                                     </div>
                                     <div class="category-item">
-                                        <div class="logo">
-                                            <img src="img/cat4.png" alt="cat1">
-                                        </div>
-
-                                        <a href="#">Летняя обувь</a>
+                                        <a href="#">
+                                            <div class="logo">
+                                                <img src="img/cat4.png" alt="cat1">
+                                            </div>
+                                            Летняя обувь
+                                        </a>
                                     </div>
                                     <div class="category-item">
-                                        <div class="logo">
-                                            <img src="img/cat5.png" alt="cat1">
-                                        </div>
-
-                                        <a href="#">Распродажа</a>
+                                        <a href="#">
+                                            <div class="logo">
+                                                <img src="img/cat5.png" alt="cat1">
+                                            </div>
+                                            Распродажа
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +173,7 @@
                             <h1>Популярные товары</h1>
                             <div class="slider-product">
                                 <div class="slide">
-                                    <img src="img/foot.png" alt="slide1">
+                                    <img src="img/foot.png" alt="slide1">                                                                       
                                 </div>
                                 <div class="slide">
                                     <img src="img/foot.png" alt="slide2">
@@ -156,12 +187,12 @@
                             </div>
                         </div>
                     </section>
-                    
+
                     <section class="news">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
-                                   <h1>Новости и акции</h1>
+                                    <h1>Новости и акции</h1>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="item-news clearfix">
@@ -182,36 +213,39 @@
                             </div>
                         </div>
                     </section>
-                    
+
                     <section class="why">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h1>Почему люди выбирают Ионесси</h1>
                                 </div>
-                                <div class="col-sm-4 one">
+                                <div class="col-sm-4">
+                                    <div class="one"></div>
                                     <div class="image-box">
                                         <img src="img/w1.png" alt="w1">
                                     </div>
                                     <a href="#" class="title">Наша обувь служит не один сезон</a>
                                     <p class="descr">Хоть это и затратно, но мы до сих пор ориентируемся на советский ГОСТ. Используем коже хромированного дубления, натуральную овчину и замшу, трикотажные подклады, войлочные стельки, самые надежные кожевенные клеи и полимеадные нити. Никаких дешевых заменителей или искусственных добавок.
-Мы даем самую долгую гарантию - 90 дней.</p>
+                                        Мы даем самую долгую гарантию - 90 дней.</p>
                                 </div>
-                                <div class="col-sm-4 two">
+                                <div class="col-sm-4">
+                                    <div class="two"></div>
                                     <div class="image-box">
                                         <img src="img/w2.png" alt="w1">
                                     </div>
                                     <a href="#" class="title">Мы знаем, что такое обувь для сурового климата</a>
                                     <p class="descr">Возможно, наша обувь не выигрывает европейский конкурс элегантности. Зато мы знаем, как сделать обувь комфортой в наших некомфортных условиях. Много лет мы накапливали опыт, испытывая наши модели в суровых климатических условиях.
-Наша обувь неизвестна в столицах, зато ее любят и носят все жители Сибири и дальнего востока.</p>
+                                        Наша обувь неизвестна в столицах, зато ее любят и носят все жители Сибири и дальнего востока.</p>
                                 </div>
-                                <div class="col-sm-4 three">
+                                <div class="col-sm-4">
+                                    <div class="three"></div>
                                     <div class="image-box">
                                         <img src="img/w3.png" alt="w1">
                                     </div>
                                     <a href="#" class="title">Ионесси — это полностью отечественный продукт</a>
                                     <p class="descr">Хоть это и затратно, но мы до сих пор ориентируемся на советский ГОСТ. Используем коже хромированного дубления, натуральную овчину и замшу, трикотажные подклады, войлочные стельки, самые надежные кожевенные клеи и полимеадные нити. Никаких дешевых заменителей или искусственных добавок.
-Мы даем самую долгую гарантию - 90 дней.</p>
+                                        Мы даем самую долгую гарантию - 90 дней.</p>
                                 </div>
                             </div>
                         </div>
@@ -235,17 +269,29 @@
                             </ul>
                         </div>
                         <div class="col-sm-2">
-                             <ul>
+                            <ul>
                                 <li><a href="#">О компании</a></li>
                                 <li><a href="#">Магазины</a></li>
                                 <li><a href="#">Объявления</a></li>                             
                             </ul>
                         </div>
-                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <div class="subscribe">
+                                <h4>Подписка на рассылку:</h4>
+                                <div class="submit-form">
+                                    <input type="text" class="form-control" placeholder="E-mail">
+                                    <button class="btn btn-subscribe">Подписаться</button>
+                                </div>
+                                <ul class="social-buttons">
+                                    <li><a href="#"><i class="icon social vk"></i></a></li>
+                                    <li><a href="#"><i class="icon social tw"></i></a></li>
+                                    <li><a href="#"><i class="icon social yt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
-
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
