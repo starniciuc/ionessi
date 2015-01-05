@@ -20,3 +20,27 @@ $("#upload").change(function () {
         $("#nameFile").html("Загружено " + filename);
     }
 });
+
+$(".btn-increment").click(function(){
+    $valueElement = $(this).parents(".count-produs").find("input");
+    
+    if($(this).hasClass("left")){
+        $v = (parseInt($valueElement.val()) - 1)>0 ? (parseInt($valueElement.val()) - 1) : 1;
+        $valueElement.val($v);         
+    }
+    
+    if($(this).hasClass("right")){
+        $v = (parseInt($valueElement.val()) + 1)>0 ? (parseInt($valueElement.val()) + 1) : 1;
+        $valueElement.val($v);         
+    }
+    
+});
+
+$("#editComapany").change(function(){
+    if($(this).prop( "checked" )){
+        $("#editComp").slideDown("slow");
+    }
+    if(!$(this).prop( "checked" )){
+        $("#editComp").slideUp("slow");
+    }
+});

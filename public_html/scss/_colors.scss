@@ -1,3 +1,23 @@
 $black: #000000;
 $grey: #5f5f5f;
 $white: #FFFFFF;
+
+$brown: #b1825c;
+$red: #9a1d2a;
+
+.color{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    
+    &.brown{
+        background-color: $brown;
+    }
+    
+    &.red{
+        background-color: $red;
+    }
+}

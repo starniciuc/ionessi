@@ -50,7 +50,6 @@
                 </div>
             </header>
 
-
             <nav class="nav-bar-menu" role="navigation">
                 <div class="container">
                     <div class="row">
@@ -106,13 +105,31 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h1>Корзина</h1>
+                                <h1>Личный кабинет</h1>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-12">
-                                <table class="list-table order">
+                            <div class="col-md-3">
+                                <ul class="left-menu">
+                                    <li class="active"><a href="#">Мои заказы</a></li>
+                                    <li><a href="#">Корзина</a></li>
+                                    <li><a href="#">Настройки</a></li>
+                                    <li><a href="#">Задать вопрос</a></li>
+                                    <li><a href="#">Мои вопросы</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="order-block after-table">
+                                    <h2>Заказ № 23626 <span>15850 руб.</span></h2>
+                                    <p>от 04.04.2014 <span>ожидает оплаты</span></p>
+                                    <ul class="tool">
+                                        <li><a href="#"><i class="icon doc"></i> <span>Счет оплаты</span></a></li>
+                                        <li><a href="#"><span>Скачать в PDF</span></a></li>
+                                    </ul>
+                                </div>
+
+                                <table class="list-table order after-remove">
                                     <tr>
                                         <td>1.</td>
                                         <td>
@@ -121,19 +138,14 @@
                                             </div>
                                             <div class="text">
                                                 <a href="#">Полуботинки, осень 2014</a>
-                                                <p><span>Артикул: 234-01 <i class="color brown"></i></span> 36 размер, 1 шт.</p>
+                                                <p>36 размер, 1 шт.</p>
                                             </div>  
                                         </td>
                                         <td>
-                                            <div class="count-produs">
-                                                <button class="btn btn-increment left"><span></span></button>
-                                                <input type="text" class="form-control" value="1">
-                                                <button class="btn btn-increment right"><span></span></button>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            4850 руб.
-                                            <button class="btn btn-delete pull-right"></button>
+                                            <div class="price-block">
+                                                <p>Цена: <span class="pull-right">4850 руб.</span></p>
+                                                <p>Сумма: <span class="pull-right">4850 руб.</span></p>
+                                            </div>                                            
                                         </td>
                                     </tr> 
                                     <tr>
@@ -144,125 +156,63 @@
                                             </div>
                                             <div class="text">
                                                 <a href="#">Полуботинки, осень 2014</a>
-                                                <p><span>Артикул: 234-01 <i class="color red"></i></span> 36 размер, 1 шт.</p>
+                                                <p>36 размер, 1 шт.</p>
                                             </div>                                            
                                         </td>
                                         <td>
-                                             <div class="count-produs">
-                                                <button class="btn btn-increment left"><span></span></button>
-                                                <input type="text" class="form-control" value="1">
-                                                <button class="btn btn-increment right"><span></span></button>
+                                            <div class="price-block">
+                                                <p>Цена: <span class="pull-right">11000 руб.</span></p>
+                                                <p>Сумма: <span class="pull-right">11000 руб.</span></p>
                                             </div>
-                                        </td>
-                                        <td>
-                                            11000 руб.
-                                            <button class="btn btn-delete pull-right"></button>
                                         </td>
                                     </tr> 
                                 </table>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-6 check-order">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h5 class="grey">Сумма:</h5>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h5 class="grey">15850 руб.</h5>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h5 class="grey">Скидка:</h5>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h5 class="grey">- 0 руб.</h5>
+                                <div class="remove-order">
+                                    <p>Отказаться от заказа (объясните причину):</p>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" rows="1"></textarea>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <button class="btn btn-remove">Отказаться</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h5>Итого:</h5>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h3>15850 руб.</h3>
-                                    </div>
+                                
+                                <div class="order-block">
+                                    <h2>Заказ № 23626 <span>1300 руб.</span></h2>
+                                    <p>от 04.04.2014 <span class="pay">оплачен</span></p>
+                                    <ul class="tool">
+                                        <li><a href="#"><i class="icon doc"></i> <span>Счет оплаты</span></a></li>
+                                        <li><a href="#"><span>Скачать в PDF</span></a></li>
+                                    </ul>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <button class="btn btn-subscribe mega-btn">Оформить заказ</button>
-                                    </div>
+
+                                <div class="order-block">
+                                    <h2>Заказ № 23626 <span>34677 руб.</span></h2>
+                                    <p>от 04.04.2014 <span class="pay">оплачен</span></p>
+                                    <ul class="tool">
+                                        <li><a href="#"><i class="icon doc"></i> <span>Счет оплаты</span></a></li>
+                                        <li><a href="#"><span>Скачать в PDF</span></a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h5>Смотрети так же:</h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s1.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Сапоги, демисезон</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>3500</strong> руб. <span>4800 руб.</span></p>
-                                    </div>
+
+                                <div class="order-block">
+                                    <h2>Заказ № 23626 <span>50 руб.</span></h2>
+                                    <p>от 04.04.2014 <span class="pay">оплачен</span></p>
+                                    <ul class="tool">
+                                        <li><a href="#"><i class="icon doc"></i> <span>Счет оплаты</span></a></li>
+                                        <li><a href="#"><span>Скачать в PDF</span></a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s2.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Сапоги, зима</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>200</strong> руб.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s3.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Сапоги, зима</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>200</strong> руб.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s4.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Полуботинки, демисезон</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>4800</strong> руб. <span>5000 руб.</span></p>
-                                    </div>
+
+                                <div class="pagination-block">
+                                    <span>Страница:</span>
+                                    <ul class="pagination-list">
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +223,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img src="img/logo-footer.png" class="logo">
+                            <img src="img/logo-footer.png" class="logo" alt="ionnesi">
                             <p>2014 ЗАО «Ионесси»</p>
                             <p>Красноярск, ул. Сурикова, 12</p>
                             <p>Разработка сайта: <a href="#">Аленте</a></p>

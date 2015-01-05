@@ -47,7 +47,7 @@
             background-position:  -112px 0;
         }
         
-        &.ok{
+        &.yt{
             background-position:  -140px 0;
         }
         
@@ -72,5 +72,19 @@
         background: url("../img/shop-icon.png") no-repeat -64px 0;
         width: 115px;
         height: 25px;
+    }
+    
+    &.doc{
+        background: url("../img/icon-doc.png") no-repeat 0px 0;
+        width: 20px;
+        height: 27px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    
+    &.new{
+        background: url("../img/new.png") no-repeat 0px 0;
+        width: 139px;
+        height: 44px;
     }
 }

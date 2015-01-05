@@ -5,14 +5,50 @@
     color: $white;
     font-size: 16px;
     font-family: $font-open;
-    background-color: #accfea;
+    background-color: #7abbdc;
     border-radius: 0;
     box-shadow: none;
-    @include opacity(1);
+    @include opacity(0.8);
     @include transition(opacity 0.35s);
     
     &:hover{
-        opacity: 0.8;
+        opacity: 1;
         color: $white;
+    }
+}
+
+.btn-remove{
+    border:0;
+    background: none;
+    height: 35px;
+    color: $white;
+    font-size: 16px;
+    font-family: $font-open;
+    background-color: #ff918d;
+    border-radius: 0;
+    box-shadow: none;
+    @include opacity(0.8);
+    @include transition(opacity 0.35s);
+    width: 100%;
+    
+    &:hover{
+        opacity: 1;
+        color: $white;
+    }
+}
+
+.btn-delete{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    margin-right: 20px;
+    background: url("../img/close-btn-white.png") no-repeat 0 0;
+    @include opacity(0.8);
+    @include transition(opacity 0.35s);
+    
+    &:hover{
+        @include opacity(1);
     }
 }
