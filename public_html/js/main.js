@@ -44,3 +44,26 @@ $("#editComapany").change(function(){
         $("#editComp").slideUp("slow");
     }
 });
+
+$(".setColor").click(function(){
+    $(this).toggleClass("selected");
+});
+
+$(".setSize").click(function(){
+    $(this).toggleClass("selected");
+});
+$(".goToTop").click(function(){
+    $('html, body').animate({scrollTop: 0}, 1000);
+});
+
+$(".table-mode").click(function(){
+    $(this).toggleClass("selected");
+    $(".view-produs").addClass("table-mode-view");
+    $(".view-produs").removeClass("grid-mode-view");
+});
+
+$(".grid-mode").click(function(){
+    $(this).toggleClass("selected");
+    $(".view-produs").removeClass("table-mode-view");
+    $(".view-produs").addClass("grid-mode-view");
+});

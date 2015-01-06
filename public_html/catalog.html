@@ -12,6 +12,8 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href="css/jquery.nouislider.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -101,224 +103,383 @@
                                 <ul class="breadcrumb">
                                     <li><a href="#">Главная</a></li>
                                     <li><a href="#">Каталог</a></li>
-                                    <li><a href="#">Женская обувь</a></li>
-                                    <li><a href="#">Зима</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-12">
-                                <h1>Сапоги, зима</h1>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="view">
-                                    <div class="produs-img">
-                                        <img class="my-foto-container" src="img/img1.png"  data-large="img/img1.png" title="Фото">
-                                        <div class="icon new"></div>
+                            <div class="col-md-3">
+                                <h1>Каталог</h1>
+                                <p>Для кого:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck1" id="ck1">
+                                        <label for="ck1">Женские</label>
                                     </div>
-                                    <div class="thumbr">
-                                        <ul>
-                                            <li><img class="my-foto" src="img/th1.png"  data-large="img/img1.png" title="Фото1"></li>
-                                            <li><img class="my-foto" src="img/th2.png"  data-large="img/img1.png" title="Фото2"></li>
-                                        </ul>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck2" id="ck2">
+                                        <label for="ck2">Мужские</label>
                                     </div>
                                 </div>
-                                <div class="share-block">
-                                    <h5>Поделиться:</h5>
-                                    <ul class="social-buttons">
-                                        <li><a href="#"><i class="icon social vk"></i> <span>ВКонтакте</span></a></li>
-                                        <li><a href="#"><i class="icon social tw"></i> <span>Твиттер</span></a></li>
-                                        <li><a href="#"><i class="icon social ok"></i> <span>Одноклассники</span></a></li>
-                                        <li><a href="#"><i class="icon social fb"></i> <span>Facebook</span></a></li>
-                                        <li><a href="#"><i class="icon social gp"></i> <span>Google+</span></a></li>
+
+                                <p>Сезон:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck3" id="ck3">
+                                        <label for="ck3">Зима</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck4" id="ck4">
+                                        <label for="ck4">Лето</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck5" id="ck5">
+                                        <label for="ck5">Демисезон</label>
+                                    </div>
+                                </div>
+
+                                <p>Коллекция:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck6" id="ck6">
+                                        <label for="ck6">Ионесси</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck7" id="ck7">
+                                        <label for="ck7">Ионесси NEXT</label>
+                                    </div>
+                                </div>
+
+                                <p>Тип:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck8" id="ck8">
+                                        <label for="ck8">Сапоги</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck9" id="ck9">
+                                        <label for="ck9">Полусапоги</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck10" id="ck10">
+                                        <label for="ck10">Ботинки</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck11" id="ck11">
+                                        <label for="ck11">Полуботинки</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck12" id="ck12">
+                                        <label for="ck12">Мокасины</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck13" id="ck13">
+                                        <label for="ck13">Босоножки</label>
+                                    </div>
+                                </div>
+
+                                <p>Материал верха:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck14" id="ck14">
+                                        <label for="ck14">Кожа натуральная</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck15" id="ck15">
+                                        <label for="ck15">Замша</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck16" id="ck16">
+                                        <label for="ck16">Спилок велюр</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck17" id="ck17">
+                                        <label for="ck17">Нубук</label>
+                                    </div>
+                                </div>
+
+                                <p>Материал подклада:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck18" id="ck18">
+                                        <label for="ck18">Кожа натуральная</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck19" id="ck19">
+                                        <label for="ck19">Ворсин</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck20" id="ck20">
+                                        <label for="ck20">Мех</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck21" id="ck21">
+                                        <label for="ck21">Текстиль</label>
+                                    </div>
+                                </div>
+
+                                <p>Материал подошвы:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck22" id="ck22">
+                                        <label for="ck22">ТЭП</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck23" id="ck23">
+                                        <label for="ck23">ПУ</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck24" id="ck24">
+                                        <label for="ck24">Резина</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck25" id="ck25">
+                                        <label for="ck25">Релак</label>
+                                    </div>
+                                </div>
+                                <p>Цена:</p>
+                                <div class="block-range text-center">
+                                    <div class="input-block clearfix">
+                                        <input id="input-select" type="text" class="range-input pull-left"> -
+                                        <input id="input-number" type="text" class="range-input pull-right">
+                                    </div>
+                                    <div class="sliders" id="html5"></div>
+                                </div>
+
+                                <p>Размер:</p>
+                                <div class="size-block">
+                                    <ul>
+                                        <li><a href="javascript:void(0)" class="setSize">36</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize selected">37</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize selected">38</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize">39</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize">40</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize">41</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize">42</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize">43</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize">44</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize disabled">45</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize disabled">46</a></li>
+                                        <li><a href="javascript:void(0)" class="setSize disabled">47</a></li>
+                                    </ul>
+                                </div>                                
+
+                                <p>Цвет:</p>
+                                <div class="select-color">
+                                    <ul>
+                                        <li><a href="javascript:void(0)" class="setColor selected"><i class="color brown"></i></a>
+                                        <li><a href="javascript:void(0)" class="setColor"><i class="color maro"></i></a>
+                                        <li><a href="javascript:void(0)" class="setColor"><i class="color white"></i></a>
+                                        <li><a href="javascript:void(0)" class="setColor"><i class="color red"></i></a>
                                     </ul>
                                 </div>
+
+                                <p>Особое:</p>
+                                <div class="filter-block">
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck26" id="ck26">
+                                        <label for="ck26">Увеличенная полнота</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck26" id="ck26">
+                                        <label for="ck26">Новинка</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck26" id="ck26">
+                                        <label for="ck26">Распродажа</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck26" id="ck26">
+                                        <label for="ck26">Лак</label>
+                                    </div>
+                                    <div class="checkbox-side">
+                                        <input type="checkbox" name="ck26" id="ck26">
+                                        <label for="ck26">Тиснение</label>
+                                    </div>
+                                </div>
+
+                                <div class="buttons-block">
+                                    <button class="btn btn-subscribe">Показать</button>
+                                    <a href="#" class="clear-filter">очистить фильтр</a>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="call-center"><i class="icon mic"></i> <span>Получить консультацию</span></a>
+
+                                    <a href="#" class="goToTop">Наверх</a>
+                                </div>
+
                             </div>                            
-                            <div class="col-md-6">
-                                <div class="set-view">
-                                    <h1>4850 <small>руб.</small> <span>10000 руб.</span></h1>
-                                    <p class="code">Артикул: 8-2204-041 <i class="color brown"></i></p>
-                                    <p>Выберите размер:</p>
-                                    <ul class="size">
-                                        <li>
-                                            <label>36</label><input type="number">
-                                        </li>
-                                        <li>
-                                            <label>37</label><input type="number">
-                                        </li>
-                                        <li>
-                                            <label>38</label><input type="number">
-                                        </li>
-                                        <li>
-                                            <label>39</label><input type="number">
-                                        </li>
-                                        <li>
-                                            <label>40</label><input type="number">
-                                        </li>
-                                        <li>
-                                            <label>41</label><input type="number">
-                                        </li>
-                                        <li>
-                                            <label>42</label><input type="number">
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-subscribe">В Корзину</button>
+                            <div class="col-md-9">
+                                <div class="set-view-mode">
+                                    <select class="selectpicker">
+                                        <option>Популярности</option>
+                                    </select>
+                                    
+                                    <select class="selectpicker">
+                                        <option>Типу</option>
+                                    </select>
                                 </div>
-                                <div class="about view-mode">
-                                    <p><span>Пол:</span> Мужской</p>
-                                    <p><span>Тип:</span> Сапоги</p>
-                                    <p><span>Линейка:</span> Next</p>
-                                    <p><span>Год:</span> 2014</p>
-                                    <p><span>Сезон:</span> Зима 2014-15</p>
-                                    <p><span>Цвет:</span> Бежевый</p>
-                                    <p><span>Материал верха:</span> Замша</p>
-                                    <p><span>Материал подклада:</span> Текстиль</p>
-                                    <p><span>Материал подошвы:</span> ТЭП</p>
-                                    <p><span>Разменный ряд:</span> 37, 38, 39, 40</p>
-                                    <p><span>Особое:</span> Первая</p>
-                                </div>
-                                <h5>Оценка пользователей:</h5>
-                                <div class="starRating">
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <div>
-                                                    <input id="rating1" type="radio" name="rating" value="1">
-                                                    <label for="rating1"><span>1</span></label>
-                                                </div>
-                                                <input id="rating2" type="radio" name="rating" value="2">
-                                                <label for="rating2"><span>2</span></label>
-                                            </div>
-                                            <input id="rating3" type="radio" name="rating" value="3">
-                                            <label for="rating3"><span>3</span></label>
+                                <a href="#" class="table-mode">table</a>
+                                <a href="#" class="grid-mode selected">grid</a>
+                                <div class="view-produs grid-mode-view">
+                                    <h5>Тип: Сапоги</h5>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/1.png" alt="produs">                                            
                                         </div>
-                                        <input id="rating4" type="radio" name="rating" value="4">
-                                        <label for="rating4"><span>4</span></label>
-                                    </div>
-                                    <input id="rating5" type="radio" name="rating" value="5">
-                                    <label for="rating5"><span>5</span></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <h5>Похожие товары:</h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s1.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Сапоги, демисезон</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>3500</strong> руб. <span>4800 руб.</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s2.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Сапоги, зима</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>200</strong> руб.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s3.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Сапоги, зима</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>200</strong> руб.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="produs-block">
-                                    <div class="produs-image">
-                                        <img src="img/s4.png" alt="produs">
-                                    </div>
-                                    <div class="produs-link">
-                                        <a href="#">Полуботинки, демисезон</a>
-                                    </div>
-                                    <div class="produs-code">
-                                        <p>Артикул: 8-2204-041</p>
-                                    </div>
-                                    <div class="produs-price">
-                                        <p><strong>4800</strong> руб. <span>5000 руб.</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <ul class="view-tab" role="tablist">
-                                    <li role="presentation" class="active"><a href="#feedback" aria-controls="feedback" role="tab" data-toggle="tab">Отзывы о модели</a></li>
-                                    <li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab">Вопросы о модели</a></li>                                    
-                                    <li class="pull-right"><a href="#inputForm" class="btn-feed">Оставить отзыв</a></li>                                    
-                                </ul>
-
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane active" id="feedback">
-                                        <div class="query-view">
-                                            <p class="name">
-                                                Танюшка:
-                                            </p>
-                                            <p>Если предварительно подвергнуть объекты длительному вакуумированию, гомогенная среда едва ли квантуема. Возмущение плотности отражает барионный квант. Вещество отталкивает нестационарный луч.</p>
-                                            <p class="date">04.04.2014</p>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги, демисезон</a>
                                         </div>
-                                        <div class="query-view answer">
-                                            <p class="name">
-                                                Ионесси:
-                                            </p>
-                                            <p>Спасибо! Возмущение плотности отражает барионный квант.</p>
-                                            <p class="date">04.04.2014</p>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
                                         </div>
-                                        <div class="query-view">
-                                            <p class="name">Киса:</p>
-                                            <p>Расслоение когерентно восстанавливает резонатор, даже если пока мы не можем наблюсти это непосредственно.</p>
-                                            <p class="date">04.04.2014</p>
-                                        </div>
-                                        <div class="query-view answer">
-                                            <p class="name">
-                                                Ионесси:
-                                            </p>
-                                            <p>Приходите еще! Даже если пока мы не можем наблюсти это непосредственно.</p>
-                                            <p class="date">04.04.2014</p>
+                                        <div class="produs-price">
+                                            <p><strong>3500</strong> руб. <span>4800 руб.</span></p>
                                         </div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane" id="query">...</div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/2.png" alt="produs">
+                                            <div class="icon new"></div>
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги осень 2014</a>                                           
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color red"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>200</strong> руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/3.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Полуботинки зима 2014-15</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>200</strong> руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/4.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги, зима</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>3500</strong> руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/5.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги, зима</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color white"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>200</strong> руб.</p>
+                                        </div>
+                                    </div>
+                                    <h5>Тип: Полусапоги</h5>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/1.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги, демисезон</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color maro"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>3500</strong> руб. <span>4800 руб.</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/s2.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги зима</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>200</strong> руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/s3.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги зима</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>200</strong> руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/6.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги, демисезон</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>3500</strong> руб. <span>4800 руб.</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/2.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Сапоги зима</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>200</strong> руб.</p>
+                                        </div>
+                                    </div>
+                                    <div class="produs-block">
+                                        <div class="produs-image">
+                                            <img src="img/produs/3.png" alt="produs">
+                                        </div>
+                                        <div class="produs-link">
+                                            <a href="#">Полуботинки демисезон</a>
+                                        </div>
+                                        <div class="produs-code">
+                                            <p>Артикул: 8-2204-041 <span class="foot-detail"><i class="color brown"></i>размеры: 37 - 41</span></p>
+                                        </div>
+                                        <div class="produs-price">
+                                            <p><strong>4800</strong> руб. <span>5000 руб.</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">                            
-                            <div class="col-lg-12">
-                                <div class="pagination-block">
+                                <div class="pagination-block">                                    
                                     <span>Страница:</span>
                                     <ul class="pagination-list">
                                         <li class="active"><a href="#">1</a></li>
@@ -326,50 +487,8 @@
                                         <li><a href="#">3</a></li>
                                     </ul>
                                 </div>
+                                <p class="seo">Это текст для SEO и продвижения. Он состоит из ключевых слов и написан для поисховых роботов. Дальше идет охинея. Многочисленные расчеты предсказывают, а эксперименты подтверждают, что гомогенная среда стохастично испускает наносекундный атом, как и предсказывает общая теория поля. Погранслой поглощает атом. Неоднородность мгновенно отражает магнит. Мишень теоретически возможна. Самосогласованная модель предсказывает, что при определенных условиях вещество синфазно. Атом инвариантен относительно сдвига.</p>
                             </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="query-block">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-side" id="inputForm">
-                                                <h5>Остатавить отзыв:</h5>
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label>Ваше имя:</label>
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control">
-                                                            </div>    
-                                                        </div>    
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Напишите ваш отзыв:</label>
-                                                        <textarea class="form-control"></textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Введите данные с картинки:</label>
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <input type="text" class="form-control">
-                                                            </div>                                                    
-                                                            <div class="col-md-4">
-                                                                <img src="img/capchea.png" alt="capchea">                                                         
-                                                            </div>                                                    
-                                                            <div class="col-md-4">
-                                                                <button type="submit" class="btn btn-subscribe pull-right">Отправить</button>
-                                                            </div>                                                    
-                                                        </div>
-
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                    
                         </div>
                     </div>                    
                 </div>
@@ -420,31 +539,24 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
         <script src="js/zoomsl-3.0.min.js" type="text/javascript"></script>
+        <script src="js/jquery.nouislider.all.js" type="text/javascript"></script>
+        <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
         <script>
-            jQuery(function () {
-
-                //вешаем плагин на контейнер-картинку
-                $(".my-foto-container").imagezoomsl({
-                    zoomrange: [2, 2],
-                    rightoffset: 100
-                });
-                //клик по превью-картинке
-                $(".my-foto").click(function () {
-
-                    var that = this;
-                    $(".my-foto").removeClass("selected");
-                    $(that).addClass("selected");
-                    //копируем атрибуты из превью-картинки в контейнер-картинку
-                    $(".my-foto-container").fadeOut(600, function () {
-
-                        $(this).attr("src", $(that).attr("data-large"))              // путь до small картинки
-                                .attr("data-large", $(that).attr("data-large"))       // путь до big картинки
-
-                                .fadeIn(1000);
-                    });
-                });
+            $('#html5').noUiSlider({
+                start: [0, 89000],
+                connect: true,
+                range: {
+                    'min': 0,
+                    'max': 89000
+                }
             });
+
+            $('#html5').Link('lower').to($('#input-select'), null, wNumb({
+                decimals: 0
+            }));
+
+            $('#html5').Link('upper').to($('#input-number'));
         </script>
     </body>
 </html>

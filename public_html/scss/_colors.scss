@@ -4,6 +4,7 @@ $white: #FFFFFF;
 
 $brown: #b1825c;
 $red: #9a1d2a;
+$maro: #4c4648;
 
 .color{
     display: inline-block;
@@ -15,6 +16,14 @@ $red: #9a1d2a;
     
     &.brown{
         background-color: $brown;
+    }
+    
+    &.maro{
+        background-color: $maro;
+    }
+    
+    &.white{
+        background-color: $white;
     }
     
     &.red{
