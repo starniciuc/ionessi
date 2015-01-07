@@ -1,0 +1,32 @@
+$black: #000000;
+$grey: #5f5f5f;
+$white: #FFFFFF;
+
+$brown: #b1825c;
+$red: #9a1d2a;
+$maro: #4c4648;
+
+.color{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    
+    &.brown{
+        background-color: $brown;
+    }
+    
+    &.maro{
+        background-color: $maro;
+    }
+    
+    &.white{
+        background-color: $white;
+    }
+    
+    &.red{
+        background-color: $red;
+    }
+}

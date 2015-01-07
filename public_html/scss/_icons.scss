@@ -1,0 +1,127 @@
+.icon{
+    display: inline-block;
+
+    &.phone{
+        background: url("../img/header-icons.png") no-repeat 0 0;
+        width: 16px;
+        height: 26px;
+        vertical-align: bottom;
+    }
+
+    &.user{
+        background: url("../img/header-icons.png") no-repeat -17px 0;
+        width: 28px;
+        height: 26px; 
+    }
+
+    &.cart{
+        background: url("../img/header-icons.png") no-repeat -45px 0;
+        width: 25px;
+        height: 26px; 
+    }
+
+    &.mic{
+        background: url("../img/mic.png") no-repeat 0px 0;
+        width: 16px;
+        height: 19px; 
+    }
+
+    &.social{
+        background: url("../img/social-icons.png") no-repeat 0 0;
+        width: 27px;
+        height: 27px;
+        @include opacity(0.7);
+        @include transition(opacity 0.35s);
+
+        &.vk{
+            background-position:  0 0;
+        }
+
+        &.tw{
+            background-position:  -28px 0;
+        }
+
+        &.fb{
+            background-position:  -56px 0;
+        }
+
+        &.gp{
+            background-position:  -84px 0;
+        }
+
+        &.ok{
+            background-position:  -112px 0;
+        }
+
+        &.yt{
+            background-position:  -140px 0;
+        }
+
+        &:hover{
+            @include opacity(1);
+        }
+    }
+
+    &.card{
+        background: url("../img/shop-icon.png") no-repeat 0 0;
+        width: 30px;
+        height: 25px;
+    }
+
+    &.cash{
+        background: url("../img/shop-icon.png") no-repeat -32px 0;
+        width: 30px;
+        height: 25px;
+    }
+
+    &.shop{
+        background: url("../img/shop-icon.png") no-repeat -64px 0;
+        width: 115px;
+        height: 25px;
+    }
+
+    &.doc{
+        background: url("../img/icon-doc.png") no-repeat 0px 0;
+        width: 20px;
+        height: 27px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    &.new{
+        background: url("../img/new.png") no-repeat 0px 0;
+        width: 139px;
+        height: 44px;
+    }
+
+    &.table{
+        background: url("../img/view-mode.png") no-repeat 0 0;
+        width: 35px;
+        height: 35px;
+        
+        &:hover{
+            background-position: 0 -36px;
+        }
+    }
+
+    &.grid{
+        background: url("../img/view-mode.png") no-repeat -37px -36px;
+        width: 35px;
+        height: 35px;
+        
+        &:hover{
+            background-position: -37px 0;
+        }
+    }
+}
+.selected{
+    .icon{
+        &.table{
+            background-position: 0 -36px;
+        }
+
+        &.grid{
+            background-position: -37px 0;
+        } 
+    }
+}

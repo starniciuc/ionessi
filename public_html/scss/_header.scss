@@ -1,0 +1,109 @@
+body{
+    background-color: #FFFFFF;
+}
+header{
+    min-height: 90px;
+
+    .call-number{
+        padding-top: 32px;
+
+        a{
+            color: $black;
+            font-family: $font-roboto;
+            font-size: 29px;
+            font-weight: 500;
+            display: inline-block;
+            line-height: 29px;
+
+            span.small-text{
+                font-size: 20px;
+                line-height: 25px;
+                vertical-align: top;
+                margin: 0 0 0 5px;
+            }
+
+            &:hover{
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+
+    .logo{
+        text-align: center;
+        line-height: 90px;
+
+        a{
+            display: inline-block;
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    .user-block{
+        display: inline-block;
+        margin-top: 27px;
+        padding-left: 38px;
+        position: relative;
+        margin-right: 25px;
+        float: right;
+        
+        .icon.user{
+            position: absolute;
+            left: 0; 
+            top: 8px;
+        }
+        
+        .login{
+            color: $black;
+            font-family: $font-roboto;
+            font-size: 20px;
+            font-weight: 500;
+            display: block;
+        }
+        
+        .registration{
+            color: $grey;
+            font-family: $font-arial;
+            font-size: 12px;
+            display: block;
+        }
+    }
+    
+    .cart-block{
+        display: inline-block;
+        margin-top: 27px;
+        padding-left: 38px;
+        position: relative;
+        margin-right: 25px;
+        float: right;
+        & > a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .icon.cart{
+            position: absolute;
+            left: 0; 
+            top: 8px;
+        }
+        
+        .cart{
+            color: $black;
+            font-family: $font-roboto;
+            font-size: 20px;
+            font-weight: 500;
+            display: block;
+        }
+        
+        p{
+            color: $grey;
+            font-family: $font-arial;
+            font-size: 12px;
+            display: block;
+            margin: 0;
+        }
+    }
+}
