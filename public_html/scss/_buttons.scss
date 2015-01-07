@@ -1,16 +1,20 @@
+a:link, a:active, a:hover, a:focus{
+    outline: 0;
+}
 .btn-subscribe{
     border:0;
     background: none;
     height: 35px;
     color: $white;
     font-size: 16px;
+    font-weight: 300;
     font-family: $font-open;
     background-color: #7abbdc;
     border-radius: 0;
     box-shadow: none;
     @include opacity(0.8);
     @include transition(opacity 0.35s);
-    
+
     &:hover{
         opacity: 1;
         color: $white;
@@ -30,7 +34,7 @@
     @include opacity(0.8);
     @include transition(opacity 0.35s);
     width: 100%;
-    
+
     &:hover{
         opacity: 1;
         color: $white;
@@ -47,8 +51,52 @@
     background: url("../img/close-btn-white.png") no-repeat 0 0;
     @include opacity(0.8);
     @include transition(opacity 0.35s);
-    
+
     &:hover{
         @include opacity(1);
+    }
+}
+
+.btn-cart{
+    border:0;
+    background: none;
+    height: 30px;
+    color: $white;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $font-open;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #7abbdc;
+    border-radius: 0;
+    box-shadow: none;
+    @include transition(color 0.35s);
+
+    &:hover, &:active, &:active, &.active{
+        outline: 0;
+        color: rgba(255, 255, 255, 0.4);
+        box-shadow: none;
+    }
+}
+
+.btn-save{
+    border: 0;
+    background-color: #e7edf2;
+    height: 35px;
+    color: #5a8ead;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $font-open;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    box-shadow: none;
+    @include transition(background 0.35s);
+
+    &:hover{
+        color: #5a8ead;
+        background-color: #def3ff;
     }
 }
