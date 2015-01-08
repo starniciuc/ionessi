@@ -104,6 +104,24 @@ main{
         background: url("../img/ice-right.png") no-repeat right 0;
         background-repeat: repeat-y;
     }
+
+    &.leto{
+        background: url("../img/vesna-left.png") no-repeat 0 0;
+        background-repeat: repeat-y;
+        .ice-right{
+            background: url("../img/vesna.png") no-repeat right 0;
+            background-repeat: repeat-y;
+        }
+    }
+
+    &.oseni{
+        background: url("../img/oseni-left.png") no-repeat 0 0;
+        background-repeat: repeat-y;
+        .ice-right{
+            background: url("../img/oseni.png") no-repeat right 0;
+            background-repeat: repeat-y;
+        }
+    }
     section.slider-top{
         position: relative;
 
@@ -211,8 +229,78 @@ main{
             .slide{
                 text-align: center;
 
-                img{
-                    max-width: 100%;
+                a{
+                    display: block;
+                }
+                .padding-top-300{
+                    padding-top: 100px;
+                }
+                .produc-element{
+                    position: relative;
+                    padding-bottom: 100px;
+                    width: 400px;
+                    
+                    .image-product{
+                        position: relative;
+                        max-height: 365px;                    
+                        vertical-align: bottom;
+                        text-align: center;
+                        
+                        span{
+                            display: inline-block;
+                            vertical-align: bottom;
+                            height: 100%;
+                            width: 1px;
+                        }
+                        img{
+                            max-height: 100%;
+                            max-width: 100%;
+                            vertical-align: middle;
+                        }
+                        
+                        .icon{
+                            position: absolute;
+                            top: 50%;
+                        }
+                    }
+                    
+                    .about-produs{
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 180px;
+                        background-color: rgba(4, 125, 199, 0.6);
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0;
+                        padding: 40px 20px 0; 
+                        
+                        &.dark{
+                            background-color: rgba(4, 87, 199, 0.6);
+                        }
+                        
+                        p{
+                            color: $white;
+                            font-family: $font-open;
+                            margin-bottom: 5px;
+                            
+                            &.code{
+                                font-size: 14px;
+                            }
+                            
+                            &.name{
+                                font-size: 25px;
+                            }
+                            
+                            &.price{
+                                font-size: 14px;
+                                
+                                strong{
+                                    font-size: 24px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -531,6 +619,12 @@ p.text-description{
                 background-position: 0 0;
             }
         } 
+
+        &:hover + label{
+            &:before{
+                background: url("../img/ck-hover.png") no-repeat 0 0px;
+            }
+        }
     }
 
     input[type="checkbox"]{
@@ -629,8 +723,12 @@ ul.social-buttons{
         background-color: #e7edf2;
         height: 35px;
         font-size: 16px;
+        color: #000000;
+        font:300 16px $font-open;
     }
-
+    input.form-control.error, textarea.form-control.error{
+        background-color: #ead1d1;
+    }
     textarea.form-control{
         height: 140px;
     }
@@ -649,6 +747,7 @@ ul.social-buttons{
             color: #000000;
             font-size: 16px;
             font-family: $font-open;
+            font-weight: 300;
 
         }
         input[type="file"]{
@@ -660,6 +759,35 @@ ul.social-buttons{
             left: 0;
             @include opacity(0);
             cursor: pointer;
+        }
+    }
+}
+.alert{
+    padding: 0;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+
+    i{
+        margin-right: 10px;
+    }
+    &.error{
+        p{
+            vertical-align: middle;
+            line-height: 40px;
+            color: #932f2f !important;
+            font-size: 16px;
+            font-family: $font-open;
+        }
+    }
+
+    &.success{
+        p{
+            vertical-align: middle;
+            line-height: 40px;
+            color: #138600 !important;
+            font-size: 16px;
+            font-family: $font-open;
         }
     }
 }
@@ -761,6 +889,10 @@ ul.social-buttons{
     padding: 15px;
     margin-bottom: 15px;
 
+    &:hover{
+        background-color: #ddf2ff;
+        cursor: pointer;
+    }
     a.name{
         color: #004e7c;
         font-family: $font-open;
@@ -845,7 +977,7 @@ ul.social-buttons{
             li{
                 display: block;
                 width: 100%;
-
+                text-align:left;
                 a{
                     display: block;
                     padding: 4px 15px;
@@ -1923,7 +2055,7 @@ table.list-table{
                         width: 82px;
                         height: 24px;
                     }
-                    
+
                     &.next{
                         background: url("../img/next-icon.png") no-repeat 0 0;
                         width: 82px;
@@ -1991,7 +2123,7 @@ table.list-table{
                             margin-bottom: 15px;
                             position: absolute;
                             bottom: 0px;
-                            
+
                             &.btn-save{
                                 bottom: 45px;
                             }
@@ -2028,7 +2160,7 @@ table.list-table{
                     z-index: 2;
                     text-align: center;
                 }
-                
+
                 .close-grid-product{
                     position: absolute;
                     top: 0;
@@ -2085,7 +2217,7 @@ table.list-table{
                         width: 70px;
                         height: 18px;
                     }
-                    
+
                     &.next{
                         background: url("../img/next-table.png") no-repeat 0 0;
                         width: 70px;
@@ -2178,6 +2310,59 @@ table.list-table{
                 content: " ";
                 clear: both;
             }
+        }
+    }
+}
+
+.modal{
+    .modal-content{
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        padding: 15px 30px;
+
+        .btn-delete{
+            position: absolute;
+            top: 0;
+            right: -50px;
+            margin: 0;
+            @include opacity(1);
+
+            &:hover{
+                @include opacity(0.8);
+            }
+        }
+
+        h1{
+            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-family: $font-open;
+        }
+
+        .btn-subscribe{
+            padding-left: 30px;
+            padding-right: 30px; 
+        }
+
+        a{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 30px;
+            font-family: $font-open;
+            color: #004e7c;
+
+            &:hover{
+                color: #004e7c;
+                text-decoration: underline;
+            }
+        }
+
+        p{
+            font-size: 16px;
+            font-family: $font-open;
+            font-weight: 300;
+            color: #000000;
         }
     }
 }
