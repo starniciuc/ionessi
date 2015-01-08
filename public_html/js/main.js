@@ -20,6 +20,9 @@ $("#upload").change(function () {
         $("#nameFile").html("Загружено " + filename);
     }
 });
+$('html').click(function() {
+    $(".produs-block").removeClass("active");
+});
 
 $(".btn-increment").click(function () {
     $valueElement = $(this).parents(".count-produs").find("input");
@@ -76,27 +79,64 @@ $(".grid-mode").click(function () {
     $(".view-produs").removeClass("table-mode-view");
     $(".view-produs").addClass("grid-mode-view");
 });
+$(".produs-block").click(function(event){
+    event.stopPropagation();
+});
 
-$(".open-cart").click(function () {
+$(".get-size-block").click(function(event){
+    event.stopPropagation();
+});
+
+$(".open-cart").click(function (event) {
+    event.stopPropagation();
+    
     if ($(".view-produs").hasClass("table-mode-view")) {
         var $par = $(this).parents(".produs-block");
         var $elm = $par.find(".get-size-block");
         $(this).toggleClass("active");
         $elm.slideToggle("slow");
-    }
-});
-
-$(".produs").click(function () {
+    };
+    
     if ($(".view-produs").hasClass("grid-mode-view")) {
         var $par = $(this).parents(".produs-block");
         $(".produs-block").removeClass("active");
+        $(this).toggleClass("active");
         $par.addClass("active");
+        
+        $(".produs-block").each(function(i, value){
+            var coef = 4;
+            
+            if($(window).width() <= 992){
+                coef = 3;
+            }
+            if(((i+1) % coef === 0) || (i === 0)){
+                var $par_b = $(value);
+                $par_b.addClass("left-elm");
+            }            
+        });
     }
 });
-
-$(".close-grid-product").click(function(){
+$(".close-grid-product").click(function () {
     if ($(".view-produs").hasClass("grid-mode-view")) {
         var $par = $(this).parents(".produs-block");
         $par.removeClass("active");
     }
+});
+$(".produs").click(function(){
+    if($(".view-produs").hasClass("grid-mode-view") && $(window).width() < 551){
+        var $par = $(this).parents(".produs-block");
+        $(".produs-block").removeClass("active");
+        $(this).toggleClass("active");
+        $par.addClass("active");
+    }
+});
+$(".modal").draggable({
+    handle: ".modal-body"
+});
+
+$(".open-collapse").click(function(){
+    var $this = $(this);
+    var $par = $this.parents(".order-list");
+    var $elm = $par.find(".collapse");
+    $elm.collapse("toggle");
 });

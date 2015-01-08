@@ -109,6 +109,10 @@ a:link, a:active, a:hover, a:focus{
     box-shadow: none;
     @include transition(background 0.35s);
 
+    &.white{
+        background-color: $white;
+    }
+    
     &:hover{
         color: #5a8ead;
         background-color: #def3ff;

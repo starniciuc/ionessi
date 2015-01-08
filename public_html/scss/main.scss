@@ -2,12 +2,18 @@
     Author     : Starniciuc Mihai
 */
 @import "compass";
+@import "compass/layout";
 
 @import "fonts";
 @import "colors";
 @import "buttons";
 @import "icons";
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+
+@include sticky-footer(205px, ".wrapper", "#my-root-footer", "footer");
 
 @import "header";
 @import "content";
 @import "footer";
+
+@import "responsiv";
