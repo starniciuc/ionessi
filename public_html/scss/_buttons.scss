@@ -56,6 +56,20 @@ a:link, a:active, a:hover, a:focus{
         @include opacity(1);
     }
 }
+.btn-close-modal{
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    background: url("../img/close-btn-grey.png") no-repeat 0 0;
+    @include opacity(0.8);
+    @include transition(opacity 0.35s);
+
+    &:hover{
+        @include opacity(1);
+    }
+}
 
 .btn-cart{
     border:0;

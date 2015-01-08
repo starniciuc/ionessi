@@ -1892,13 +1892,13 @@ table.list-table{
             }
         }
     }
-
+    .close-grid-product{
+        display: none;
+    }
     &.grid-mode-view{
 
         .produs{
             cursor: pointer;
-
-
         }
         .produs-block{
             display: inline-block;
@@ -1909,22 +1909,29 @@ table.list-table{
 
             .produs-image{
                 height: auto;
-                max-height: 300px;
+                height: 260px;
                 text-align: center;
                 position: relative;
 
                 .icon{
                     position: absolute;
-                    right: 0;
-                    top: 0;
+                    right: 5px;
+                    top: 10px;
 
                     &.new{
                         background: url("../img/new-grid.png") no-repeat 0 0;
                         width: 82px;
                         height: 24px;
                     }
+                    
+                    &.next{
+                        background: url("../img/next-icon.png") no-repeat 0 0;
+                        width: 82px;
+                        height: 24px;
+                    }
                 }
                 img{
+                    vertical-align: bottom;
                     max-height: 100%;
                     width: auto;
                 }
@@ -1947,7 +1954,7 @@ table.list-table{
                 }
 
                 .get-size-block{
-                    display: block;
+                    display: block !important;
                     position: absolute;
                     top: 0;
                     width: 165px;
@@ -1958,18 +1965,36 @@ table.list-table{
                     padding: 15px;
                     background-color: $white;
                     z-index: 2;
-                    
+                    height: 451px;
+                    padding-top: 60px;
+
+                    ul.size{
+                        li{
+                            margin: 0;
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
                     .buttons-block-com{
+
                         p{
                             font-weight: 300;
                             font-size: 14px;
                             font-family: $font-open;
                             color: #848484;
+                            position: absolute;
+                            top: 10px;
                         }
-                        
+
                         .btn{
-                            width: 100%;
+                            width: 90%;
                             margin-bottom: 15px;
+                            position: absolute;
+                            bottom: 0px;
+                            
+                            &.btn-save{
+                                bottom: 45px;
+                            }
                         }
                     }
                 }
@@ -1979,6 +2004,13 @@ table.list-table{
                     position: absolute;
                     bottom: -20px;
                     z-index: 3;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 300;
+                    font-family: $font-open;
+                    color: #848484;
+                    font-size: 14px;
+
                     i.color{
                         display: none;
                     }
@@ -1994,6 +2026,15 @@ table.list-table{
                     border-bottom: 2px solid #accfea;
                     background-color: $white;
                     z-index: 2;
+                    text-align: center;
+                }
+                
+                .close-grid-product{
+                    position: absolute;
+                    top: 0;
+                    right: -50px;
+                    display: block;
+                    z-index: 5;
                 }
             }
         }
@@ -2041,6 +2082,12 @@ table.list-table{
 
                     &.new{
                         background: url("../img/new-samll.png") no-repeat 0 0;
+                        width: 70px;
+                        height: 18px;
+                    }
+                    
+                    &.next{
+                        background: url("../img/next-table.png") no-repeat 0 0;
                         width: 70px;
                         height: 18px;
                     }

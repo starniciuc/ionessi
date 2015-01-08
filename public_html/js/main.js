@@ -59,6 +59,9 @@ $(".goToTop").click(function () {
 $(".table-mode").click(function () {
     $(".grid-mode").removeClass("selected");
     $(this).addClass("selected");
+    if ($(".view-produs").hasClass("grid-mode-view")) {
+        $(".produs-block").removeClass("active");
+    }
     $(".view-produs").addClass("table-mode-view");
     $(".view-produs").removeClass("grid-mode-view");
 });
@@ -83,9 +86,17 @@ $(".open-cart").click(function () {
     }
 });
 
-$(".produs").click(function(){
-   if ($(".view-produs").hasClass("grid-mode-view")) {
+$(".produs").click(function () {
+    if ($(".view-produs").hasClass("grid-mode-view")) {
         var $par = $(this).parents(".produs-block");
-        $par.toggleClass("active");
-    } 
+        $(".produs-block").removeClass("active");
+        $par.addClass("active");
+    }
+});
+
+$(".close-grid-product").click(function(){
+    if ($(".view-produs").hasClass("grid-mode-view")) {
+        var $par = $(this).parents(".produs-block");
+        $par.removeClass("active");
+    }
 });
