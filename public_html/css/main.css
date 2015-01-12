@@ -600,7 +600,7 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   nav .menu li ul.submenu { position: relative; display: block; background: none; border: 0; }
   nav .menu li ul.submenu li a { font-size: 12px; padding: 3px; }
   main h1 { font-size: 26px; }
-  .navbar-header .logo { display: inline-block; margin-left: 15px; margin-top: 15px; }
+  .navbar-header .logo { display: inline-block; margin-left: 15px; margin-top: 10px; }
   .navbar-header .logo img { height: 25px; }
   .navbar-header i { color: #003453; font-size: 25px; }
   .navbar-header .button-mobile { display: inline-block; height: 45px; line-height: 65px; margin-right: 10px; }
@@ -622,7 +622,8 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .shop-list { padding-bottom: 60px; }
   .filter-btn { font-size: 22px; font-weight: 300; font-family: "Open Sans", sans-serif; float: none; }
   .filter-btn i { margin-left: 15px; }
-  .set-view-mode label { margin-bottom: 20px; } }
+  .set-view-mode label { margin-bottom: 20px; }
+  .button-mobile-text { position: absolute; left: 40px; top: 33px; font-size: 16px; color: #007ECB; font-weight: 600; font-family: "Open Sans", sans-serif; } }
 @media (max-width: 550px) { .view-produs.grid-mode-view .produs-block { width: 100%; margin-right: 0%; }
   .view-produs.grid-mode-view .produs-block.active .cart-button, .view-produs.grid-mode-view .produs-block.active .foot-detail { position: relative; }
   .view-produs.grid-mode-view .produs-block.active .get-size-block { left: auto; right: auto; position: relative; top: 100%; width: 100%; border-top: 0; border-left: 2px solid #accfea; border-right: 2px solid #accfea; }

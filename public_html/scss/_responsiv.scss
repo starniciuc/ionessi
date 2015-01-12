@@ -139,7 +139,7 @@
         .logo{
             display: inline-block;
             margin-left: 15px;
-            margin-top: 15px;
+            margin-top: 10px;
 
             img{
                 height: 25px;
@@ -232,6 +232,15 @@
 			margin-bottom: 20px;
 		}
 
+	}
+	.button-mobile-text{
+		position: absolute;
+		left: 40px;
+		top: 33px;
+		font-size: 16px;
+		color: #007ECB;
+		font-weight: 600;
+		font-family: $font-open;
 	}
 }
 @media(max-width:550px){
