@@ -151,3 +151,11 @@ $(".filter-btn").click(function () {
 		$(this).html("Открыть фильтр <i class='fa fa-bars'></i>");
 	}
 });
+
+$(".ck-pers").change(function(){
+	if($(this).val() == 1){
+		$(".jurid-block").slideDown();
+	}else{
+		$(".jurid-block").slideUp();
+	}
+})

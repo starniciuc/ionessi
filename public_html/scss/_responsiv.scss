@@ -54,6 +54,22 @@
         .ice-right{
             background: none;
         }
+
+		&.oseni{
+			background: none;
+
+			.ice-right{
+				background: none;
+			}
+		}
+		
+		&.leto{
+			background: none;
+
+			.ice-right{
+				background: none;
+			}
+		}
     }
     main .why a.title{
         font-size: 18px;

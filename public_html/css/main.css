@@ -552,6 +552,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 
 .modal.fade.ui-draggable-dragging { -moz-transition: none; -o-transition: none; -webkit-transition: none; transition: none; }
 
+.jurid-block { display: none; }
+
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }
 footer p { color: #8295a1; font-size: 16px; font-family: "Open Sans", sans-serif; }
@@ -579,6 +581,10 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   header .cart-block .cart, header .user-block .login { font-size: 16px; }
   .wrapper { background: none; }
   .wrapper .ice-right { background: none; }
+  .wrapper.oseni { background: none; }
+  .wrapper.oseni .ice-right { background: none; }
+  .wrapper.leto { background: none; }
+  .wrapper.leto .ice-right { background: none; }
   main .why a.title { font-size: 18px; }
   main .why p.descr { font-size: 14px; }
   main .slider-product-side .slider-product .slide .produc-element { width: 100%; }
