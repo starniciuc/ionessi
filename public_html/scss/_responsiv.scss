@@ -66,7 +66,7 @@
     }
     .left-menu{
         margin-bottom: 20px;
-        
+
         li{
             padding: 4px  10px;
 
@@ -182,7 +182,7 @@
             margin-top: 10px;
         }
     }
-    
+
     .query-block .answer{
         padding-left: 0;
         .type-block{
@@ -203,12 +203,20 @@
         font-size: 22px;
         font-weight: 300;
         font-family: $font-open;
-        
+		float: none;
+
         i{
             margin-left: 15px;
         }
-        
+
     }
+	.set-view-mode{
+
+		label{
+			margin-bottom: 20px;
+		}
+
+	}
 }
 @media(max-width:550px){
     .view-produs.grid-mode-view .produs-block{
