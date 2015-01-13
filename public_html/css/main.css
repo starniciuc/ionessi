@@ -565,6 +565,12 @@ footer .subscribe .submit-form { position: relative; }
 footer .subscribe .submit-form input.form-control { border: 0; height: 35px; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; padding-right: 100px; color: #91a3af; font-size: 16px; font-family: "Open Sans", sans-serif; }
 footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; top: 0; }
 
+@media screen and (max-width: 1500px) { .wrapper { background-size: 200px auto; }
+  .wrapper .ice-right { background-size: 200px auto; }
+  .wrapper.oseni { background-size: 200px auto; }
+  .wrapper.oseni .ice-right { background-size: 200px auto; }
+  .wrapper.leto { background-size: 200px auto; }
+  .wrapper.leto .ice-right { background-size: 200px auto; } }
 @media screen and (max-width: 1200px) { nav .menu li { padding-right: 12px; }
   .logo img { max-width: 100%; } }
 @media screen and (max-width: 992px) { nav.nav-bar-menu { min-height: 45px; }

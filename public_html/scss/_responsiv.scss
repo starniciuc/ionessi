@@ -1,3 +1,28 @@
+@media screen and (max-width: 1500px) {
+    .wrapper{
+        background-size: 200px auto;
+
+        .ice-right{
+            background-size: 200px auto;
+        }
+
+		&.oseni{
+			background-size: 200px auto;
+
+			.ice-right{
+				background-size: 200px auto;
+			}
+		}
+		
+		&.leto{
+			background-size: 200px auto;
+
+			.ice-right{
+				background-size: 200px auto;
+			}
+		}
+	}
+}
 @media screen and (max-width: 1200px) {
     nav .menu li{
         padding-right: 12px;
