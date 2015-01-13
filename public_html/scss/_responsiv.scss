@@ -1,29 +1,52 @@
 @media screen and (max-width: 1500px) {
     .wrapper{
-        background-size: 200px auto;
+        background-size: 174px auto;
 
         .ice-right{
-            background-size: 200px auto;
+            background-size: 174px auto;
         }
 
 		&.oseni{
-			background-size: 200px auto;
+			background-size: 174px auto;
 
 			.ice-right{
-				background-size: 200px auto;
+				background-size: 174px auto;
 			}
 		}
 		
 		&.leto{
-			background-size: 200px auto;
+			background-size: 174px auto;
 
 			.ice-right{
-				background-size: 200px auto;
+				background-size: 174px auto;
 			}
 		}
 	}
 }
 @media screen and (max-width: 1200px) {
+	wrapper{
+        background-size: 100px auto;
+
+        .ice-right{
+            background-size: 100px auto;
+        }
+
+		&.oseni{
+			background-size: 100px auto;
+
+			.ice-right{
+				background-size: 100px auto;
+			}
+		}
+		
+		&.leto{
+			background-size: 100px auto;
+
+			.ice-right{
+				background-size: 100px auto;
+			}
+		}
+	}
     nav .menu li{
         padding-right: 12px;
     }
