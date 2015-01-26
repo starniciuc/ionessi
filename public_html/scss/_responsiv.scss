@@ -1,4 +1,77 @@
+@media screen and (max-width: 1500px) {
+    .wrapper{
+        background-size: 174px auto;
+
+        .ice-right{
+            background-size: 174px auto;
+        }
+
+		&.oseni{
+			background-size: 174px auto;
+
+			.ice-right{
+				background-size: 174px auto;
+			}
+		}
+		
+		&.leto{
+			background-size: 174px auto;
+
+			.ice-right{
+				background-size: 174px auto;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1300px) {
+    .wrapper{
+        background-size: 100px auto;
+
+        .ice-right{
+            background-size: 100px auto;
+        }
+
+		&.oseni{
+			background-size: 100px auto;
+
+			.ice-right{
+				background-size: 100px auto;
+			}
+		}
+		
+		&.leto{
+			background-size: 100px auto;
+
+			.ice-right{
+				background-size: 100px auto;
+			}
+		}
+	}
+}
 @media screen and (max-width: 1200px) {
+	.wrapper{
+        background-size: 50px auto;
+
+        .ice-right{
+            background-size: 50px auto;
+        }
+
+		&.oseni{
+			background-size: 50px auto;
+
+			.ice-right{
+				background-size: 50px auto;
+			}
+		}
+		
+		&.leto{
+			background-size: 50px auto;
+
+			.ice-right{
+				background-size: 50px auto;
+			}
+		}
+	}
     nav .menu li{
         padding-right: 12px;
     }
@@ -54,6 +127,22 @@
         .ice-right{
             background: none;
         }
+
+		&.oseni{
+			background: none;
+
+			.ice-right{
+				background: none;
+			}
+		}
+		
+		&.leto{
+			background: none;
+
+			.ice-right{
+				background: none;
+			}
+		}
     }
     main .why a.title{
         font-size: 18px;
@@ -66,7 +155,7 @@
     }
     .left-menu{
         margin-bottom: 20px;
-        
+
         li{
             padding: 4px  10px;
 
@@ -123,7 +212,7 @@
         .logo{
             display: inline-block;
             margin-left: 15px;
-            margin-top: 15px;
+            margin-top: 10px;
 
             img{
                 height: 25px;
@@ -182,7 +271,7 @@
             margin-top: 10px;
         }
     }
-    
+
     .query-block .answer{
         padding-left: 0;
         .type-block{
@@ -203,12 +292,29 @@
         font-size: 22px;
         font-weight: 300;
         font-family: $font-open;
-        
+		float: none;
+
         i{
             margin-left: 15px;
         }
-        
+
     }
+	.set-view-mode{
+
+		label{
+			margin-bottom: 20px;
+		}
+
+	}
+	.button-mobile-text{
+		position: absolute;
+		left: 40px;
+		top: 33px;
+		font-size: 16px;
+		color: #007ECB;
+		font-weight: 600;
+		font-family: $font-open;
+	}
 }
 @media(max-width:550px){
     .view-produs.grid-mode-view .produs-block{

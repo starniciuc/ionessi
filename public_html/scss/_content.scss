@@ -402,6 +402,10 @@ main{
             margin-bottom: 10px;
             display: block;
             padding-right: 30px;
+			
+			&:hover{
+				text-decoration: none;
+			}
         }
         p.descr{
             color: #6b7f8b;
@@ -2476,4 +2480,7 @@ table.list-table{
     -o-transition: none;
     -webkit-transition: none;
     transition: none;
+}
+.jurid-block{
+	display: none;
 }
