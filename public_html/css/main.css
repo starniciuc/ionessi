@@ -623,11 +623,13 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .wrapper.leto { background-size: 50px auto; }
   .wrapper.leto .ice-right { background-size: 50px auto; }
   nav .menu li { padding-right: 12px; }
-  .logo img { max-width: 100%; } }
+  .logo img { max-width: 100%; }
+  nav .menu li { padding-left: 2px; padding-right: 2px; } }
 @media screen and (max-width: 992px) { nav.nav-bar-menu { min-height: 45px; }
   nav .menu li .submenu { top: 100%; }
   nav .menu li a { font-size: 13px; padding: 14px 0; }
   header .logo a { display: block; }
+  nav .menu li { padding-left: 4px; padding-right: 4px; }
   nav .menu li a span { display: none; }
   .info-slide { display: none; }
   .bx-controls { display: none; }
