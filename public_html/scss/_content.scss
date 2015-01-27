@@ -2569,3 +2569,20 @@ table.list-table{
 		}
 	}
 }
+.backToList{
+	display: block;
+	width: 139px;
+	height: 56px;
+	background: url("../img/back-to.png") no-repeat 0 0;
+	position: absolute;
+	left: -140px;
+	font-size: 16px;
+	font-weight: 300;
+	padding-left: 35px;
+	padding-top: 5px;
+	font-family: $font-open;
+	top: -70px;
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}

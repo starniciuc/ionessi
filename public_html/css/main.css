@@ -576,6 +576,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 
 .share-block.new-design ul li span { vertical-align: middle; display: inline-block; font-size: 24px; color: #000000; font-family: "Open Sans", sans-serif; }
 
+.backToList { display: block; width: 139px; height: 56px; background: url("../img/back-to.png") no-repeat 0 0; position: absolute; left: -140px; font-size: 16px; font-weight: 300; padding-left: 35px; padding-top: 5px; font-family: "Open Sans", sans-serif; top: -70px; color: #FFFFFF; text-decoration: none; }
+
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }
 footer p { color: #8295a1; font-size: 16px; font-family: "Open Sans", sans-serif; }
