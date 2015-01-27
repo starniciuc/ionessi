@@ -107,7 +107,7 @@
 
                         <div class="row">
                             <div class="col-md-6">
-								<a href="#" class="backToList">Вернуться в каталог</a>
+                                <a href="#" class="backToList">Вернуться в каталог</a>
                                 <div class="view">
                                     <div class="produs-img">
                                         <img class="my-foto-container" src="img/img1.png"  data-large="img/img1.png" title="Фото">
@@ -122,7 +122,7 @@
                                 </div>
                                 <div class="share-block new-design">
                                     <ul class="social-buttons">
-										<li><span>Поделиться:</span></li>
+                                        <li><span>Поделиться:</span></li>
                                         <li><a href="#"><i class="icon social vk"></i> </a></li>
                                         <li><a href="#"><i class="icon social tw"></i> </a></li>
                                         <li><a href="#"><i class="icon social ok"></i> </a></li>
@@ -165,7 +165,9 @@
                                                 <label>42</label><input type="number" value="0" min="0">
                                             </li>
                                         </ul>
+                                        <div class="circle-white"></div>
                                     </div>
+                                    
                                 </div>
                                 <div class="about view-mode">
                                     <p><span>Пол:</span> Мужской</p>
@@ -202,7 +204,6 @@
                                     <input id="rating5" type="radio" name="rating" value="5">
                                     <label for="rating5"><span>5</span></label>
                                 </div>
-                                <div class="slected-stars">3.5</div>
                             </div>
                         </div>
                         <div class="row">
@@ -289,12 +290,15 @@
                             <div class="col-lg-12">
                                 <ul class="view-tab" role="tablist">
                                     <li role="presentation" class="active"><a href="#feedback" aria-controls="feedback" role="tab" data-toggle="tab">Отзывы о модели</a></li>
-                                    <!--<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab">Вопросы о модели</a></li>-->                                    
-                                    <li class="pull-right"><a href="#inputForm" class="btn-feed">Оставить отзыв</a></li>                                    
+                                    <li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab">Вопросы о модели</a></li>
                                 </ul>
 
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane active" id="feedback">
+                                        <div class="feed clearfix">
+                                            <a href="#inputForm" class="btn-feed pull-right">Оставить отзыв</a> 
+                                        </div>
+                                        
                                         <div class="query-view">
                                             <p class="name">
                                                 Танюшка:
@@ -303,6 +307,7 @@
                                             <p class="date">04.04.2014</p>
                                         </div>
                                         <div class="query-view answer">
+                                            <div class="ionessi"></div>
                                             <p class="name">
                                                 Ионесси:
                                             </p>
@@ -315,29 +320,33 @@
                                             <p class="date">04.04.2014</p>
                                         </div>
                                         <div class="query-view answer">
+                                            <div class="ionessi"></div>
                                             <p class="name">
                                                 Ионесси:
                                             </p>
                                             <p>Приходите еще! Даже если пока мы не можем наблюсти это непосредственно.</p>
                                             <p class="date">04.04.2014</p>
                                         </div>
+
+                                        <div class="row">                            
+                                            <div class="col-lg-12">
+                                                <div class="pagination-block text-right">
+                                                    <span>Страница:</span>
+                                                    <ul class="pagination-list">
+                                                        <li class="active"><a href="#">1</a></li>
+                                                        <li><a href="#">2</a></li>
+                                                        <li><a href="#">3</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="query">...</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">                            
-                            <div class="col-lg-12">
-                                <div class="pagination-block">
-                                    <span>Страница:</span>
-                                    <ul class="pagination-list">
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="clearfix"></div>
                         <div class="row">
                             <div class="col-lg-12">
@@ -348,10 +357,33 @@
                                                 <h5>Остатавить отзыв:</h5>
                                                 <form>
                                                     <div class="form-group">
-                                                        <label>Ваше имя:</label>
                                                         <div class="row">
                                                             <div class="col-md-4">
+                                                                <label>Ваше имя:</label>
                                                                 <input type="text" class="form-control">
+                                                            </div>    
+                                                            <div class="col-md-6 col-md-offset-2">
+                                                                <label>Оцените товар:</label><br>
+                                                                <div class="starRating">
+                                                                    <div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div>
+                                                                                    <input id="rating1" type="radio" name="rating" value="1">
+                                                                                    <label for="rating1"><span>1</span></label>
+                                                                                </div>
+                                                                                <input id="rating2" type="radio" name="rating" value="2">
+                                                                                <label for="rating2"><span>2</span></label>
+                                                                            </div>
+                                                                            <input id="rating3" type="radio" name="rating" value="3">
+                                                                            <label for="rating3"><span>3</span></label>
+                                                                        </div>
+                                                                        <input id="rating4" type="radio" name="rating" value="4">
+                                                                        <label for="rating4"><span>4</span></label>
+                                                                    </div>
+                                                                    <input id="rating5" type="radio" name="rating" value="5">
+                                                                    <label for="rating5"><span>5</span></label>
+                                                                </div>
                                                             </div>    
                                                         </div>    
                                                     </div>
