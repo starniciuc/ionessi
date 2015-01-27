@@ -145,7 +145,26 @@
         width: 122px;
         height: 44px; 
     }
+    
+     &.print{
+        background: url("../img/tool-icon.png") no-repeat 0 0px;
+        width: 33px;
+        height: 33px; 
+        
+        &:hover{
+            background-position: 0 -33px;
+        }
+    }
 
+     &.pdf{
+        background: url("../img/tool-icon.png") no-repeat -33px 0px;
+        width: 33px;
+        height: 33px; 
+        
+        &:hover{
+            background-position: -33px -33px;
+        }
+    }
 }
 .selected{
     .icon{
@@ -157,4 +176,7 @@
             background-position: -37px 0;
         } 
     }
+}
+.m-l-5{
+    margin-left: 10px;
 }

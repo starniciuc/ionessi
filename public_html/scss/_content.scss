@@ -36,20 +36,26 @@ nav{
                     color: #5a839c;
                     text-transform: lowercase;
                 }
-
                 &:hover{
                     text-decoration: none;
                 }
             }
+            
+            &.sub-menu-list:hover{
+                border-bottom: 1px solid #FFFFFF;
+                margin-bottom: -1px;
+            }
+            
             .submenu{
                 display: none;
                 padding: 0;
                 margin: 0;
                 position: absolute;
                 top: 66px;
-                left: 0px;
-                background-color: #e0ebf2;
-                border-bottom: 5px solid #85a7c0;
+                left: -1px;
+                background-color: #dfeaf2;
+                border: 1px solid #85b8d7;
+                border-top: 0;
                 list-style: none;
                 z-index: 105;
 
@@ -57,6 +63,7 @@ nav{
                     display: block;
                     width: 100%;
                     padding: 0 1px;
+                    border: 0;
                     a{
                         display: block;
                         padding: 4px 15px;
@@ -66,12 +73,17 @@ nav{
                         font-size: 16px;
                         text-transform: capitalize;
                         white-space: nowrap;
-                        @include transition(background 0.35s);
+                        @include transition(all 0.35s);
 
                         &:hover{
-                            background-color: #FFFFFF;
+                            background-color: #84b6d6;
                             text-decoration: none;
+                            color: #FFFFFF;
                         }
+                    }
+                    
+                    &:hover{
+                        border: 0;
                     }
                 }
             }
@@ -80,9 +92,7 @@ nav{
                 background-color: #FFFFFF;
                 border-left: 1px solid #85b8d7;
                 border-right: 1px solid #85b8d7;
-                border-bottom: 1px solid #FFFFFF;
-                margin-bottom: -1px;
-                
+                                
                 .submenu{
                     display: block;
                 }
@@ -204,6 +214,10 @@ main{
                     max-width: 100%;
                     margin-bottom: 15px;
                 }
+                
+                &:hover{
+                    background: url("../img/category-hover.png") no-repeat center center;
+                }
             }
 
             a{
@@ -212,6 +226,9 @@ main{
                 font-weight: 600;
                 font-family: $font-open;
                 text-transform: uppercase;
+                &:hover{
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -963,6 +980,7 @@ ul.social-buttons{
         font-weight: 300;
         box-shadow: none;
         text-shadow: none;
+        border: 1px solid #94a0a9;
     }
     .dropdown-menu{
         padding: 0;
@@ -1371,12 +1389,15 @@ table.list-table{
 }
 .produk-link{
     display: block;
-
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+    
     &:hover{
         text-decoration: none;
+        border: 2px solid #accfea;
         .produs-block{
             .produs-link{
-                text-decoration: underline;
+                //text-decoration: underline;
             }
         }
     }
@@ -1623,6 +1644,7 @@ table.list-table{
                 font-size: 16px;
                 font-weight: 300;
                 font-family: $font-open;
+                border: 1px solid #94a0a9;
             }
         }
     }
@@ -1805,7 +1827,8 @@ table.list-table{
             display: inline-block;
             margin-right: 5px;
             margin-bottom: 5px;
-
+            border: 1px solid #94a0a9;
+            
             a{
                 display: block;
                 border-top: 2px solid #e7edf2;
@@ -1820,6 +1843,8 @@ table.list-table{
                 height: 30px;
                 line-height: 28px;
                 padding: 0;
+                
+                
                 &.disabled{
                     background: none;
                     border-top: 2px solid transparent;
@@ -1860,6 +1885,7 @@ table.list-table{
         font-family: $font-open;
         font-weight: 300;
         font-size: 16px;
+        border: 1px solid #94a0a9;
     }
 }
 .noUi-horizontal{
@@ -1967,8 +1993,8 @@ table.list-table{
 
 .goToTop{
     background: url("../img/bg-toTop.png") no-repeat 0 0;
-    height: 60px;
-    width: 190px;
+    height: 102px;
+    width: 90px;
     background-size: 100% 100%;
     text-align: center;
     color: $black;
@@ -1977,13 +2003,13 @@ table.list-table{
     font-family: $font-open;
     display: block;
     margin: 40px auto;
-    padding-top: 20px;
-    color: $black;
+    padding-top: 50px;
+    color: $white;
     @include opacity(0.8);
     @include transition(opacity 0.35s);
 
     &:hover{
-        color: $black;
+        color: $white;
         text-decoration: none;
         cursor: pointer;
         @include opacity(1);
@@ -2026,11 +2052,13 @@ table.list-table{
             margin-bottom: 40px;
         }
     }    
-
+    .btn-cart.open-cart.active{
+        display: none;
+    }
     ul.size{
         padding: 0;
         margin: 0;
-
+        border-right: 1px solid #94a0a9;
         li{
             display: inline-block;
             width: 90px;
@@ -2051,6 +2079,7 @@ table.list-table{
                 font-family: $font-open;
                 background-color: #e7edf2;
                 padding-left: 5px;
+                border: 1px solid #94a0a9;
             }
         }
     }
@@ -2483,4 +2512,45 @@ table.list-table{
 }
 .jurid-block{
 	display: none;
+}
+.goToTop{
+    position: fixed;
+    bottom: 20px;
+    right: 160px;
+    z-index: 1000;
+}
+.right-side-view{
+    float: left;
+    width: 60%;
+    padding-right: 20px;
+    
+    p.code{
+        color: #d05c4c;
+        font-size: 18px;
+        
+        span{
+            font-size: 24px;
+        }
+        
+    }
+    button{
+        width: 100%;
+    }
+}
+.left-side-view{
+    float: right;
+    width: 40%;
+    ul.size{
+        padding-left: 25px;
+        border-left: 1px solid #94a0a9; 
+    }
+}
+.slected-stars{
+    display: inline-block;
+    font-size: 29px;
+    color: #000000;
+    vertical-align: middle;
+    font-family: $font-open;
+    font-weight: 300;
+    margin-left: 15px;
 }
