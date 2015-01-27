@@ -2554,3 +2554,18 @@ table.list-table{
     font-weight: 300;
     margin-left: 15px;
 }
+
+.share-block.new-design{
+	ul{
+		li {
+			span{
+				vertical-align: middle;
+				display: inline-block;
+				font-size: 24px;
+				color: #000000;
+				font-family: $font-open;
+				
+			}
+		}
+	}
+}
