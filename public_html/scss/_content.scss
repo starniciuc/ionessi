@@ -2060,13 +2060,13 @@ table.list-table{
     }
 
     .btn-group{
-        margin-right: 30px;
+        margin-right: 10px;
     }
 
     .table-mode, .grid-mode{
         display: inline-block;   
         vertical-align: middle;
-        margin-left: 10px;
+        margin-left: 4px;
         float: right;
     }
 
@@ -2640,4 +2640,7 @@ table.list-table{
 }
 .set-view{
     position: relative;
+}
+.navbar-collapse-filter p{
+    font-weight: 600;
 }

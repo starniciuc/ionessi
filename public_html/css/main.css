@@ -65,7 +65,7 @@ a:link, a:active, a:hover, a:focus { outline: 0; }
 .selected .icon.table { background-position: 0 -36px; }
 .selected .icon.grid { background-position: -37px 0; }
 
-.m-l-5 { margin-left: 10px; }
+.m-l-5 { margin-left: 5px; }
 
 html, body { height: 100%; }
 
@@ -487,8 +487,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .set-view-mode { margin-bottom: 30px; margin-top: 40px; }
 .set-view-mode label { font-family: "Open Sans", sans-serif; font-weight: 300; color: #000000; margin-right: 10px; font-size: 16px; }
 .set-view-mode .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) { width: auto; }
-.set-view-mode .btn-group { margin-right: 30px; }
-.set-view-mode .table-mode, .set-view-mode .grid-mode { display: inline-block; vertical-align: middle; margin-left: 10px; float: right; }
+.set-view-mode .btn-group { margin-right: 10px; }
+.set-view-mode .table-mode, .set-view-mode .grid-mode { display: inline-block; vertical-align: middle; margin-left: 4px; float: right; }
 
 .view-produs { margin-bottom: 30px; }
 .view-produs .head-view-block .pagination-block { margin-top: 10px; margin-bottom: 40px; }
@@ -586,6 +586,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .circle-white { width: 20px; height: 20px; border-radius: 10px; background-color: #FFFFFF; position: absolute; top: 50%; margin-top: -10px; right: 20px; }
 
 .set-view { position: relative; }
+
+.navbar-collapse-filter p { font-weight: 600; }
 
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }
