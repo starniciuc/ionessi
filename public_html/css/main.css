@@ -323,11 +323,11 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .produs-block { margin-bottom: 30px; }
 .produs-block .produs-image { text-align: center; height: 225px; line-height: 225px; }
 .produs-block .produs-image img { max-width: 100%; }
-.produs-block .produs-link { text-align: center; margin-bottom: 20px; font-size: 18px; color: #004e7c; font-family: "Open Sans", sans-serif; font-weight: 300; height: 25px; }
+.produs-block .produs-link { text-align: center; margin-bottom: 25px; font-size: 18px; color: #004e7c; font-family: "Open Sans", sans-serif; font-weight: 300; height: 25px; }
 .produs-block .produs-link a { font-size: 18px; color: #004e7c; font-family: "Open Sans", sans-serif; font-weight: 300; }
 .produs-block .produs-link a:hover { color: #004e7c; text-decoration: underline; }
 .produs-block .produs-code { text-align: center; }
-.produs-block .produs-code p { font-size: 14px; color: #848484; font-family: "Open Sans", sans-serif; font-weight: 300; margin-bottom: 5px; }
+.produs-block .produs-code p { font-size: 18px; color: #848484; font-family: "Open Sans", sans-serif; font-weight: 300; margin-bottom: 5px; }
 .produs-block .produs-price { text-align: center; height: 39px; }
 .produs-block .produs-price p { font-size: 20px; color: #000000; font-family: "Open Sans", sans-serif; font-weight: 300; }
 .produs-block .produs-price p strong { font-weight: 600; }
@@ -588,6 +588,10 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .set-view { position: relative; }
 
 .navbar-collapse-filter p { font-weight: 600; }
+
+.navbar-collapse.navbar-collapse-filter { max-height: 100%; }
+
+.call-center { margin-bottom: 15px; }
 
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }

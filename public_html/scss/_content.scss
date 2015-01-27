@@ -1243,7 +1243,7 @@ table.list-table{
 
     .produs-link{
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         font-size: 18px;
         color: #004e7c;
         font-family: $font-open;
@@ -1267,7 +1267,7 @@ table.list-table{
         text-align: center;
 
         p{
-            font-size: 14px;
+            font-size: 18px;
             color: #848484;
             font-family: $font-open;
             font-weight: 300;
@@ -2643,4 +2643,10 @@ table.list-table{
 }
 .navbar-collapse-filter p{
     font-weight: 600;
+}
+.navbar-collapse.navbar-collapse-filter{
+    max-height: 100%;
+}
+.call-center{
+    margin-bottom: 15px;
 }
