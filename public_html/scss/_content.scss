@@ -1572,8 +1572,8 @@ table.list-table{
                 cursor: pointer;
 
                 img{
-                    width: 110px;
-                    height: auto;
+                    width: auto;
+                    height: 110px;
                 }
 
                 &:hover{
@@ -1644,6 +1644,7 @@ table.list-table{
                 border: 0;
                 width: 50px;
                 font-size: 16px;
+                padding-left: 5px;
                 font-weight: 300;
                 font-family: $font-open;
                 border: 1px solid #94a0a9;
@@ -1714,7 +1715,7 @@ table.list-table{
         padding: 10px 15px;
         border-top: 2px solid #94a0a9;
         background-color: #aebdc8;
-        
+
         a{
             color: #FFFFFF;
             font-size: 24px;
@@ -1733,7 +1734,7 @@ table.list-table{
             border-bottom: 1px solid #FFFFFF;
             background-color: #FFFFFF;
             margin-bottom: -1px;
-            
+
             a{
                 color: #000000;
                 border: 0;
@@ -2244,6 +2245,10 @@ table.list-table{
                     .close-grid-product{
                         left: -50px;
                     }
+                    ul.size{
+                        border: 0;
+                        border-left: 1px solid #94a0a9;
+                    }
 
                 }
 
@@ -2259,7 +2264,7 @@ table.list-table{
                     padding: 15px;
                     background-color: $white;
                     z-index: 2;
-                    height: 451px;
+                    height: 461px;
                     padding-top: 60px;
 
                     ul.size{
