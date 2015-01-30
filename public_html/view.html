@@ -110,8 +110,9 @@
                                 <a href="#" class="backToList">Вернуться в каталог</a>
                                 <div class="view">
                                     <div class="produs-img">
-                                        <img class="my-foto-container" src="img/img1.png"  data-large="img/img1.png" title="Фото">
+                                        <img class="my-foto-container" src="img/img1.png"  data-large="img/img1.png" title="Фото" id="image-view">
                                         <div class="icon new"></div>
+                                        <button onclick="addZoom()" class="showZoom">zoom</button>
                                     </div>
                                     <div class="thumbr">
                                         <ul>
@@ -692,7 +693,7 @@
             jQuery(function () {
 
                 //вешаем плагин на контейнер-картинку
-                $(".my-foto-container").imagezoomsl({
+                $(".my-foto-zoom").imagezoomsl({
                     zoomrange: [2, 2],
                     rightoffset: 100
                 });
