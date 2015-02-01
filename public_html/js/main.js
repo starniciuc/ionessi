@@ -161,10 +161,15 @@ $(".ck-pers").change(function () {
 })
 
 function addZoom() {
-    $("#image-view").toggleClass("my-foto-zoom");
+    $("#image-view").addClass("my-foto-zoom");
     //вешаем плагин на контейнер-картинку
     $(".my-foto-zoom").imagezoomsl({
         zoomrange: [2, 2],
         rightoffset: 100
     });
+}
+
+function hideZoom() {
+    $("#image-view").removeClass("my-foto-zoom");
+    $(".zoomContainer").hide();
 }

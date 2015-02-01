@@ -598,6 +598,9 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .showZoom { display: block; position: absolute; bottom: 0; right: 0; background: none; background: url("../img/zoom.png") no-repeat 0 0; width: 70px; height: 70px; z-index: 4; box-shadow: none; text-indent: -9999px; border: 0; }
 .showZoom:hover { background-position: -73px 0; }
 
+.hideZoom { display: block; position: absolute; bottom: 0; right: 80px; background: none; background: url("../img/zoom.png") no-repeat 0 -72px; width: 70px; height: 70px; z-index: 4; box-shadow: none; text-indent: -9999px; border: 0; }
+.hideZoom:hover { background-position: -73px -72px; }
+
 .m-top-10 { margin-top: 10px; }
 
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
