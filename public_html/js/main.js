@@ -89,11 +89,13 @@ $(".get-size-block").click(function (event) {
 
 $(".open-cart").click(function (event) {
     event.stopPropagation();
-
+		
+		$(".open-cart").removeClass("active");
+		
     if ($(".view-produs").hasClass("table-mode-view")) {
         var $par = $(this).parents(".produs-block");
         var $elm = $par.find(".get-size-block");
-        $(this).toggleClass("active");
+        $(this).addClass("active");
         $elm.slideToggle("slow");
     }
     ;
@@ -118,12 +120,14 @@ $(".open-cart").click(function (event) {
         });
     }
 });
+
 $(".close-grid-product").click(function () {
     if ($(".view-produs").hasClass("grid-mode-view")) {
         var $par = $(this).parents(".produs-block");
         $par.removeClass("active");
     }
 });
+
 $(".produs").click(function () {
     if ($(".view-produs").hasClass("grid-mode-view") && $(window).width() < 551) {
         var $par = $(this).parents(".produs-block");
@@ -161,15 +165,23 @@ $(".ck-pers").change(function () {
 })
 
 function addZoom() {
-    $("#image-view").addClass("my-foto-zoom");
-    //вешаем плагин на контейнер-картинку
-    $(".my-foto-zoom").imagezoomsl({
-        zoomrange: [2, 2],
+    $("#image-view").toggleClass("my-foto-zoom");
+		$(".showZoom").toggleClass("hideZoom");
+		if($("#image-view").hasClass("my-foto-zoom")){
+			$(".my-foto-zoom").imagezoomsl({
+        rightoffset: 100,
+				zoomrange: [2.12, 12],
+				magnifiersize: [530, 340],
+				scrollspeedanimate: 10,
+				loopspeedanimate: 5,
+				magnifiereffectanimate: "slideIn",
         rightoffset: 100
-    });
-}
-
-function hideZoom() {
-    $("#image-view").removeClass("my-foto-zoom");
-    $(".zoomContainer").hide();
+			});
+		}else{
+			$(".magnifier").remove();
+			$(".cursorshade").remove();
+			$(".statusdiv").remove();
+			$(".tracker").remove();
+		}
+	  
 }
