@@ -2508,8 +2508,8 @@ table.list-table{
                 }
 
                 img{
-                    height: 100%;
-                    width: auto;
+                    max-height: 100%;
+					max-width: 100%;
                 }
             }
 
@@ -2725,15 +2725,16 @@ table.list-table{
     height: 56px;
     background: url("../img/back-to.png") no-repeat 0 0;
     position: absolute;
-    left: -140px;
+    left: 0px;
     font-size: 16px;
     font-weight: 300;
     padding-left: 35px;
     padding-top: 5px;
     font-family: $font-open;
-    top: -70px;
+    top: -20px;
     color: #FFFFFF;
     text-decoration: none;
+	z-index: 5;
 
 }
 .feed{
@@ -2805,4 +2806,7 @@ table.list-table{
 }
 .border-top{
 	border-top: 1px solid #b4b4b4;
+}
+.new-line-mob {
+    display: inline;
 }

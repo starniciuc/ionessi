@@ -2,7 +2,8 @@ $(".slider").bxSlider({
     controls: false,
     auto: true,
     mode: "fade",
-    pause: 10000
+    pause: 10000,
+		adaptiveHeight: true
 });
 $(".slider-product").bxSlider({
     pager: false,

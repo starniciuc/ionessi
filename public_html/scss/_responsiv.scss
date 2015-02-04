@@ -80,10 +80,14 @@
             max-width: 100%;
         }
     }
-     nav .menu li{
+	nav .menu li{
         padding-left: 2px;
         padding-right: 2px;
     }
+	.block-range .range-input{
+		width: 70px;
+	}
+
 }
 @media screen and (max-width: 992px) {
     nav.nav-bar-menu{
@@ -105,13 +109,17 @@
     }
     nav .menu li a span{
         display: none;
-    }
-    .info-slide{
-        display: none;
-    }
-    .bx-controls{
-        display: none;
-    }
+    } 
+	main section.slider-top .slide .info-slide{
+		width: 600px;
+		height: 300px;
+		padding: 52px 59px 68px 110px;
+	}
+	main section.slider-top .bx-controls .bx-pager{
+		width: 600px;
+		bottom: 250px;
+	}
+
     header .call-number a span.small-text{
         font-size: 16px;
         vertical-align: initial;
@@ -177,6 +185,21 @@
         width: 48%;
         margin-right: 1%;
     }
+	.new-line-mob {
+		display: block;
+	}
+	.block-range .range-input{
+		width: 50px;
+	}
+	.showZoom{
+		display: none;
+	}
+	.shop-list {
+		padding-bottom: 60px;
+	}
+	.goToTop{
+		display: none;
+	}
 }
 @media(max-width:767px){
     header, .slider-top{
@@ -185,6 +208,15 @@
     main .category .category-item{
         width: 49%;
         margin-bottom: 30px;
+    }
+	.block-range .range-input{
+		width: 90px;
+	}
+	.info-slide{
+        display: none;
+    }
+	.bx-controls{
+        display: none;
     }
     .navbar-toggle .icon-bar{
         background-color: #003453;
