@@ -87,7 +87,16 @@
 	.block-range .range-input{
 		width: 70px;
 	}
-
+	header .cart-block{
+        margin-right: 0;
+    }
+    header .user-block{
+        margin-right: 5px;
+    }
+    header .cart-block .cart,
+    header .user-block .login{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 992px) {
     nav.nav-bar-menu{
@@ -129,13 +138,19 @@
     }
     header .cart-block{
         margin-right: 0;
+		padding: 0;
     }
     header .user-block{
         margin-right: 5px;
+		padding: 0;
     }
+	header .cart-block .icon,
+	header .user-block .icon{
+		display: none;
+	}
     header .cart-block .cart,
     header .user-block .login{
-        font-size: 16px;
+        font-size: 14px;
     }
     .wrapper{
         background: none;
@@ -189,7 +204,7 @@
 		display: block;
 	}
 	.block-range .range-input{
-		width: 50px;
+		width: 100%;
 	}
 	.showZoom{
 		display: none;

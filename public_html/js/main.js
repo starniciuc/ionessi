@@ -23,6 +23,7 @@ $("#upload").change(function () {
 });
 $('html').click(function () {
     $(".produs-block").removeClass("active");
+		$(".open-cart").removeClass("active");
 });
 
 $(".btn-increment").click(function () {
