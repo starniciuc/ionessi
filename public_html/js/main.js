@@ -26,7 +26,7 @@ $('html').click(function () {
 		$(".open-cart").removeClass("active");
 });
 
-$(".btn-increment").click(function () {
+$('#content_inner').on('click', '.btn-increment', function () {
     $valueElement = $(this).parents(".count-produs").find("input");
 
     if ($(this).hasClass("left")) {
