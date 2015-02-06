@@ -127,6 +127,7 @@ $(".close-grid-product").click(function () {
     if ($(".view-produs").hasClass("grid-mode-view")) {
         var $par = $(this).parents(".produs-block");
         $par.removeClass("active");
+				$(".open-cart").removeClass("active");
     }
 });
 
