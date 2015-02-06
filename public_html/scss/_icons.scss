@@ -66,18 +66,30 @@
         background: url("../img/shop-icon.png") no-repeat 0 0;
         width: 30px;
         height: 25px;
+        
+        &:hover{
+            background-position:0 -25px; 
+        }
     }
 
     &.cash{
         background: url("../img/shop-icon.png") no-repeat -32px 0;
         width: 30px;
         height: 25px;
+        
+        &:hover{
+            background-position:-32px -25px; 
+        }
     }
 
     &.shop{
         background: url("../img/shop-icon.png") no-repeat -64px 0;
         width: 115px;
         height: 25px;
+        
+        &:hover{
+            background-position:-64px -25px; 
+        }
     }
 
     &.doc{

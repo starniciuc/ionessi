@@ -44,8 +44,11 @@ a:link, a:active, a:hover, a:focus { outline: 0; }
 .icon.social.yt { background-position: -140px 0; }
 .icon.social:hover { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 .icon.card { background: url("../img/shop-icon.png") no-repeat 0 0; width: 30px; height: 25px; }
+.icon.card:hover { background-position: 0 -25px; }
 .icon.cash { background: url("../img/shop-icon.png") no-repeat -32px 0; width: 30px; height: 25px; }
+.icon.cash:hover { background-position: -32px -25px; }
 .icon.shop { background: url("../img/shop-icon.png") no-repeat -64px 0; width: 115px; height: 25px; }
+.icon.shop:hover { background-position: -64px -25px; }
 .icon.doc { background: url("../img/icon-doc.png") no-repeat 0px 0; width: 20px; height: 27px; margin-right: 10px; vertical-align: middle; }
 .icon.new { background: url("../img/new.png") no-repeat 0px 0; width: 139px; height: 44px; }
 .icon.table { background: url("../img/view-mode.png") no-repeat 0 0; width: 35px; height: 35px; }
