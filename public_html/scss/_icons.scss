@@ -67,7 +67,7 @@
         width: 30px;
         height: 25px;
         
-        &:hover{
+        &.selected{
             background-position:0 -25px; 
         }
     }
@@ -77,7 +77,7 @@
         width: 30px;
         height: 25px;
         
-        &:hover{
+        &.selected{
             background-position:-32px -25px; 
         }
     }
@@ -87,7 +87,7 @@
         width: 115px;
         height: 25px;
         
-        &:hover{
+        &.selected{
             background-position:-64px -25px; 
         }
     }
