@@ -815,11 +815,11 @@ ul.social-buttons{
     }
 }
 .tab-content{
-	.query-block{
-		border: 1px solid #b4b4b4;
-		border-top: 0px solid #b4b4b4;
-		padding: 15px 15px 30px;
-	}
+    .query-block{
+        border: 1px solid #b4b4b4;
+        border-top: 0px solid #b4b4b4;
+        padding: 15px 15px 30px;
+    }
 }
 .query-block{
 
@@ -836,8 +836,8 @@ ul.social-buttons{
             position: absolute;
             top: 0px;
             left: 0px;
-			width: 120px;
-			
+            width: 120px;
+
             p.name{
                 color: #000000;
                 font-family: $font-open;
@@ -1713,49 +1713,49 @@ table.list-table{
     background : url('../img/stars.png') repeat-x 0 -40px;
 }
 .star-rating{
-	display: inline-block;
+    display: inline-block;
 }
 .query-view{
-	.name{
-		display: inline-block;
-		vertical-align: text-top;
-		margin-bottom: 0;
-	}
+    .name{
+        display: inline-block;
+        vertical-align: text-top;
+        margin-bottom: 0;
+    }
 }
 .star-rating i{
     display        : inline-block;
     height         : 40px;
-	width:	40px;
+    width:	40px;
     background     : url('../img/stars.png') repeat-x 0 0;
     vertical-align : middle;
-	vertical-align: top;
+    vertical-align: top;
 }
 
 .star-rating.small i{
-	width: 20px;
-	height: 20px;
-	background-size: auto 60px;	
+    width: 20px;
+    height: 20px;
+    background-size: auto 60px;	
 }
 
 .star-rating.Four i:first-child, 
 .star-rating.Four i:first-child + i, 
 .star-rating.Four i:first-child + i + i, 
 .star-rating.Four i:first-child + i + i + i { 
-	background : url('../img/stars.png') repeat-x 0 -40px;
+    background : url('../img/stars.png') repeat-x 0 -40px;
 }
 
 .star-rating.One i:first-child {
-	background : url('../img/stars.png') repeat-x 0 -40px;
+    background : url('../img/stars.png') repeat-x 0 -40px;
 }
 
 .star-rating.Two i:first-child,
 .star-rating.Two i:first-child + i {
-	background : url('../img/stars.png') repeat-x 0 -40px;
+    background : url('../img/stars.png') repeat-x 0 -40px;
 }
 .star-rating.Three i:first-child,
 .star-rating.Three i:first-child + i,
 .star-rating.Three i:first-child + i + i {
-	background : url('../img/stars.png') repeat-x 0 -40px;
+    background : url('../img/stars.png') repeat-x 0 -40px;
 }
 
 .star-rating.Five i:first-child,
@@ -1763,32 +1763,32 @@ table.list-table{
 .star-rating.Five i:first-child + i + i,
 .star-rating.Five i:first-child + i + i + i,
 .star-rating.Five i:first-child + i + i + i + i{
-	background : url('../img/stars.png') repeat-x 0 -40px;
+    background : url('../img/stars.png') repeat-x 0 -40px;
 }
 
 .star-rating.small.Four i:first-child, 
 .star-rating.small.Four i:first-child + i, 
 .star-rating.small.Four i:first-child + i + i, 
 .star-rating.small.Four i:first-child + i + i + i { 
-	background : url('../img/stars.png') repeat-x 0 -21px;
-	background-size: auto 60px;	
+    background : url('../img/stars.png') repeat-x 0 -21px;
+    background-size: auto 60px;	
 }
 
 .star-rating.small.One i:first-child {
-	background : url('../img/stars.png') repeat-x 0 -21px;
-	background-size: auto 60px;	
+    background : url('../img/stars.png') repeat-x 0 -21px;
+    background-size: auto 60px;	
 }
 
 .star-rating.small.Two i:first-child,
 .star-rating.small.Two i:first-child + i {
-	background : url('../img/stars.png') repeat-x 0 -21px;
-	background-size: auto 60px;	
+    background : url('../img/stars.png') repeat-x 0 -21px;
+    background-size: auto 60px;	
 }
 .star-rating.small.Three i:first-child,
 .star-rating.small.Three i:first-child + i,
 .star-rating.small.Three i:first-child + i + i {
-	background : url('../img/stars.png') repeat-x 0 -21px;
-	background-size: auto 60px;	
+    background : url('../img/stars.png') repeat-x 0 -21px;
+    background-size: auto 60px;	
 }
 
 .star-rating.small.Five i:first-child,
@@ -1796,8 +1796,8 @@ table.list-table{
 .star-rating.small.Five i:first-child + i + i,
 .star-rating.small.Five i:first-child + i + i + i,
 .star-rating.small.Five i:first-child + i + i + i + i{
-	background : url('../img/stars.png') repeat-x 0 -21px;
-	background-size: auto 60px;	
+    background : url('../img/stars.png') repeat-x 0 -21px;
+    background-size: auto 60px;	
 }
 
 .view-tab{
@@ -1854,7 +1854,7 @@ table.list-table{
     padding: 15px;
     border: 1px solid #b4b4b4;
     padding-bottom: 0;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .query-view{
     border: 1px solid #b4b4b4;
@@ -2242,6 +2242,8 @@ table.list-table{
                     right: 5px;
                     top: 10px;
 
+
+
                     &.new{
                         background: url("../img/new-grid.png") no-repeat 0 0;
                         width: 82px;
@@ -2253,17 +2255,20 @@ table.list-table{
                         width: 82px;
                         height: 24px;
                     }
-					&.sale{
-						background: url("../img/sale.png") no-repeat 0 0px;
-						width: 91px;
-						height: 44px;
-					}
+                    &.sale{
+                        background: url("../img/sale.png") no-repeat 0 0px;
+                        width: 91px;
+                        height: 44px;
+                    }
                 }
                 img{
                     vertical-align: bottom;
                     max-height: 100%;
                     width: auto;
                 }
+            }
+            .icon + .icon{
+                top: 50px;
             }
 
             .produs-code{
@@ -2498,18 +2503,20 @@ table.list-table{
                     }
 
                     &.sale{
-						background: url("../img/sale.png") no-repeat 0 0px;
-						background-size: auto 18px;
-						width: 91px;
-						height: 18px;
+                        background: url("../img/sale.png") no-repeat 0 0px;
+                        background-size: auto 18px;
+                        width: 91px;
+                        height: 18px;
                     }
 
 
                 }
-
+                .icon + .icon{
+                    bottom: 20px;
+                }
                 img{
                     max-height: 100%;
-					max-width: 100%;
+                    max-width: 100%;
                 }
             }
 
@@ -2704,8 +2711,8 @@ table.list-table{
 
 .share-block.new-design{
     ul{
-		display: inline-block;
-		vertical-align: middle;
+        display: inline-block;
+        vertical-align: middle;
 
         li {
             span{
@@ -2734,7 +2741,7 @@ table.list-table{
     top: -20px;
     color: #FFFFFF;
     text-decoration: none;
-	z-index: 5;
+    z-index: 5;
 
 }
 .feed{
@@ -2802,12 +2809,12 @@ table.list-table{
     margin-top: 10px;
 }
 .yashare-auto-init{
-	display: inline-block;
+    display: inline-block;
 }
 .border-top{
-	border-top: 1px solid #b4b4b4;
+    border-top: 1px solid #b4b4b4;
 }
 .new-line-mob {
     display: inline;
-	margin-top: 10px;
+    margin-top: 10px;
 }
