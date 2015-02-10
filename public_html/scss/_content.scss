@@ -1182,9 +1182,10 @@ table.list-table{
             color: #004e7c;
         }
 
-        &:last-child{
+        &:last-child, &.price{
             font-weight: 500;
             text-align: right;
+			font-size: 18px;
 
             .price-block{
                 padding-right: 20px;
@@ -2157,6 +2158,7 @@ table.list-table{
     margin: 40px auto;
     padding-top: 50px;
     color: $white;
+	
     @include opacity(0.8);
     @include transition(opacity 0.35s);
 
@@ -2701,7 +2703,7 @@ table.list-table{
 .goToTop{
     position: fixed;
     bottom: 20px;
-    right: 160px;
+    right: 180px;
     z-index: 1000;
 }
 .right-side-view{
