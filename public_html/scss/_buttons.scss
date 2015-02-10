@@ -49,7 +49,7 @@ a:link, a:active, a:hover, a:focus{
     border-radius: 0;
     margin-right: 20px;
     background: url("../img/close-btn-white.png") no-repeat 0 0;
-    @include opacity(0.8);
+    @include opacity(0.6);
     @include transition(opacity 0.35s);
 
     &:hover{

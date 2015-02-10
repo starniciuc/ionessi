@@ -283,7 +283,7 @@ main{
                         }
 
                         .icon + .icon{
-                            top: 50px;
+                            top: 60px;
                         }
                     }
 
@@ -637,21 +637,21 @@ p.text-description{
                 top: 3px;
                 vertical-align: middle;
                 display: inline-block;
-                background: url("../img/radio.png") no-repeat 0 -30px;
+                background: url("../img/ck-hover.png") no-repeat 0 0px;
             }
         }
 
         &:checked + label{
             &:before{
-                background-position: 0 0;
+                background: url("../img/radio.png") no-repeat 0 0px;
             }
         } 
 
-        &:hover + label{
+/*        &:hover + label{
             &:before{
                 background: url("../img/ck-hover.png") no-repeat 0 0px;
             }
-        }
+        }*/
     }
 
     input[type="checkbox"]{
@@ -769,6 +769,7 @@ ul.social-buttons{
         background-image:url("../img/upload.png");
         background-repeat: no-repeat;
         background-position: 97% center;
+        border: 1px solid #85b8d7;
 
         span{
             color: #000000;
@@ -1185,7 +1186,7 @@ table.list-table{
         &:last-child, &.price{
             font-weight: 500;
             text-align: right;
-			font-size: 18px;
+            font-size: 18px;
 
             .price-block{
                 padding-right: 20px;
@@ -1263,10 +1264,47 @@ table.list-table{
         text-align: center;
         height: 225px;
         line-height: 225px;
+        position: relative;
 
+        .icon{
+            position: absolute;
+            right: 5px;
+            top: 10px;
+
+
+
+            &.new{
+                background: url("../img/labels/6.png") no-repeat 0 0;
+                width: 82px;
+                height: 24px;
+            }
+
+            &.next{
+                background: url("../img//labels/4.png") no-repeat 0 0;
+                width: 82px;
+                height: 24px;
+            }
+            &.sale{
+                background: url("../img//labels/5.png") no-repeat 0 0px;
+                width: 82px;
+                height: 24px;
+            }
+        }
+        img{
+            vertical-align: bottom;
+            max-height: 100%;
+            width: auto;
+        }
+        .icon + .icon{
+            top: 40px;
+        }
+        .icon + .icon + .icon{
+            top: 70px;
+        }
         img{
             max-width: 100%;
         }
+
     }
 
     .produs-link{
@@ -1584,7 +1622,7 @@ table.list-table{
             right: 0;
         }
         .icon + .icon{
-            top: 50px;
+            top: 60px;
         }
         .icon + .icon + .icon{
             top: 100px;
@@ -2161,7 +2199,7 @@ table.list-table{
     margin: 40px auto;
     padding-top: 50px;
     color: $white;
-	
+
     @include opacity(0.8);
     @include transition(opacity 0.35s);
 
@@ -2411,7 +2449,7 @@ table.list-table{
                     padding: 15px;
                     background-color: $white;
                     z-index: 2;
-                    height: 461px;
+                    height: 417px;
                     padding-top: 60px;
 
                     ul.size{
@@ -2436,10 +2474,10 @@ table.list-table{
                             width: 90%;
                             margin-bottom: 15px;
                             position: absolute;
-                            bottom: 15px;
+                            bottom: 0px;
 
                             &.btn-save{
-                                bottom: 60px;
+                                bottom: 40px;
                             }
                         }
                     }
@@ -2465,8 +2503,8 @@ table.list-table{
                     display: block;
                     position: absolute;
                     width: 100%;
-                    bottom: -80px;
-                    height: 80px;
+                    bottom: -35px;
+                    height: 35px;
                     padding-top: 30px; 
                     border-right: 2px solid #accfea;
                     border-bottom: 2px solid #accfea;
