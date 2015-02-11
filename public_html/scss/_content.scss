@@ -58,6 +58,7 @@ nav{
                 border-top: 0;
                 list-style: none;
                 z-index: 105;
+				min-width: 101%;
 
                 li{
                     display: block;
@@ -647,11 +648,11 @@ p.text-description{
             }
         } 
 
-/*        &:hover + label{
-            &:before{
-                background: url("../img/ck-hover.png") no-repeat 0 0px;
-            }
-        }*/
+		/*        &:hover + label{
+					&:before{
+						background: url("../img/ck-hover.png") no-repeat 0 0px;
+					}
+				}*/
     }
 
     input[type="checkbox"]{
@@ -1338,7 +1339,24 @@ table.list-table{
             font-family: $font-open;
             font-weight: 300;
             margin-bottom: 5px;
+
+			.foot-detail{
+				display: block;
+				margin-top: 5px;
+				width: 100%;
+				text-align: center;
+				color: #848484;
+				font-family: "Open Sans",sans-serif;
+				font-size: 14px;
+				
+				i{
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+			}
         }
+
     }
 
     .produs-price{
@@ -1644,8 +1662,9 @@ table.list-table{
                 cursor: pointer;
 
                 img{
-                    width: auto;
                     height: 110px;
+					max-width: 100%;
+					max-height: 100%;
                 }
 
                 &:hover{
@@ -1720,6 +1739,7 @@ table.list-table{
                 font-weight: 300;
                 font-family: $font-open;
                 border: 1px solid #94a0a9;
+				text-align: center;
             }
         }
     }
