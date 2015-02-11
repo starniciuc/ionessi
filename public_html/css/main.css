@@ -307,7 +307,7 @@ p.date { color: #848484; font-size: 14px; font-family: "Open Sans", sans-serif; 
 table.list-table { width: 100%; margin-bottom: 30px; }
 table.list-table td { font-size: 16px; font-weight: 300; font-family: "Open Sans", sans-serif; color: #000000; padding: 10px; border-bottom: 1px solid #FFFFFF; background-color: #e7edf2; }
 table.list-table td .image-block { display: inline-block; margin-right: 15px; vertical-align: middle; }
-table.list-table td .image-block img { width: 72px; height: 72px; }
+table.list-table td .image-block img { width: auto; height: 72px; }
 table.list-table td .text { display: inline-block; vertical-align: middle; }
 table.list-table td .text a { margin-bottom: 10px; }
 table.list-table td .text p { font-size: 18px; margin: 0; line-height: 26px; }
