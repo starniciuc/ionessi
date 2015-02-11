@@ -194,3 +194,7 @@ function addZoom() {
     }
 
 }
+$(".setColor").click(function () {
+    $(this).toggleClass("selected");
+    $(this).next().prop("checked", $(this).hasClass("selected")); /* вот эту строку */
+});
