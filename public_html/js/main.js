@@ -8,7 +8,8 @@ $(".slider").bxSlider({
 $(".slider-product").bxSlider({
     pager: false,
     auto: true,
-    pause: 7500
+    pause: 7500,
+		adaptiveHeight: true
 });
 $("#upload").change(function () {
     var fullPath = document.getElementById('upload').value;
