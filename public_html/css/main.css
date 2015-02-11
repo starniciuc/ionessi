@@ -682,7 +682,8 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .wrapper.oseni { background-size: 174px auto; }
   .wrapper.oseni .ice-right { background-size: 174px auto; }
   .wrapper.leto { background-size: 174px auto; }
-  .wrapper.leto .ice-right { background-size: 174px auto; } }
+  .wrapper.leto .ice-right { background-size: 174px auto; }
+  .goToTop { right: 45px; } }
 @media screen and (max-width: 1300px) { .wrapper { background-size: 100px auto; }
   .wrapper .ice-right { background-size: 100px auto; }
   .wrapper.oseni { background-size: 100px auto; }
