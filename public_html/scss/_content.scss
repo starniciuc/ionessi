@@ -1149,8 +1149,8 @@ table.list-table{
             vertical-align: middle;
 
             img{
-                width: auto;
-                height: 72px;
+                max-width: 100%;
+                max-height: 100%;
             }
         }
         .text{
