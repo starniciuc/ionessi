@@ -596,7 +596,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.table-mode-view .produs-block .produs-link { display: inline-block; margin-bottom: 0; }
 .view-produs.table-mode-view .produs-block .produs-code { display: block; text-align: left; height: 40px; }
 .view-produs.table-mode-view .produs-block .produs-code p { font-size: 18px; color: #d05c4c; }
-.view-produs.table-mode-view .produs-block .produs-code .foot-detail { color: #000000; display: inline-block; }
+.view-produs.table-mode-view .produs-block .produs-code .foot-detail { color: #000000; display: inline-block; font-size: 18px; margin-top: 0px; text-align: left; width: auto; }
 .view-produs.table-mode-view .produs-block .produs-code .foot-detail i { margin-right: 10px; }
 .view-produs.table-mode-view .produs-block .produs-price { display: inline-block; position: absolute; top: 10px; right: 10px; }
 .view-produs.table-mode-view .produs-block .produs-price span { float: left; margin-right: 15px; font-size: 14px; padding-top: 6px; }
