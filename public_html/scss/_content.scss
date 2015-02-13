@@ -1663,13 +1663,14 @@ table.list-table{
 				
 				span{
 					height: 110px;
-					width: 1px;
+					/*width: 1px;*/
 					display: inline-block;
 					vertical-align: bottom;
 				}
 				
                 img{
 					vertical-align: bottom;
+					display: inline-block;
 					max-width: 100%;
 					max-height: 100%;
                 }
