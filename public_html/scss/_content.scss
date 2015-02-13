@@ -1149,8 +1149,8 @@ table.list-table{
             vertical-align: middle;
 
             img{
-                width: auto;
-                height: 72px;
+                max-width: 100%;
+                max-height: 100%;
             }
         }
         .text{
@@ -2646,6 +2646,10 @@ table.list-table{
                     }
                     color: $black;
                     display: inline-block;
+                    font-size: 18px;
+                    margin-top: 0px;
+                    text-align: left;
+                    width: auto;
                 }
             }
 
