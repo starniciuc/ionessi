@@ -510,10 +510,15 @@ main{
             padding: 0;
             margin: 0;
             list-style: none;
-
+			
+			
             li{
                 display: inline-block;
                 margin:0;
+				//border-left: 1px solid #94a0a9;
+				width: auto;
+				float: left;
+				
                 a{
                     font-family: $font-open;
                     font-weight: 300;
@@ -521,19 +526,26 @@ main{
                     color: #004e7c;
                     border-top: 2px solid $white;
                     padding: 3px 10px 2px;
+					border: 1px solid #94a0a9;
+					border-left: 0;
+					
                     @include transition(all 0.35s);
 
                     &:hover{
                         text-decoration: none;
-                        border-top: 2px solid #94a0a9;
+                        //border-top: 2px solid #94a0a9;
                         background-color: #aebdc8;
                         color: $white;
                     }
+					
+					&:last-child{
+						border-left: 1px solid #94a0a9;
+					}
                 }
 
                 &.active{
                     a{
-                        border-top: 2px solid #94a0a9;
+                        //border-top: 2px solid #94a0a9;
                         background-color: #aebdc8;
                         color: $white;
 

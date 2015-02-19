@@ -185,10 +185,11 @@ main .breadcrumb > li + li:before { color: #004e7c; font-weight: 300; font-size:
 main .pagination-block { color: #000000; font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 18px; margin-bottom: 20px; }
 main .pagination-block span { display: inline-block; }
 main .pagination-block ul.pagination-list { display: inline-block; padding: 0; margin: 0; list-style: none; }
-main .pagination-block ul.pagination-list li { display: inline-block; margin: 0; }
-main .pagination-block ul.pagination-list li a { font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 18px; color: #004e7c; border-top: 2px solid white; padding: 3px 10px 2px; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; -o-transition: all 0.35s; transition: all 0.35s; }
-main .pagination-block ul.pagination-list li a:hover { text-decoration: none; border-top: 2px solid #94a0a9; background-color: #aebdc8; color: white; }
-main .pagination-block ul.pagination-list li.active a { border-top: 2px solid #94a0a9; background-color: #aebdc8; color: white; }
+main .pagination-block ul.pagination-list li { display: inline-block; margin: 0; width: auto; float: left; }
+main .pagination-block ul.pagination-list li a { font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 18px; color: #004e7c; border-top: 2px solid white; padding: 3px 10px 2px; border: 1px solid #94a0a9; border-left: 0; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; -o-transition: all 0.35s; transition: all 0.35s; }
+main .pagination-block ul.pagination-list li a:hover { text-decoration: none; background-color: #aebdc8; color: white; }
+main .pagination-block ul.pagination-list li a:last-child { border-left: 1px solid #94a0a9; }
+main .pagination-block ul.pagination-list li.active a { background-color: #aebdc8; color: white; }
 main .pagination-block ul.pagination-list li.active a:hover { text-decoration: none; }
 main h5 { font-size: 24px; color: #000000; font-family: "Open Sans", sans-serif; }
 main .share-block { margin-bottom: 20px; }
