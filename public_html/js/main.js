@@ -1,3 +1,4 @@
+
 $(".slider").bxSlider({
     controls: false,
     auto: true,
@@ -5,12 +6,25 @@ $(".slider").bxSlider({
     pause: 10000,
     adaptiveHeight: true
 });
+
+
 $(".slider-product").bxSlider({
     pager: false,
     auto: true,
     pause: 7500,
 		adaptiveHeight: true
 });
+
+$(".thumbr ul").bxSlider({
+    pager: false,
+    auto: false,
+    slideWidth: 110,
+    minSlides: 2,
+    maxSlides: 3,
+    slideMargin: 10,
+    adaptiveHeight: true
+});
+
 $("#upload").change(function () {
     var fullPath = document.getElementById('upload').value;
     if (fullPath) {
