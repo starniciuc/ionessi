@@ -623,9 +623,9 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.table-mode-view .produs-block .produs-image .icon + .icon { left: 140px; }
 .view-produs.table-mode-view .produs-block .produs-image .icon + .icon + .icon { left: 200px; }
 .view-produs.table-mode-view .produs-block .produs-image img { max-height: 100%; max-width: 100%; }
-.view-produs.table-mode-view .produs-block .produs-image .block-prev { display: none; position: absolute; left: 82px; width: 150px; height: 160px; top: -40px; background-color: #FFFFFF; border: 3px solid #94a0a9; z-index: 6; margin-left: 8px; }
+.view-produs.table-mode-view .produs-block .produs-image .block-prev { display: none; position: absolute; left: 82px; width: 150px; height: 160px; top: -40px; background-color: #FFFFFF; border: 1px solid #94a0a9; z-index: 6; margin-left: 6px; }
 .view-produs.table-mode-view .produs-block .produs-image .block-prev img { max-width: 100%; max-height: 100%; }
-.view-produs.table-mode-view .produs-block .produs-image .block-prev:before { content: " "; position: absolute; top: 0; left: -12px; width: 12px; height: 100%; background: url("../img/arr-hover.png") no-repeat 0 center; }
+.view-produs.table-mode-view .produs-block .produs-image .block-prev:before { content: " "; position: absolute; top: 0; left: -10px; width: 12px; height: 100%; background: url("../img/arr-hover.png") no-repeat 0 center; }
 .view-produs.table-mode-view .produs-block .produs-image:hover .block-prev { display: block; }
 .view-produs.table-mode-view .produs-block .produs-link { display: inline-block; margin-bottom: 0; vertical-align: middle; width: 300px; text-align: left; }
 .view-produs.table-mode-view .produs-block .produs-code { display: inline-block; text-align: left; height: 82px; vertical-align: middle; padding-top: 7px; padding-left: 10px; }
