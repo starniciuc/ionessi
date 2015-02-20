@@ -627,7 +627,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.table-mode-view .produs-block .produs-image .block-prev img { max-width: 100%; max-height: 100%; }
 .view-produs.table-mode-view .produs-block .produs-image .block-prev:before { content: " "; position: absolute; top: 0; left: -12px; width: 12px; height: 100%; background: url("../img/arr-hover.png") no-repeat 0 center; }
 .view-produs.table-mode-view .produs-block .produs-image:hover .block-prev { display: block; }
-.view-produs.table-mode-view .produs-block .produs-link { display: inline-block; margin-bottom: 0; vertical-align: middle; }
+.view-produs.table-mode-view .produs-block .produs-link { display: inline-block; margin-bottom: 0; vertical-align: middle; width: 300px; text-align: left; }
 .view-produs.table-mode-view .produs-block .produs-code { display: inline-block; text-align: left; height: 82px; vertical-align: middle; padding-top: 7px; padding-left: 10px; }
 .view-produs.table-mode-view .produs-block .produs-code p { font-size: 16px; color: #d05c4c; }
 .view-produs.table-mode-view .produs-block .produs-code .foot-detail { color: #000000; display: block; font-size: 16px; margin-top: 0px; text-align: left; width: auto; }
@@ -637,8 +637,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.table-mode-view .produs-block .produs-price { display: inline-block; position: absolute; top: 10px; right: 10px; }
 .view-produs.table-mode-view .produs-block .produs-price span { float: left; margin-right: 15px; font-size: 14px; padding-top: 6px; }
 .view-produs.table-mode-view .cart-button { display: block; position: absolute; top: 45px; right: 10px; }
-.view-produs.table-mode-view .get-size-block { display: none; background-color: #FFFFFF; margin-top: 10px; margin-left: -7px; margin-right: -7px; margin-bottom: -7px; padding: 10px; }
-.view-produs.table-mode-view .get-size-block ul.size { margin-bottom: 15px; }
+.view-produs.table-mode-view .get-size-block { display: none; background-color: #FFFFFF; padding: 10px; }
+.view-produs.table-mode-view .get-size-block ul.size { margin-bottom: 15px; border: 0; }
 .view-produs.table-mode-view .get-size-block .buttons-block-com .btn { margin-left: 15px; }
 .view-produs.table-mode-view .get-size-block .buttons-block-com p { font-weight: 300; font-size: 14px; font-family: "Open Sans", sans-serif; color: #848484; line-height: 35px; }
 .view-produs.table-mode-view .get-size-block:before { display: table; content: " "; clear: both; }

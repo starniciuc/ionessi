@@ -2875,6 +2875,8 @@ table.list-table{
                 display: inline-block;
                 margin-bottom: 0; 
                 vertical-align: middle;
+                width: 300px;
+                text-align: left;
             }
 
             .produs-code{
@@ -2938,14 +2940,11 @@ table.list-table{
         .get-size-block{
             display: none;
             background-color: $white;
-            margin-top: 10px;
-            margin-left: -7px;
-            margin-right: -7px;
-            margin-bottom: -7px;
             padding: 10px;
 
             ul.size{
                 margin-bottom: 15px;
+                border: 0;
             }
 
             .buttons-block-com{
