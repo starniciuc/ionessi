@@ -12,11 +12,12 @@ nav{
 
         li{
             display: inline-block;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 19px;
+            padding-left: 19px;
             position: relative;
             border-left: 1px solid transparent;
             border-right: 1px solid transparent;
+            float: left;
             @include transition(background 0.35s);
 
             a{
@@ -290,7 +291,8 @@ main{
                         }
 
                         .icon + .icon{
-                            top: 60px;
+                            top: 10px;
+                            right: 115px;
                         }
                     }
 
@@ -1455,10 +1457,10 @@ table.list-table{
             width: auto;
         }
         .icon + .icon{
-            top: 40px;
+            right: 75px;
         }
         .icon + .icon + .icon{
-            top: 70px;
+            right: 145px;
         }
         img{
             max-width: 100%;
