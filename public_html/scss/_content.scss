@@ -217,9 +217,9 @@ main{
                     margin-bottom: 15px;
                 }
 
-                
+
             }
-            
+
             &:hover{
                 .logo{
                     background: url("../img/category-hover.png") no-repeat center center;
@@ -1200,7 +1200,7 @@ table.list-table{
                 position: absolute;
                 right: -82px;
                 top: 0px;
-
+                z-index: 2;
 
 
                 &.new{
@@ -1222,10 +1222,11 @@ table.list-table{
             }
 
             .icon + .icon{
-                right: -164px;
+                right: -152px;
+                z-index: 1;
             }
             .icon + .icon + .icon{
-                right: -266px;
+                right: -252px;
             }
             img{
                 max-width: 100%;
@@ -1234,6 +1235,7 @@ table.list-table{
         }
         .text{
             a{
+                padding-top: 5px;
                 margin-bottom: 10px;
                 height: 100%;
                 display: inline-block;
@@ -2546,6 +2548,7 @@ table.list-table{
                         border-top: 2px solid #accfea;
                         border-left: 2px solid #accfea;
                     }
+
                     .cart-button{
                         display: block;
                         position: absolute;
@@ -2577,6 +2580,11 @@ table.list-table{
                             display: none;
                         }
                     }
+                    .produs-link{
+                        a{
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }
@@ -2586,6 +2594,14 @@ table.list-table{
             margin-right: 2%;
             margin-bottom: 20px;
             position: relative;
+
+            .produs-link{
+                a{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
 
             .produs-image{
                 height: auto;
@@ -2621,6 +2637,9 @@ table.list-table{
                     vertical-align: bottom;
                     max-height: 100%;
                     width: auto;
+                    position: absolute;
+                    bottom: 0;
+                    left: 10px;
                 }
             }
             .icon + .icon{

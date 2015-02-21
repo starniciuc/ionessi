@@ -308,15 +308,15 @@ table.list-table tr.divider-tr td { padding-bottom: 5px; border: 0; background: 
 table.list-table th { font-weight: 300; color: #808080; font-size: 14px; font-family: "Open Sans", sans-serif; padding-bottom: 10px; }
 table.list-table td { font-size: 16px; font-weight: 300; font-family: "Open Sans", sans-serif; color: #000000; border-bottom: 1px solid #FFFFFF; background-color: #e7edf2; border-top: 1px solid #bcc6c9; border-bottom: 1px solid #bcc6c9; }
 table.list-table td .image-block { display: inline-block; margin-right: 15px; vertical-align: middle; position: relative; }
-table.list-table td .image-block .icon { position: absolute; right: -82px; top: 0px; }
+table.list-table td .image-block .icon { position: absolute; right: -82px; top: 0px; z-index: 2; }
 table.list-table td .image-block .icon.new { background: url("../img/labels/6.png") no-repeat 0 0; width: 82px; height: 24px; }
 table.list-table td .image-block .icon.next { background: url("../img//labels/4.png") no-repeat 0 0; width: 82px; height: 24px; }
 table.list-table td .image-block .icon.sale { background: url("../img//labels/5.png") no-repeat 0 0px; width: 82px; height: 24px; }
-table.list-table td .image-block .icon + .icon { right: -164px; }
-table.list-table td .image-block .icon + .icon + .icon { right: -266px; }
+table.list-table td .image-block .icon + .icon { right: -152px; z-index: 1; }
+table.list-table td .image-block .icon + .icon + .icon { right: -252px; }
 table.list-table td .image-block img { max-width: 100%; max-height: 100%; }
 table.list-table td .text { display: inline-block; vertical-align: middle; }
-table.list-table td .text a { margin-bottom: 10px; height: 100%; display: inline-block; }
+table.list-table td .text a { padding-top: 5px; margin-bottom: 10px; height: 100%; display: inline-block; }
 table.list-table td .text p { font-size: 16px; margin: 0; line-height: 24px; display: inline-block; height: 100%; vertical-align: middle; margin-left: 10px; }
 table.list-table td .text p i { margin-left: 0; margin-right: 5px; }
 table.list-table td .text p span { display: block; color: #000000; }
@@ -586,13 +586,15 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.grid-mode-view.enabled .produs-block:hover .cart-button { display: block; position: absolute; width: 100%; bottom: -80px; height: 80px; padding-top: 30px; border-right: 2px solid #accfea; border-bottom: 2px solid #accfea; border-left: 2px solid #accfea; right: 0px; background-color: #FFFFFF; z-index: 2; text-align: center; }
 .view-produs.grid-mode-view.enabled .produs-block:hover .foot-detail { display: block; position: absolute; bottom: -20px; z-index: 3; width: 100%; text-align: center; font-weight: 300; font-family: "Open Sans", sans-serif; color: #848484; font-size: 14px; }
 .view-produs.grid-mode-view.enabled .produs-block:hover .foot-detail i.color { display: none; }
+.view-produs.grid-mode-view.enabled .produs-block:hover .produs-link a { text-decoration: underline; }
 .view-produs.grid-mode-view .produs-block { display: inline-block; width: 30%; margin-right: 2%; margin-bottom: 20px; position: relative; }
+.view-produs.grid-mode-view .produs-block .produs-link a:hover { text-decoration: none; }
 .view-produs.grid-mode-view .produs-block .produs-image { height: auto; height: 255px; text-align: center; position: relative; }
 .view-produs.grid-mode-view .produs-block .produs-image .icon { position: absolute; right: 5px; top: 25px; }
 .view-produs.grid-mode-view .produs-block .produs-image .icon.new { background: url("../img/labels/6.png") no-repeat 0 0; width: 82px; height: 24px; }
 .view-produs.grid-mode-view .produs-block .produs-image .icon.next { background: url("../img//labels/4.png") no-repeat 0 0; width: 82px; height: 24px; }
 .view-produs.grid-mode-view .produs-block .produs-image .icon.sale { background: url("../img//labels/5.png") no-repeat 0 0px; width: 82px; height: 24px; }
-.view-produs.grid-mode-view .produs-block .produs-image img { vertical-align: bottom; max-height: 100%; width: auto; }
+.view-produs.grid-mode-view .produs-block .produs-image img { vertical-align: bottom; max-height: 100%; width: auto; position: absolute; bottom: 0; left: 10px; }
 .view-produs.grid-mode-view .produs-block .icon + .icon { right: 75px; }
 .view-produs.grid-mode-view .produs-block .icon + .icon + .icon { right: 150px; }
 .view-produs.grid-mode-view .produs-block .produs-code p { color: #d05c4c; }
