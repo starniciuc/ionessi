@@ -40,6 +40,10 @@ $('html').click(function () {
     $(".produs-block").removeClass("active");
     $(".open-cart").removeClass("active");
     $(".grid-mode-view").addClass("enabled");
+    
+    if ($(".view-produs").hasClass("table-mode-view")) {
+        $(".get-size-block").slideUp("slow");
+    }
 });
 
 $('#content_inner').on('click', '.btn-increment', function () {
@@ -216,4 +220,8 @@ $(".setColor").click(function () {
 $(".setSize").click(function () {
     $(this).toggleClass("selected");
     $(this).next().prop("checked", $(this).hasClass("selected")); /* вот эту строку */
+});
+
+$(".sub-menu-list > a").click(function(event){
+    event.stopPropagation();
 });
