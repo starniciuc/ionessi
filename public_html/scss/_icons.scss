@@ -160,25 +160,21 @@
     
      &.print{
         background: url("../img/tool-icon.png") no-repeat 0 0px;
-        background-size: 33px auto;
-        width: 16px;
-        height: 16px; 
-        margin-top: 10px;
+        width: 32px;
+        height: 32px; 
         
         &:hover{
-            background-position: 0 -17px;
+            background-position: 0 -33px;
         }
     }
 
      &.pdf{
-        background: url("../img/tool-icon.png") no-repeat -17px 0px;
-        background-size: 33px auto;
-        width: 16px;
-        height: 17px; 
-        margin-top: 10px;
+        background: url("../img/tool-icon.png") no-repeat -33px 0px;
+        width: 32px;
+        height: 32px; 
         
         &:hover{
-            background-position: -17px -17px;
+            background-position: -33px -33px;
         }
     }
 }
