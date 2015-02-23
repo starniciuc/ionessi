@@ -2669,7 +2669,7 @@ table.list-table{
                 .icon{
                     position: absolute;
                     right: 5px;
-                    top: -5px;
+                    top: 0px;
 
                     &.new{
                         background: url("../img/labels/6.png") no-repeat 0 0;
@@ -2767,7 +2767,7 @@ table.list-table{
                     padding: 15px;
                     background-color: $white;
                     z-index: 2;
-                    height: 456px;
+                    height: 446px;
                     padding-top: 60px;
 
                     ul.size{
