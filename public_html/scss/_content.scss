@@ -52,7 +52,7 @@ nav{
                 padding: 0;
                 margin: 0;
                 position: absolute;
-                top: 66px;
+                top: 102%;
                 left: -1px;
                 background-color: #dfeaf2;
                 border: 1px solid #85b8d7;
@@ -1231,6 +1231,7 @@ table.list-table{
             img{
                 max-width: 100%;
                 max-height: 100%;
+				height: 72px;
             }
         }
         .text{
@@ -1318,6 +1319,10 @@ table.list-table{
                             &:hover{
                                 background-color: #e7edf2;
                             }
+
+							&:active, &:focus{
+								text-decoration: none;
+							}
 
                             &.selected{
                                 color: #FFFFFF;
@@ -2280,6 +2285,9 @@ table.list-table{
                 line-height: 28px;
                 padding: 0;
 
+				&:active, &:focus{
+					text-decoration: none;
+				}
 
                 &.disabled{
                     background: none;
