@@ -40,6 +40,7 @@ $('html').click(function () {
     $(".produs-block").removeClass("active");
     $(".open-cart").removeClass("active");
     $(".grid-mode-view").addClass("enabled");
+    $(".zanaves").hide();
     
     if ($(".view-produs").hasClass("table-mode-view")) {
         $(".get-size-block").slideUp("slow");
@@ -88,6 +89,7 @@ $(".table-mode").click(function () {
     $(this).addClass("selected");
     if ($(".view-produs").hasClass("grid-mode-view")) {
         $(".produs-block").removeClass("active");
+        $(".zanaves").hide();
     }
     $(".view-produs").addClass("table-mode-view");
     $(".view-produs").removeClass("grid-mode-view");
@@ -118,6 +120,7 @@ $(".open-cart").click(function (event) {
 
     $(".open-cart").removeClass("active");
     $(".grid-mode-view").removeClass("enabled");
+    $(".zanaves").hide();
     
     if ($(".view-produs").hasClass("table-mode-view")) {
         var $par = $(this).parents(".produs-block");
@@ -133,6 +136,7 @@ $(".open-cart").click(function (event) {
         $(this).toggleClass("active");
         $par.addClass("active");
         $(".grid-mode-view").removeClass("enabled");
+        $(".zanaves").show();
         
         $(".produs-block").each(function (i, value) {
             var coef = 4;
@@ -155,6 +159,7 @@ $(".close-grid-product").click(function () {
         $par.removeClass("active");
         $(".open-cart").removeClass("active");
         $(".grid-mode-view").addClass("enabled");
+        $(".zanaves").hide();
     }
 });
 

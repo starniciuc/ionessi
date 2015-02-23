@@ -12,8 +12,8 @@ nav{
 
         li{
             display: inline-block;
-            padding-right: 18px;
-            padding-left: 18px;
+            padding-right: 17px;
+            padding-left: 17px;
             position: relative;
             border-left: 1px solid transparent;
             border-right: 1px solid transparent;
@@ -52,7 +52,7 @@ nav{
                 padding: 0;
                 margin: 0;
                 position: absolute;
-                top: 102%;
+                top: 101%;
                 left: -1px;
                 background-color: #dfeaf2;
                 border: 1px solid #85b8d7;
@@ -665,6 +665,7 @@ p.text-description{
                 vertical-align: middle;
                 display: inline-block;
                 background: url("../img/ck-hover.png") no-repeat 0 0px;
+
             }
         }
 
@@ -697,17 +698,24 @@ p.text-description{
                 top: 3px;
                 vertical-align: middle;
                 display: inline-block;
-                background: url("../img/checkbox.png") no-repeat -21px 0;
+                background: none;
+                background-color: #e7edf2;
+                border: 1px solid #94a0a9;
+
             }
         }
         &:hover + label{
             &:before{
-                background-position: -42px 0;
+                background-image: url("../img/checkbox.png");
+                background-repeat: no-repeat;
+                background-position: -22px -1px;
             }
         }
         &:checked + label{
             &:before{
-                background-position: 0 0;
+                 background-image: url("../img/checkbox.png");
+                background-repeat: no-repeat;
+                background-position: -1px -1px;
             }
         } 
     }
@@ -1256,6 +1264,7 @@ table.list-table{
                 height: 100%;
                 vertical-align: middle;
                 margin-left: 10px;
+                color: #000000;
 
                 i{
                     margin-left: 0;
@@ -1264,6 +1273,9 @@ table.list-table{
                 span{
                     display: block;
                     color: #d05c4c;
+                }
+                i + span{
+                    color: #000000;
                 }
             }
         }
@@ -1805,17 +1817,17 @@ table.list-table{
     .produs-img{
         text-align: center;
         position: relative;
-        height: 550px;
+        height: 620px;
         text-align: center;
 
         span{
-            height: 550px;
+            height: 620px;
             vertical-align: middle;
             display: inline-block;
         }
         img{
-            max-height: 100%;
-            max-width: 100%;
+            max-height: 98%;
+            max-width: 98%;
             vertical-align: middle;
         }
 
@@ -1896,13 +1908,13 @@ table.list-table{
 .slide-thumb{
     position: relative;
     padding: 0px 50px 0;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 .set-view{
     background: url("../img/bg-view.png") no-repeat 0 0;
     background-size: 100% 100%;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
     h1{
         color: #000000;
@@ -1929,7 +1941,7 @@ table.list-table{
         color: #d05c4c;
         font-size: 16px;
         font-family: $font-open;
-        margin-bottom: 0px;
+        margin-bottom: 15px;
     }
 
     p{
@@ -2560,6 +2572,7 @@ table.list-table{
         display: none;
     }
     &.grid-mode-view{
+        position: relative;
 
         .produs{
             cursor: pointer;
@@ -2568,6 +2581,17 @@ table.list-table{
             border-left: 2px solid transparent;
             width: 100%;
         }
+
+        .zanaves{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: none;
+        }
+
         &.enabled{
             .produs-block{
                 &:hover{
@@ -2636,16 +2660,16 @@ table.list-table{
 
             .produs-image{
                 height: auto;
-                height: 255px;
+                height: 225px;
                 text-align: center;
                 position: relative;
-
+                padding-top: 25px;
+                margin-top: 20px;
+                
                 .icon{
                     position: absolute;
                     right: 5px;
-                    top: 25px;
-
-
+                    top: -5px;
 
                     &.new{
                         background: url("../img/labels/6.png") no-repeat 0 0;
@@ -2665,12 +2689,9 @@ table.list-table{
                     }
                 }
                 img{
-                    vertical-align: bottom;
-                    max-height: 100%;
-                    width: auto;
-                    position: absolute;
-                    bottom: 0;
-                    left: 10px;
+                    vertical-align: middle;
+                    max-height: 90%;
+                    max-width: 90%;
                 }
             }
             .icon + .icon{
@@ -2691,6 +2712,8 @@ table.list-table{
             }
 
             &.active{
+                z-index: 3;
+
                 .produs{
                     border-right: 2px solid #accfea;
                     border-top: 2px solid #accfea;
@@ -2752,7 +2775,7 @@ table.list-table{
                             margin: 0;
                             width: 100%;
                             text-align: center;
-                            padding: 3px 0;
+                            padding: 0;
                         }
                     }
                     .buttons-block-com{
@@ -2925,16 +2948,15 @@ table.list-table{
                     z-index: 6;
                     margin-left:6px;
                     vertical-align: middle;
-                    
-/*                    span{
+
+                    span{
                         vertical-align: middle;
                         display: inline-block;
                         height: 160px;
-                    }*/
+                    }
                     img{
-                        width: auto;
-                        height: 160px;
-                        max-width: 160px;
+                        max-height: 95%;
+                        max-width: 95%;
                         display: inline-block;
                         vertical-align: middle;
                     }
@@ -3029,7 +3051,7 @@ table.list-table{
             background-color: $white;
             padding: 10px;
             border-top: 1px solid #bcc6c9;
-                
+
             ul.size{
                 margin-bottom: 15px;
                 border: 0;
