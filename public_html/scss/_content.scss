@@ -12,8 +12,8 @@ nav{
 
         li{
             display: inline-block;
-            padding-right: 19px;
-            padding-left: 19px;
+            padding-right: 18px;
+            padding-left: 18px;
             position: relative;
             border-left: 1px solid transparent;
             border-right: 1px solid transparent;
@@ -1195,47 +1195,47 @@ table.list-table{
             margin-right: 15px;
             vertical-align: middle;
             position: relative;
-			width: 72px;
-			height: 72px;
-			background-color: #FFFFFF;
-			text-align: center;
-			
+            width: 72px;
+            height: 72px;
+            background-color: #FFFFFF;
+            text-align: center;
+
             .icon{
                 position: absolute;
-                right: -82px;
-                top: 0px;
-                z-index: 2;
-
+                top: 0;
+                left: 72px;
 
                 &.new{
-                    background: url("../img/labels/6.png") no-repeat 0 0;
-                    width: 82px;
-                    height: 24px;
+                    background: url("../img//labels/1.png") no-repeat 0 0;
+                    width: 70px;
+                    height: 18px;
                 }
 
                 &.next{
-                    background: url("../img//labels/4.png") no-repeat 0 0;
-                    width: 82px;
-                    height: 24px;
+                    background: url("../img/labels/3.png") no-repeat 0 0;
+                    width: 70px;
+                    height: 18px;
                 }
-                &.sale{
-                    background: url("../img//labels/5.png") no-repeat 0 0px;
-                    width: 82px;
-                    height: 24px;
-                }
-            }
 
+                &.sale{
+                    background: url("../img/labels/2.png") no-repeat 0 0px;
+                    background-size: auto 18px;
+                    width: 70px;
+                    height: 18px;
+                }
+
+
+            }
             .icon + .icon{
-                right: -152px;
-                z-index: 1;
+                left: 130px;
             }
             .icon + .icon + .icon{
-                right: -252px;
+                left: 190px;
             }
             img{
                 max-width: 100%;
                 max-height: 100%;
-				height: 72px;
+                height: 72px;
             }
         }
         .text{
@@ -1256,13 +1256,14 @@ table.list-table{
                 height: 100%;
                 vertical-align: middle;
                 margin-left: 10px;
+
                 i{
                     margin-left: 0;
                     margin-right: 5px;
                 }
                 span{
                     display: block;
-                    color: #000000;
+                    color: #d05c4c;
                 }
             }
         }
@@ -1324,9 +1325,9 @@ table.list-table{
                                 background-color: #e7edf2;
                             }
 
-							&:active, &:focus{
-								text-decoration: none;
-							}
+                            &:active, &:focus{
+                                text-decoration: none;
+                            }
 
                             &.selected{
                                 color: #FFFFFF;
@@ -1484,6 +1485,7 @@ table.list-table{
         text-align: center;
         margin-bottom: 25px;
         font-size: 18px;
+        line-height: 20px;
         color: #004e7c;
         font-family: $font-open;
         font-weight: 300;
@@ -1494,7 +1496,7 @@ table.list-table{
             color: #004e7c;
             font-family: $font-open;
             font-weight: 300;
-            line-height: 22px;
+            line-height: 20px;
 
             &:hover{
                 color: #004e7c;
@@ -1609,6 +1611,7 @@ table.list-table{
         font-family: $font-open;
         font-weight: 300;
         text-align: center;
+        height: 33px;
         border: 1px solid #bcc6c9;
     }
 }
@@ -1802,10 +1805,18 @@ table.list-table{
     .produs-img{
         text-align: center;
         position: relative;
+        height: 550px;
+        text-align: center;
 
+        span{
+            height: 550px;
+            vertical-align: middle;
+            display: inline-block;
+        }
         img{
-            max-height: 650px;
+            max-height: 100%;
             max-width: 100%;
+            vertical-align: middle;
         }
 
         .icon{
@@ -1936,6 +1947,7 @@ table.list-table{
             display: inline-block;
             width: 90px;
             margin-right: 15px;
+            padding: 3px 0;
 
             label{
                 font-size: 20px;
@@ -2123,10 +2135,12 @@ table.list-table{
             font-family: $font-open;
             border-bottom: 0px dotted #000000;
             line-height: 26px;
+            @include transition(all 0.35s);
 
             &:hover{
                 text-decoration: none;
                 border: 0;
+                color: #1d5f82;
             }
         }
 
@@ -2175,7 +2189,7 @@ table.list-table{
 .query-view{
     border: 1px solid #b4b4b4;
     padding: 10px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 
     &.answer{
         padding: 0;
@@ -2183,6 +2197,7 @@ table.list-table{
         position: relative;
         margin-left: 46px;
         border-top: 0;
+        margin-bottom: 10px;
 
         .ionessi{
             position: absolute;
@@ -2289,9 +2304,9 @@ table.list-table{
                 line-height: 28px;
                 padding: 0;
 
-				&:active, &:focus{
-					text-decoration: none;
-				}
+                &:active, &:focus{
+                    text-decoration: none;
+                }
 
                 &.disabled{
                     background: none;
@@ -2502,7 +2517,7 @@ table.list-table{
     .head-view-block{
         .pagination-block{
             margin-top: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }
     }    
     .btn-cart.open-cart.active{
@@ -2516,6 +2531,7 @@ table.list-table{
             display: inline-block;
             width: 90px;
             margin-right: 15px;
+            padding: 3px 0;
 
             label{
                 font-size: 20px;
@@ -2736,6 +2752,7 @@ table.list-table{
                             margin: 0;
                             width: 100%;
                             text-align: center;
+                            padding: 3px 0;
                         }
                     }
                     .buttons-block-com{
@@ -2898,17 +2915,27 @@ table.list-table{
                     display: none;
                     position: absolute;
                     left: 82px;
-                    width: 150px;
+                    width: auto;
                     height: 160px;
+                    width: 160px;
+                    text-align: center;
                     top: -40px;
                     background-color: #FFFFFF;
                     border: 1px solid #94a0a9;
                     z-index: 6;
                     margin-left:6px;
-
+                    vertical-align: middle;
+                    
+/*                    span{
+                        vertical-align: middle;
+                        display: inline-block;
+                        height: 160px;
+                    }*/
                     img{
-                        max-width: 100%;
-                        max-height: 100%;
+                        width: auto;
+                        height: 160px;
+                        max-width: 160px;
+                        display: inline-block;
                         vertical-align: middle;
                     }
 
@@ -3001,7 +3028,8 @@ table.list-table{
             display: none;
             background-color: $white;
             padding: 10px;
-
+            border-top: 1px solid #bcc6c9;
+                
             ul.size{
                 margin-bottom: 15px;
                 border: 0;
@@ -3098,7 +3126,7 @@ table.list-table{
 .goToTop{
     position: fixed;
     bottom: 20px;
-    right: 180px;
+    right: 45px;
     z-index: 1000;
 }
 .right-side-view{
@@ -3184,12 +3212,13 @@ table.list-table{
         font-size: 18px;
         line-height: 18px;
         padding: 10px;
-        @include opacity(0.75);
-        @include transition(opacity 0.35s);
+        // @include opacity(0.75);
+        @include transition(all 0.35s);
 
         &:hover{
             text-decoration: none;
-            @include opacity(1);
+            //@include opacity(1);
+            color: #1d5f82;
         }
     }
 }
