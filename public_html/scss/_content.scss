@@ -2779,22 +2779,29 @@ table.list-table{
 						&.four{
 							padding-top: 15px;
 							li{
-								padding: 8px 0;
+								padding: 10px 0;
 							}
 						}
 						&.five{
-							padding-top: 20px;
+							padding-top: 7px;
 							li{
-								padding: 4px 0;
+								padding: 8px 0;
 							}
 						}
 						&.six{
 							li{
-								padding: 3px 0;
+								padding: 5px 0;
+							}
+						}
+						&.seven{
+							padding-top: 2px;
+
+							li{
+								padding: 2px 0;
 							}
 						}
 
-						height: 230px;
+						height: 260px;
 
                         li{
                             margin: 0;
@@ -2818,10 +2825,10 @@ table.list-table{
                             width: 90%;
                             margin-bottom: 15px;
                             position: absolute;
-                            bottom: 40px;
+                            bottom: 20px;
 
                             &.btn-save{
-                                bottom: 80px;
+                                bottom: 60px;
                             }
                         }
                     }
@@ -3201,24 +3208,31 @@ table.list-table{
 		&.four{
 			padding-top: 15px;
 			li{
-				padding: 8px 0;
+				padding: 10px 0;
 			}
 		}
 		&.five{
-			padding-top: 20px;
+			padding-top: 7px;
 			li{
-				padding: 4px 0;
+				padding: 8px 0;
 			}
 		}
 		&.six{
 			li{
-				padding: 3px 0;
+				padding: 5px 0;
+			}
+		}
+		&.seven{
+			padding-top: 2px;
+
+			li{
+				padding: 2px 0;
 			}
 		}
         padding-left: 25px;
 		vertical-align: middle;
         border-left: 1px solid #94a0a9; 
-		height: 250px;
+		height: 260px;
 		margin: 15px 0;
     }
 }
