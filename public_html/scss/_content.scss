@@ -2777,13 +2777,21 @@ table.list-table{
 
                     ul.size{
 						&.four{
-							padding-top: 55px;
+							padding-top: 25px;
+							li{
+								padding: 6px 0;
+							}
 						}
 						&.five{
-							padding-top: 35px;
+							padding-top: 20px;
+							li{
+								padding: 4px 0;
+							}
 						}
 						&.six{
-							padding-top: 20px;
+							li{
+								padding: 3px 0;
+							}
 						}
 
 						height: 230px;
