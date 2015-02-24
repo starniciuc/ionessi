@@ -614,7 +614,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.grid-mode-view .produs-block.active.left-elm .cart-button { border-right: 0px solid #accfea; border-left: 2px solid #accfea; left: 0; right: auto; }
 .view-produs.grid-mode-view .produs-block.active.left-elm .close-grid-product { right: auto; left: 10px; }
 .view-produs.grid-mode-view .produs-block.active.left-elm ul.size { border: 0; border-left: 1px solid #94a0a9; }
-.view-produs.grid-mode-view .produs-block.active .get-size-block { display: block !important; position: absolute; top: 0; width: 165px; left: -165px; border-left: 2px solid #accfea; border-top: 2px solid #accfea; border-bottom: 2px solid #accfea; padding: 15px; background-color: white; z-index: 2; height: 446px; padding-top: 60px; }
+.view-produs.grid-mode-view .produs-block.active .get-size-block { display: block !important; position: absolute; top: 0; width: 165px; left: -165px; border-left: 2px solid #accfea; border-top: 2px solid #accfea; border-bottom: 2px solid #accfea; padding: 15px; background-color: white; z-index: 2; height: 447px; padding-top: 60px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size { height: 230px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size.four { padding-top: 15px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size.four li { padding: 8px 0; }
