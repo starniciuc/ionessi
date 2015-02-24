@@ -139,10 +139,10 @@ $(".open-cart").click(function (event) {
         $(".zanaves").show();
         
         $(".produs-block").each(function (i, value) {
-            var coef = 4;
+            var coef = 3;
             if ($(window).width() > 550) {
                 if ($(window).width() <= 992) {
-                    coef = 3;
+                    coef = 2;
                 }
                 if (((i + 1) % coef === 0) || (i === 0)) {
                     var $par_b = $(value);

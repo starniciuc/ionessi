@@ -2750,8 +2750,7 @@ table.list-table{
                         right: auto;
                     }
                     .close-grid-product{
-                        right: auto;
-                        left: 10px;
+                        right: -170px;
                     }
                     ul.size{
                         border: 0;
@@ -2772,7 +2771,7 @@ table.list-table{
                     padding: 15px;
                     background-color: $white;
                     z-index: 2;
-                    height: 447px;
+                    height: 446px;
                     padding-top: 60px;
 
                     ul.size{
@@ -2818,7 +2817,7 @@ table.list-table{
                             font-family: $font-open;
                             color: #848484;
                             position: absolute;
-                            top: 10px;
+                            top: 16px;
                         }
 
                         .btn{

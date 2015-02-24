@@ -612,9 +612,9 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.grid-mode-view .produs-block.active.left-elm .get-size-block { left: auto; right: -165px; border-right: 2px solid #accfea; border-left: 0; }
 .view-produs.grid-mode-view .produs-block.active.left-elm .get-size-block .buttons-block-com .btn { width: 80%; }
 .view-produs.grid-mode-view .produs-block.active.left-elm .cart-button { border-right: 0px solid #accfea; border-left: 2px solid #accfea; left: 0; right: auto; }
-.view-produs.grid-mode-view .produs-block.active.left-elm .close-grid-product { right: auto; left: 10px; }
+.view-produs.grid-mode-view .produs-block.active.left-elm .close-grid-product { right: -170px; }
 .view-produs.grid-mode-view .produs-block.active.left-elm ul.size { border: 0; border-left: 1px solid #94a0a9; }
-.view-produs.grid-mode-view .produs-block.active .get-size-block { display: block !important; position: absolute; top: 0; width: 165px; left: -165px; border-left: 2px solid #accfea; border-top: 2px solid #accfea; border-bottom: 2px solid #accfea; padding: 15px; background-color: white; z-index: 2; height: 447px; padding-top: 60px; }
+.view-produs.grid-mode-view .produs-block.active .get-size-block { display: block !important; position: absolute; top: 0; width: 165px; left: -165px; border-left: 2px solid #accfea; border-top: 2px solid #accfea; border-bottom: 2px solid #accfea; padding: 15px; background-color: white; z-index: 2; height: 446px; padding-top: 60px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size { height: 260px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size.four { padding-top: 15px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size.four li { padding: 10px 0; }
@@ -624,7 +624,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size.seven { padding-top: 2px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size.seven li { padding: 2px 0; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block ul.size li { margin: 0; width: 100%; text-align: center; padding: 0; }
-.view-produs.grid-mode-view .produs-block.active .get-size-block .buttons-block-com p { font-weight: 300; font-size: 14px; font-family: "Open Sans", sans-serif; color: #848484; position: absolute; top: 10px; }
+.view-produs.grid-mode-view .produs-block.active .get-size-block .buttons-block-com p { font-weight: 300; font-size: 14px; font-family: "Open Sans", sans-serif; color: #848484; position: absolute; top: 16px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block .buttons-block-com .btn { width: 90%; margin-bottom: 15px; position: absolute; bottom: 20px; }
 .view-produs.grid-mode-view .produs-block.active .get-size-block .buttons-block-com .btn.btn-save { bottom: 60px; }
 .view-produs.grid-mode-view .produs-block.active .foot-detail { display: block; position: absolute; bottom: -20px; z-index: 3; width: 100%; text-align: center; font-weight: 300; font-family: "Open Sans", sans-serif; color: #848484; font-size: 14px; }
