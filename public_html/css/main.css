@@ -689,9 +689,11 @@ table.list-table.after-remove { margin-bottom: 1px; }
 
 .left-side-view { float: right; width: 40%; }
 .left-side-view ul.size { padding-left: 25px; vertical-align: middle; border-left: 1px solid #94a0a9; height: 250px; margin: 15px 0; }
-.left-side-view ul.size.four { padding-top: 55px; }
-.left-side-view ul.size.five { padding-top: 35px; }
-.left-side-view ul.size.six { padding-top: 20px; }
+.left-side-view ul.size.four { padding-top: 25px; }
+.left-side-view ul.size.four li { padding: 6px 0; }
+.left-side-view ul.size.five { padding-top: 20px; }
+.left-side-view ul.size.five li { padding: 4px 0; }
+.left-side-view ul.size.six li { padding: 3px 0; }
 
 .slected-stars { display: inline-block; font-size: 29px; color: #000000; vertical-align: middle; font-family: "Open Sans", sans-serif; font-weight: 300; margin-left: 15px; }
 
