@@ -713,7 +713,7 @@ p.text-description{
         }
         &:checked + label{
             &:before{
-                 background-image: url("../img/checkbox.png");
+				background-image: url("../img/checkbox.png");
                 background-repeat: no-repeat;
                 background-position: -1px -1px;
             }
@@ -1917,7 +1917,7 @@ table.list-table{
 .set-view{
     background: url("../img/bg-view.png") no-repeat 0 0;
     background-size: 100% 100%;
-    padding: 20px;
+    padding: 20px 20px 15px;
     margin-bottom: 10px;
 
     h1{
@@ -1958,6 +1958,7 @@ table.list-table{
     ul.size{
         padding: 0;
         margin: 0;
+		height: 250px;
 
         li{
             display: inline-block;
@@ -2669,7 +2670,7 @@ table.list-table{
                 position: relative;
                 padding-top: 25px;
                 margin-top: 20px;
-                
+
                 .icon{
                     position: absolute;
                     right: 5px;
@@ -2775,6 +2776,18 @@ table.list-table{
                     padding-top: 60px;
 
                     ul.size{
+						&.four{
+							padding-top: 55px;
+						}
+						&.five{
+							padding-top: 35px;
+						}
+						&.six{
+							padding-top: 20px;
+						}
+
+						height: 230px;
+
                         li{
                             margin: 0;
                             width: 100%;
@@ -3177,8 +3190,20 @@ table.list-table{
     float: right;
     width: 40%;
     ul.size{
+		&.four{
+			padding-top: 55px;
+		}
+		&.five{
+			padding-top: 35px;
+		}
+		&.six{
+			padding-top: 20px;
+		}
         padding-left: 25px;
+		vertical-align: middle;
         border-left: 1px solid #94a0a9; 
+		height: 250px;
+		margin: 15px 0;
     }
 }
 .slected-stars{
