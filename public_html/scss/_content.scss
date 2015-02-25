@@ -1387,7 +1387,7 @@ table.list-table{
             color: #000000;
             font-size: 16px;
             font-weight: 600;
-            vertical-align: top;
+            vertical-align: central;
             border-bottom: 0;
             border-top: 0;
         }
@@ -1484,6 +1484,8 @@ table.list-table{
             vertical-align: bottom;
             max-height: 100%;
             width: auto;
+			z-index: -1;
+			position: relative;
         }
         .icon + .icon{
             right: 75px;
@@ -1801,7 +1803,8 @@ table.list-table{
 .about{
     margin-bottom: 30px;
     &.view-mode{
-        padding: 20px; 
+		padding: 0;
+        padding-top: 20px; 
         padding-bottom: 0;
         margin-bottom: 0;
     }

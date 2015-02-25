@@ -236,6 +236,9 @@
     .goToTop{
         display: none;
     }
+	.view-produs.table-mode-view .produs-block .produs-link{
+		padding-top: 20px; 
+	}
 }
 @media(max-width:767px){
     header, .slider-top{
