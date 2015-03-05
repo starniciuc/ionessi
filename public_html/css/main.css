@@ -17,7 +17,7 @@ a:link, a:active, a:hover, a:focus { outline: 0; }
 .btn-remove { border: 0; background: none; height: 35px; color: white; font-size: 16px; font-family: "Open Sans", sans-serif; background-color: #ff918d; border-radius: 0; box-shadow: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; width: 100%; }
 .btn-remove:hover { opacity: 1; color: white; }
 
-.btn-delete { width: 35px; height: 35px; background: none; border: 0; border-radius: 0; margin-right: 20px; background: url("../img/close-btn-white.png") no-repeat 0 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
+.btn-delete { width: 12px; height: 12px; background: none; border: 0; border-radius: 0; margin-right: 20px; background: url("../img/x-close.png") no-repeat 0 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
 .btn-delete:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
 .btn-close-modal { width: 35px; height: 35px; background: none; border: 0; border-radius: 0; background: url("../img/close-btn-grey.png") no-repeat 0 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
@@ -105,7 +105,7 @@ nav .menu li a span { display: block; font-size: 12px; font-family: Arial, "Helv
 nav .menu li a:hover { text-decoration: none; }
 nav .menu li.sub-menu-list:hover { border-bottom: 1px solid #FFFFFF; margin-bottom: -1px; }
 nav .menu li .submenu { display: none; padding: 0; margin: 0; position: absolute; top: 101%; left: -1px; background-color: #dfeaf2; border: 1px solid #85b8d7; border-top: 0; list-style: none; z-index: 105; min-width: 101%; }
-nav .menu li .submenu li { display: block; width: 100%; padding: 0 1px; border: 0; }
+nav .menu li .submenu li { display: block; width: 100%; padding: 0px; border: 0; }
 nav .menu li .submenu li a { display: block; padding: 4px 15px; color: #5a839c; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-weight: normal; font-size: 16px; text-transform: capitalize; white-space: nowrap; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; -o-transition: all 0.35s; transition: all 0.35s; }
 nav .menu li .submenu li a:hover { background-color: #84b6d6; text-decoration: none; color: #FFFFFF; }
 nav .menu li .submenu li:hover { border: 0; }
@@ -136,9 +136,9 @@ main .category .category-item { width: 19%; display: inline-block; text-align: c
 main .category .category-item .logo { line-height: 160px; }
 main .category .category-item .logo img { max-width: 100%; margin-bottom: 15px; }
 main .category .category-item:hover .logo { background: url("../img/category-hover.png") no-repeat center center; }
-main .category .category-item:hover a { text-decoration: underline; }
-main .category .category-item a { display: block; color: #7e9cc2; font-weight: 600; font-family: "Open Sans", sans-serif; text-transform: uppercase; }
-main .category .category-item a:hover { text-decoration: underline; }
+main .category .category-item:hover a { text-decoration: none; border-bottom: 1px dotted #7e9cc2; }
+main .category .category-item a { /*display: block;*/ color: #7e9cc2; font-weight: 600; font-family: "Open Sans", sans-serif; text-transform: uppercase; }
+main .category .category-item a:hover { text-decoration: none; }
 main h1 { font-family: "Open Sans", sans-serif; font-weight: 300; font-size: 50px; margin-bottom: 20px; margin-top: 20px; color: #1c2c4b; }
 main .slider-product-side { position: relative; }
 main .slider-product-side .slider-product .slide { text-align: center; }
@@ -645,7 +645,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.table-mode-view .produs-block .produs-image .icon.sale { background: url("../img/labels/2.png") no-repeat 0 0px; background-size: auto 18px; width: 70px; height: 18px; }
 .view-produs.table-mode-view .produs-block .produs-image .icon + .icon { left: 140px; }
 .view-produs.table-mode-view .produs-block .produs-image .icon + .icon + .icon { left: 200px; }
-.view-produs.table-mode-view .produs-block .produs-image img { max-height: 100%; max-width: 100%; }
+.view-produs.table-mode-view .produs-block .produs-image span { vertical-align: middle; display: inline-block; height: 82px; }
+.view-produs.table-mode-view .produs-block .produs-image img { max-height: 95%; max-width: 95%; z-index: 1; vertical-align: middle; }
 .view-produs.table-mode-view .produs-block .produs-image .block-prev { display: none; position: absolute; left: 82px; width: auto; height: 160px; width: 160px; text-align: center; top: -40px; background-color: #FFFFFF; border: 1px solid #94a0a9; z-index: 6; margin-left: 6px; vertical-align: middle; }
 .view-produs.table-mode-view .produs-block .produs-image .block-prev span { vertical-align: middle; display: inline-block; height: 160px; }
 .view-produs.table-mode-view .produs-block .produs-image .block-prev img { max-height: 95%; max-width: 95%; display: inline-block; vertical-align: middle; }
@@ -669,8 +670,9 @@ table.list-table.after-remove { margin-bottom: 1px; }
 
 .modal { cursor: move; }
 .modal .modal-content { border-radius: 0; border: 0; box-shadow: none; padding: 15px 30px; }
-.modal .modal-content .btn-delete { position: absolute; top: 0; right: -50px; margin: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
-.modal .modal-content .btn-delete:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
+.modal .modal-content .btn-delete { position: absolute; top: 15px; right: 5px; margin: 0; /*            &:hover{
+				@include opacity(0.8);
+			}*/ }
 .modal .modal-content h1 { margin-top: 0; font-size: 24px; margin-bottom: 30px; font-family: "Open Sans", sans-serif; }
 .modal .modal-content .btn-subscribe { padding-left: 30px; padding-right: 30px; }
 .modal .modal-content a { font-size: 16px; font-weight: 500; line-height: 30px; font-family: "Open Sans", sans-serif; color: #004e7c; }

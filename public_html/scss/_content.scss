@@ -64,7 +64,7 @@ nav{
                 li{
                     display: block;
                     width: 100%;
-                    padding: 0 1px;
+                    padding: 0px;
                     border: 0;
                     a{
                         display: block;
@@ -224,18 +224,20 @@ main{
                 .logo{
                     background: url("../img/category-hover.png") no-repeat center center;
                 }
+
                 a{
-                    text-decoration: underline;
+                    text-decoration: none;
+					border-bottom: 1px dotted #7e9cc2; 
                 }
             }
             a{
-                display: block;
+                /*display: block;*/
                 color: #7e9cc2;
                 font-weight: 600;
                 font-family: $font-open;
                 text-transform: uppercase;
                 &:hover{
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
             }
         }
@@ -2963,9 +2965,16 @@ table.list-table{
                 .icon + .icon + .icon{
                     left: 200px;
                 }
+				span{
+					vertical-align: middle;
+					display: inline-block;
+					height: 82px;
+				}
                 img{
-                    max-height: 100%;
-                    max-width: 100%;
+                    max-height: 95%;
+                    max-width: 95%;
+					z-index: 1;
+					vertical-align: middle;
                 }
 
                 .block-prev{
@@ -3125,14 +3134,14 @@ table.list-table{
 
         .btn-delete{
             position: absolute;
-            top: 0;
-            right: -50px;
+            top: 15px;
+            right: 5px;
             margin: 0;
-            @include opacity(1);
+            //@include opacity(1);
 
-            &:hover{
-                @include opacity(0.8);
-            }
+			/*            &:hover{
+							@include opacity(0.8);
+						}*/
         }
 
         h1{

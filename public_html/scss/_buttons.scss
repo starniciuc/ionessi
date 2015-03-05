@@ -42,13 +42,13 @@ a:link, a:active, a:hover, a:focus{
 }
 
 .btn-delete{
-    width: 35px;
-    height: 35px;
+    width: 12px;
+    height: 12px;
     background: none;
     border: 0;
     border-radius: 0;
     margin-right: 20px;
-    background: url("../img/close-btn-white.png") no-repeat 0 0;
+    background: url("../img/x-close.png") no-repeat 0 0;
     @include opacity(0.6);
     @include transition(opacity 0.35s);
 
