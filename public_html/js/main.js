@@ -205,13 +205,12 @@ function addZoom() {
     $(".showZoom").toggleClass("hideZoom");
     if ($("#image-view").hasClass("my-foto-zoom")) {
         $(".my-foto-zoom").imagezoomsl({
-            rightoffset: 100,
+            //rightoffset: 100,
             zoomrange: [2.12, 12],
-            magnifiersize: [500, 570],
+            magnifiersize: [500, 470],
             scrollspeedanimate: 10,
             loopspeedanimate: 5,
-            magnifiereffectanimate: "slideIn",
-            rightoffset: 100
+            magnifiereffectanimate: "slideIn"
         });
     } else {
         $(".magnifier").remove();
