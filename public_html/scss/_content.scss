@@ -2294,9 +2294,9 @@ table.list-table{
                     i{
                         border: 1px solid #FFFFFF;
                         @include box-shadow(0 0 0 2px #94C8E3);
-/*                        background-image: url("../img/check.png");
-                        background-repeat: no-repeat;
-                        background-position: center center;*/
+                        /*                        background-image: url("../img/check.png");
+                                                background-repeat: no-repeat;
+                                                background-position: center center;*/
                     }
                 }
             }
@@ -2754,6 +2754,27 @@ table.list-table{
                                 width: 80%;
                             }
                         }
+                        &.four{
+                            .buttons-block-com{
+                                p{
+                                    padding: 10px 0px 0 10px;
+                                }
+                            }
+                        }
+                        &.five{
+                            .buttons-block-com{
+                                p{
+                                    padding: 10px 0px 0 10px;
+                                }
+                            }
+                        }
+                        &.six{
+                            .buttons-block-com{
+                                p{
+                                    padding: 10px 0px 0 10px;
+                                }
+                            }
+                        }
                     }
                     .cart-button{
                         border-right: 0px solid #accfea;
@@ -2768,6 +2789,7 @@ table.list-table{
                         border: 0;
                         border-left: 1px solid #94a0a9;
                     }
+
 
                 }
 
@@ -2788,20 +2810,21 @@ table.list-table{
 
                     ul.size{
                         &.four{
-                            padding-top: 15px;
+                            padding-top: 65px;
                             li{
-                                padding: 10px 0;
+                                padding: 2px 0;
                             }
                         }
                         &.five{
-                            padding-top: 7px;
+                            padding-top: 40px;
                             li{
-                                padding: 8px 0;
+                                padding: 2px 0;
                             }
                         }
                         &.six{
+                            padding-top: 20px;
                             li{
-                                padding: 5px 0;
+                                padding: 2px 0;
                             }
                         }
                         &.seven{
@@ -2819,6 +2842,30 @@ table.list-table{
                             width: 100%;
                             text-align: center;
                             padding: 0;
+                        }
+                    }
+                    &.four{
+                        .buttons-block-com{
+                            p{
+                                padding: 10px 20px 0 0px;
+                                top: 70px;  
+                            }
+                        }
+                    }
+                    &.five{
+                        .buttons-block-com{
+                            p{
+                                padding: 10px 20px 0 0px;
+                                top: 45px;  
+                            }
+                        }
+                    }
+                    &.six{
+                        .buttons-block-com{
+                            p{
+                                padding: 10px 20px 0 0px;
+                                top: 20px;  
+                            }
                         }
                     }
                     .buttons-block-com{
@@ -3205,7 +3252,8 @@ table.list-table{
     float: left;
     width: 60%;
     padding-right: 20px;
-
+    position: relative;
+        
     p.code{
         color: #d05c4c;
         font-size: 18px;
@@ -3224,24 +3272,25 @@ table.list-table{
     width: 40%;
     ul.size{
         &.four{
-            padding-top: 15px;
+            padding-top: 65px;
             li{
-                padding: 10px 0;
+                padding: 2px 0;
             }
         }
         &.five{
-            padding-top: 7px;
+            padding-top: 42px;
             li{
-                padding: 8px 0;
+                padding: 2px 0;
             }
         }
         &.six{
+            padding-top: 25px;
             li{
-                padding: 5px 0;
+                padding: 2px 0;
             }
         }
         &.seven{
-            padding-top: 2px;
+            padding-top: 7px;
 
             li{
                 padding: 2px 0;
@@ -3250,7 +3299,7 @@ table.list-table{
         padding-left: 25px;
         vertical-align: middle;
         border-left: 1px solid #94a0a9; 
-        height: 260px;
+        height: 275px;
         margin: 15px 0;
     }
 }
