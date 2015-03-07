@@ -223,9 +223,10 @@ function addZoom() {
         $(".my-foto-zoom").imagezoomsl({
             //rightoffset: 100,
             zoomrange: [2.12, 12],
-            magnifiersize: [500, 470],
+            magnifiersize: [500, 620],
             scrollspeedanimate: 10,
             loopspeedanimate: 5,
+            magnifierborder: '1px solid #CCCCCC',
             magnifiereffectanimate: "slideIn"
         });
     } else {

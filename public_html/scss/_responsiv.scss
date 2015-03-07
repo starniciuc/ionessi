@@ -113,16 +113,16 @@
         bottom: 250px;
     }
     nav .menu li .submenu{
-        top: 101%;
+        top: 63px;
         left: -1px;
     }
 }
 @media screen and (max-width: 992px) {
     nav.nav-bar-menu{
-        min-height: 45px;
+        height: 45px;
     }
     nav .menu li .submenu{
-        top: 101%;
+       top: 44px;
         left: -1px;
     }
     nav .menu li a{
@@ -243,6 +243,12 @@
 @media(max-width:767px){
     header, .slider-top{
         display: none;
+    }
+     nav.nav-bar-menu{
+        height: auto;
+    }
+    nav .menu li .submenu{
+        top: 0;
     }
     main .category .category-item{
         width: 49%;

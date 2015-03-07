@@ -1,6 +1,6 @@
 nav{
     &.nav-bar-menu{
-        min-height: 65px;
+        height: 64px;
         background-color: #d4e5f2;
         border-bottom: 1px solid #85b8d7;
         border-top: 1px solid #85b8d7;
@@ -52,7 +52,7 @@ nav{
                 padding: 0;
                 margin: 0;
                 position: absolute;
-                top: 101%;
+                top: 63px;
                 left: -1px;
                 background-color: #dfeaf2;
                 border: 1px solid #85b8d7;
@@ -66,6 +66,7 @@ nav{
                     width: 100%;
                     padding: 0px;
                     border: 0;
+                    height: auto;
                     a{
                         display: block;
                         padding: 4px 15px;
@@ -547,7 +548,7 @@ main{
                     &:hover{
                         text-decoration: none;
                         //border-top: 2px solid #94a0a9;
-                        background-color: #e7edf2;
+                        background-color: #94C8E3;
                         color: #004e7c;
                     }
 
@@ -562,7 +563,7 @@ main{
                 &.active{
                     a{
                         //border-top: 2px solid #94a0a9;
-                        background-color: #e7edf2;
+                        background-color: #94C8E3;
                         color: #000000;
 
                         &:hover{
@@ -1345,7 +1346,7 @@ table.list-table{
                             background-color: #FFFFFF;
 
                             &:hover{
-                                background-color: #e7edf2;
+                                background-color: #94C8E3;
                             }
 
                             &:active, &:focus{
@@ -1354,7 +1355,7 @@ table.list-table{
 
                             &.selected{
                                 color: #FFFFFF;
-                                background-color: #aebdc8;
+                                background-color: #94C8E3;
                             }
                         }
                     }
@@ -1512,7 +1513,7 @@ table.list-table{
         color: #004e7c;
         font-family: $font-open;
         font-weight: 300;
-        height: 25px;
+        height: 30px;
 
         a{
             font-size: 18px;
@@ -1536,7 +1537,7 @@ table.list-table{
             color: #d05c4c;
             font-family: $font-open;
             font-weight: 300;
-            margin-bottom: 5px;
+            margin-bottom: 7px;
 
             .foot-detail{
                 display: block;
@@ -1830,22 +1831,23 @@ table.list-table{
         text-align: center;
         position: relative;
         height: 620px;
+        margin-top: 44px;
         text-align: center;
 
         span{
             height: 620px;
-            vertical-align: middle;
+            vertical-align: top;
             display: inline-block;
         }
         img{
             max-height: 98%;
             max-width: 98%;
-            vertical-align: middle;
+            vertical-align: top;
         }
 
         .icon{
             position: absolute;
-            top: 0;
+            top: -44px;
             right: 0;
         }
         .icon + .icon{
@@ -2303,9 +2305,6 @@ table.list-table{
                     i{
                         border: 1px solid #FFFFFF;
                         @include box-shadow(0 0 0 2px #94C8E3);
-                        /*                        background-image: url("../img/check.png");
-                                                background-repeat: no-repeat;
-                                                background-position: center center;*/
                     }
                 }
             }
@@ -2324,8 +2323,7 @@ table.list-table{
             display: inline-block;
             margin-right: 5px;
             margin-bottom: 5px;
-            border: 1px solid #94a0a9;
-
+            
             a{
                 display: block;
                 //border-top: 2px solid #e7edf2;
@@ -2340,19 +2338,21 @@ table.list-table{
                 height: 30px;
                 line-height: 28px;
                 padding: 0;
-
+                border: 1px solid #94a0a9;
+                @include box-shadow(0 0 0 2px #FFFFFF);
+                
                 &:active, &:focus{
                     text-decoration: none;
                 }
 
                 &.disabled{
                     background: none;
-                    border-top: 2px solid transparent;
+                    /*border-top: 2px solid transparent;*/
                     cursor: default;
 
                     &:hover, &:active, &:focus{
                         background: none;
-                        border-top: 2px solid transparent;
+                        /*border-top: 2px solid transparent;*/
                         text-decoration: none;
                         color: #000000;
                     }
@@ -2362,6 +2362,8 @@ table.list-table{
                     background-color: #94C8E3;
                     //border-top: 2px solid #94a0a9;
                     color: $black;
+                    border: 1px solid #FFFFFF;
+                    @include box-shadow(0 0 0 2px #94C8E3);
                 }
             }
         }
@@ -2393,6 +2395,7 @@ table.list-table{
 }
 .noUi-target{
     border: 0;
+    padding: 0 18px;
 }
 .noUi-connect{
     box-shadow: none;
@@ -2423,7 +2426,7 @@ table.list-table{
 .noUi-horizontal .noUi-handle{
     width:18px;
     height: 30px;
-    left: 0;
+    left: -18px;
     top: -14px;
 }
 .noUi-handle-upper{
@@ -2431,7 +2434,7 @@ table.list-table{
     height: 30px;
     background: url("../img/right.png") no-repeat 0 0;
     border: 0;
-    margin-left: -18px;
+    margin-left: 18px;
     border-radius: 0;
     box-shadow: none;
     @include opacity(0.8);
@@ -2815,7 +2818,7 @@ table.list-table{
                     padding: 15px;
                     background-color: $white;
                     z-index: 2;
-                    height: 449px;
+                    height: 456px;
                     padding-top: 60px;
 
                     ul.size{
@@ -2964,6 +2967,12 @@ table.list-table{
         }
     }
     &.table-mode-view{
+        ul.size li label{
+            float: left;
+        }
+        .change-size-block .btn-size-block{
+            width: 23px;
+        }
         .head-table-cat{
             display: block;
             color: #666;
@@ -3263,18 +3272,29 @@ table.list-table{
     width: 60%;
     padding-right: 20px;
     position: relative;
+    height: 290px;
 
     p.code{
         color: #d05c4c;
         font-size: 18px;
-
+        position: absolute;
+        bottom: 90px;
+        width: 100%;
+        padding-right: 20px;
+        
         span{
             font-size: 24px;
         }
 
     }
     button{
-        width: 100%;
+        width: 93%;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        & + button{
+            bottom: 0px;
+        }
     }
 }
 .left-side-view{
@@ -3463,7 +3483,7 @@ table.list-table{
     }
 
     .btn-size-block{
-        z-index: 4;
+        
         height: 100%;
         position: absolute;
         right: 0;
