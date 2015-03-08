@@ -1,6 +1,6 @@
 nav{
     &.nav-bar-menu{
-        height: 64px;
+        height: 67px;
         background-color: #d4e5f2;
         border-bottom: 1px solid #85b8d7;
         border-top: 1px solid #85b8d7;
@@ -18,6 +18,8 @@ nav{
             border-left: 1px solid transparent;
             border-right: 1px solid transparent;
             float: left;
+            height: 66px;
+            border-bottom: 1px solid #85b8d7;
             @include transition(background 0.35s);
 
             a{
@@ -52,7 +54,7 @@ nav{
                 padding: 0;
                 margin: 0;
                 position: absolute;
-                top: 63px;
+                top: 66px;
                 left: -1px;
                 background-color: #dfeaf2;
                 border: 1px solid #85b8d7;
@@ -548,7 +550,7 @@ main{
                     &:hover{
                         text-decoration: none;
                         //border-top: 2px solid #94a0a9;
-                        background-color: #94C8E3;
+                        background-color: #BDDDEE;
                         color: #004e7c;
                     }
 
@@ -1048,6 +1050,7 @@ ul.social-buttons{
         border: 0;
         border-radius: 0;
         box-shadow: none;
+        overflow: visible !important;
 
         .dropdown-menu.inner.selectpicker{
             padding: 0;
@@ -1056,7 +1059,7 @@ ul.social-buttons{
             box-shadow: none;
             background-color: #FFFFFF;
             border: 1px solid #85b8d7;
-            border-top: 0;
+            margin-top: -1px;
             list-style: none;
             z-index: 105;
 
@@ -1346,7 +1349,7 @@ table.list-table{
                             background-color: #FFFFFF;
 
                             &:hover{
-                                background-color: #94C8E3;
+                                background-color: #BDDDEE;
                             }
 
                             &:active, &:focus{
@@ -1354,7 +1357,6 @@ table.list-table{
                             }
 
                             &.selected{
-                                color: #FFFFFF;
                                 background-color: #94C8E3;
                             }
                         }
@@ -2301,10 +2303,17 @@ table.list-table{
                     width: 28px;
                     height: 28px;
                 }
-                &.selected, &:hover{
+                
+                &:hover{
                     i{
                         border: 1px solid #FFFFFF;
-                        @include box-shadow(0 0 0 2px #94C8E3);
+                        @include box-shadow(0 0 0 2px #BDDDEE);
+                    }
+                }
+                &.selected{
+                    i{
+                        border: 1px solid #FFFFFF;
+                        @include box-shadow(0 0 0 2px #7abbdc);
                     }
                 }
             }
@@ -2339,7 +2348,6 @@ table.list-table{
                 line-height: 28px;
                 padding: 0;
                 border: 1px solid #94a0a9;
-                @include box-shadow(0 0 0 2px #FFFFFF);
                 
                 &:active, &:focus{
                     text-decoration: none;
@@ -2357,13 +2365,19 @@ table.list-table{
                         color: #000000;
                     }
                 }
-                &.selected, &:hover{
+                &:hover{
+                    text-decoration: none;
+                    background-color: #BDDDEE;
+                    //border-top: 2px solid #94a0a9;
+                    color: $black;
+                    border: 1px solid #94a0a9;
+                }
+                &.selected{
                     text-decoration: none;
                     background-color: #94C8E3;
                     //border-top: 2px solid #94a0a9;
                     color: $black;
-                    border: 1px solid #FFFFFF;
-                    @include box-shadow(0 0 0 2px #94C8E3);
+                    border: 1px solid #94C8E3;
                 }
             }
         }

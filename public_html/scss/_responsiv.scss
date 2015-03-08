@@ -113,13 +113,16 @@
         bottom: 250px;
     }
     nav .menu li .submenu{
-        top: 63px;
+        top: 66px;
         left: -1px;
     }
 }
 @media screen and (max-width: 992px) {
     nav.nav-bar-menu{
         height: 45px;
+    }
+    nav .menu li{
+        height: 44px;
     }
     nav .menu li .submenu{
        top: 44px;

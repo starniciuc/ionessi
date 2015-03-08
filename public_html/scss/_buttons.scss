@@ -85,12 +85,14 @@ a:link, a:active, a:hover, a:focus{
     background-color: #7abbdc;
     border-radius: 0;
     box-shadow: none;
-    @include transition(color 0.35s);
+    @include opacity(0.8);
+    @include transition(opacity 0.35s);
 
     &:hover, &:active, &:active, &.active{
         outline: 0;
-        color: rgba(255, 255, 255, 0.4);
+        color: $white;
         box-shadow: none;
+        @include opacity(1);
     }
 }
 
@@ -117,4 +119,7 @@ a:link, a:active, a:hover, a:focus{
         color: #5a8ead;
         background-color: #def3ff;
     }
+}
+.margin-top-10{
+    margin-top: 15px;
 }
