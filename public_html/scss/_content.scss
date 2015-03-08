@@ -2303,7 +2303,7 @@ table.list-table{
                     width: 28px;
                     height: 28px;
                 }
-                
+
                 &:hover{
                     i{
                         border: 1px solid #FFFFFF;
@@ -2332,7 +2332,7 @@ table.list-table{
             display: inline-block;
             margin-right: 5px;
             margin-bottom: 5px;
-            
+
             a{
                 display: block;
                 //border-top: 2px solid #e7edf2;
@@ -2348,7 +2348,7 @@ table.list-table{
                 line-height: 28px;
                 padding: 0;
                 border: 1px solid #94a0a9;
-                
+
                 &:active, &:focus{
                     text-decoration: none;
                 }
@@ -2984,6 +2984,7 @@ table.list-table{
         ul.size li label{
             float: left;
         }
+
         .change-size-block .btn-size-block{
             width: 23px;
         }
@@ -3167,6 +3168,24 @@ table.list-table{
                 }
 
             }
+            &.open-block{
+                .close-grid-product{
+                    position: absolute;
+                    top: 2px;
+                    right: -7px;
+                    display: block;
+                    z-index: 50;
+                    background: url("../img/x-close.png") no-repeat 0 0;
+                    width: 12px;
+                    height: 12px;
+                    @include opacity(0.4);
+                    @include transition(opacity 0.35s);
+
+                    &:hover{
+                        @include opacity(1);
+                    }
+                }
+            }
         }
 
         .cart-button{
@@ -3295,7 +3314,7 @@ table.list-table{
         bottom: 90px;
         width: 100%;
         padding-right: 20px;
-        
+
         span{
             font-size: 24px;
         }
@@ -3497,7 +3516,7 @@ table.list-table{
     }
 
     .btn-size-block{
-        
+
         height: 100%;
         position: absolute;
         right: 0;

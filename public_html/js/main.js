@@ -46,6 +46,7 @@ $('html').click(function () {
 
     if ($(".view-produs").hasClass("table-mode-view")) {
         $(".get-size-block").slideUp("slow");
+        $(".produs-block").removeClass("open-block");
     }
 });
 
@@ -140,8 +141,11 @@ $(".open-cart").click(function (event) {
 
     if ($(".view-produs").hasClass("table-mode-view")) {
         var $par = $(this).parents(".produs-block");
+        $(".produs-block").removeClass("open-block");
+        $(".get-size-block").slideUp("slow");
         var $elm = $par.find(".get-size-block");
         $(this).addClass("active");
+        $par.addClass("open-block");
         $elm.slideToggle("slow");
     }
     ;
@@ -177,6 +181,15 @@ $(".close-grid-product").click(function () {
         $(".grid-mode-view").addClass("enabled");
         $(".zanaves").hide();
     }
+    if ($(".view-produs").hasClass("table-mode-view")) {
+        var $par = $(this).parents(".produs-block");
+        var $elm = $par.find(".get-size-block");
+        $(this).removeClass("active");
+        $(".open-cart").removeClass("active");
+        $par.removeClass("open-block");
+        $elm.slideToggle("slow");
+    }
+    ;
 });
 
 $(".produs").click(function () {
