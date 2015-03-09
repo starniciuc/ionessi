@@ -94,6 +94,9 @@ $(".setColor").click(function () {
 });
 
 $(".setSize").click(function () {
+    if($(this).hasClass("disabled")){
+        return flase;
+    }
     $(this).toggleClass("selected");
     $(this).next().prop("checked", $(this).hasClass("selected"));
 });
