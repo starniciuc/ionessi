@@ -318,6 +318,11 @@ table.list-table td .image-block .icon.sale { background: url("../img/labels/2.p
 table.list-table td .image-block .icon + .icon { left: 140px; }
 table.list-table td .image-block .icon + .icon + .icon { left: 200px; }
 table.list-table td .image-block img { max-width: 90%; max-height: 90%; vertical-align: bottom; }
+table.list-table td .image-block .block-prev { display: none; position: absolute; left: 82px; width: auto; height: 160px; width: 160px; text-align: center; top: -40px; background-color: #FFFFFF; border: 1px solid #94a0a9; z-index: 6; margin-left: 6px; vertical-align: middle; }
+table.list-table td .image-block .block-prev span { vertical-align: middle; display: inline-block; height: 160px; }
+table.list-table td .image-block .block-prev img { max-height: 95%; max-width: 95%; display: inline-block; vertical-align: middle; }
+table.list-table td .image-block .block-prev:before { content: " "; position: absolute; top: 0; left: -10px; width: 12px; height: 100%; background: url("../img/arr-hover.png") no-repeat 0 center; }
+table.list-table td .image-block:hover .block-prev { display: block; }
 table.list-table td .text { display: inline-block; vertical-align: middle; }
 table.list-table td .text a { padding-top: 5px; margin-bottom: 10px; height: 100%; display: inline-block; }
 table.list-table td .text p { font-size: 16px; margin: 0; line-height: 24px; display: inline-block; height: 100%; vertical-align: middle; margin-left: 10px; color: #000000; }

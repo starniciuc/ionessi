@@ -1262,6 +1262,51 @@ table.list-table{
                 max-height: 90%;
                 vertical-align: bottom;
             }
+
+
+			.block-prev{
+				display: none;
+				position: absolute;
+				left: 82px;
+				width: auto;
+				height: 160px;
+				width: 160px;
+				text-align: center;
+				top: -40px;
+				background-color: #FFFFFF;
+				border: 1px solid #94a0a9;
+				z-index: 6;
+				margin-left:6px;
+				vertical-align: middle;
+
+				span{
+					vertical-align: middle;
+					display: inline-block;
+					height: 160px;
+				}
+				img{
+					max-height: 95%;
+					max-width: 95%;
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+				&:before{
+					content: " ";
+					position: absolute;
+					top: 0;
+					left: -10px;
+					width: 12px;
+					height: 100%;
+					background: url("../img/arr-hover.png") no-repeat 0 center;
+				}
+			}
+
+			&:hover{
+				.block-prev{
+					display: block;
+				}
+			}
         }
         .text{
             a{
