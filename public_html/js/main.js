@@ -157,18 +157,22 @@ $(".open-cart").click(function (event) {
         $par.addClass("active");
         $(".grid-mode-view").removeClass("enabled");
         $(".zanaves").show();
-
+				var j = 0;
         $(".produs-block").each(function (i, value) {
-            var coef = 3;
+            var coef = 4;
             if ($(window).width() > 550) {
                 if ($(window).width() <= 992) {
-                    coef = 2;
+                    coef = 3;
                 }
-                if (((i + 1) % coef === 0) || (i === 0)) {
+                if (((j + 1) % coef === 0) || (j === 0)) {
                     var $par_b = $(value);
                     $par_b.addClass("left-elm");
                 }
             }
+						j++;
+						if($(value).next("h5").is("h5")){
+							j = 0;
+						};
         });
     }
 });

@@ -676,7 +676,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.table-mode-view .produs-block .produs-code .foot-detail span.size-ln { display: block; }
 .view-produs.table-mode-view .produs-block .produs-price { display: inline-block; position: absolute; top: 10px; right: 10px; }
 .view-produs.table-mode-view .produs-block .produs-price span { float: left; margin-right: 15px; font-size: 14px; padding-top: 6px; }
-.view-produs.table-mode-view .produs-block.open-block .close-grid-product { position: absolute; top: 2px; right: -7px; display: block; z-index: 50; background: url("../img/x-close.png") no-repeat 0 0; width: 12px; height: 12px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
+.view-produs.table-mode-view .produs-block.open-block .close-grid-product { position: absolute; top: 90px; right: -7px; display: block; z-index: 50; background: url("../img/x-close.png") no-repeat 0 0; width: 12px; height: 12px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
 .view-produs.table-mode-view .produs-block.open-block .close-grid-product:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .view-produs.table-mode-view .cart-button { display: block; position: absolute; top: 45px; right: 10px; }
 .view-produs.table-mode-view .get-size-block { display: none; background-color: white; padding: 10px; border-top: 1px solid #bcc6c9; }
