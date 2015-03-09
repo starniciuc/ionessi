@@ -1032,7 +1032,6 @@ ul.social-buttons{
     }
 }
 .bootstrap-select{
-
     .selectpicker.btn-default{
         border: 0;
         border-radius: 0;
@@ -1078,7 +1077,7 @@ ul.social-buttons{
                     font-family: $font-arial;
                     font-weight: normal;
                     font-size: 16px;
-                    text-transform: capitalize;
+                    /*text-transform: capitalize;*/
                     white-space: nowrap;
                     @include transition(all 0.35s);
 
