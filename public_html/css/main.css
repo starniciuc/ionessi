@@ -23,7 +23,7 @@ a:link, a:active, a:hover, a:focus { outline: 0; }
 .btn-close-modal { width: 35px; height: 35px; background: none; border: 0; border-radius: 0; background: url("../img/close-btn-grey.png") no-repeat 0 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
 .btn-close-modal:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
-.btn-cart { border: 0; background: none; height: 30px; color: white; font-size: 16px; line-height: 16px; font-family: "Open Sans", sans-serif; font-weight: 300; padding-left: 30px; padding-right: 30px; background-color: #7abbdc; border-radius: 0; box-shadow: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
+.btn-cart { border: 0; background: none; height: 30px; color: white; font-size: 16px; line-height: 16px; font-family: "Open Sans", sans-serif; font-weight: 300; padding-left: 30px; padding-right: 30px; background-color: #7abbdc; border-radius: 0; box-shadow: none; z-index: 5; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -webkit-transition: opacity 0.35s; -moz-transition: opacity 0.35s; -o-transition: opacity 0.35s; transition: opacity 0.35s; }
 .btn-cart:hover, .btn-cart:active, .btn-cart:active, .btn-cart.active { outline: 0; color: white; box-shadow: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
 .btn-save { border: 0; background-color: #e7edf2; height: 35px; color: #5a8ead; font-size: 16px; line-height: 16px; font-family: "Open Sans", sans-serif; font-weight: 300; padding-left: 30px; padding-right: 30px; border-radius: 0; box-shadow: none; -webkit-transition: background 0.35s; -moz-transition: background 0.35s; -o-transition: background 0.35s; transition: background 0.35s; }
@@ -355,6 +355,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .check-order .mega-btn { font-size: 24px; height: auto; padding: 15px 50px; margin-top: 20px; padding: 15px 50px; margin-bottom: 20px; }
 
 .produs-block { margin-bottom: 30px; }
+.produs-block a { text-decoration: none; }
 .produs-block .produs-image { text-align: center; height: 225px; line-height: 225px; position: relative; }
 .produs-block .produs-image .icon { position: absolute; right: 5px; top: 10px; }
 .produs-block .produs-image .icon.new { background: url("../img/labels/6.png") no-repeat 0 0; width: 82px; height: 24px; }
@@ -763,6 +764,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .change-size-block .btn-size-block button:hover { background-color: #e7edf2; border-top: 1px solid #94a0a9; border-right: 1px solid #94a0a9; margin-top: 0px; margin-right: -1px; padding-bottom: 1px; padding-left: 1px; }
 .change-size-block .btn-size-block button + button { top: 50%; }
 .change-size-block .btn-size-block button + button:hover { background-color: #e7edf2; border-top: 0px; border-right: 1px solid #94a0a9; border-bottom: 1px solid #94a0a9; margin-top: 0px; margin-right: -1px; margin-bottom: -1px; padding-left: 1px; padding-bottom: 0px; }
+
+.single-price { padding-top: 40px; }
 
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }

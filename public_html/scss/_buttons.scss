@@ -85,6 +85,7 @@ a:link, a:active, a:hover, a:focus{
     background-color: #7abbdc;
     border-radius: 0;
     box-shadow: none;
+	z-index: 5;
     @include opacity(0.8);
     @include transition(opacity 0.35s);
 
