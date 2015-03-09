@@ -414,12 +414,48 @@
         font-weight: 600;
         font-family: $font-open;
     }
+	.set-view-mode .table-mode, .set-view-mode .new-line-mob{
+		a{
+			float: left !important;
+		}
+	}
+	.view-produs .head-view-block .pagination-block.pull-right{
+		float: left !important;
+	}
+	.view .produs-img{
+		height: auto;
+		span{
+			height: auto;
+		}
+	}
+	.set-view{
+		margin-top: 20px;
+	}
+	
 }
 @media(max-width:550px){
     .view-produs.grid-mode-view .produs-block{
         width: 100%;
         margin-right: 0%;
     }
+	.backToList{
+		top: 5px;
+	}
+	.set-view{
+		background: none;
+		background-color: #E6EEF3;
+	}
+	.view-tab li{
+		width: 100%;
+	}
+	.circle-white{
+		display: none;
+	}
+	.set-view-mode label{
+		display: block;
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
     .view-produs.grid-mode-view .produs-block.active .cart-button,
     .view-produs.grid-mode-view .produs-block.active .foot-detail{
         position: relative;

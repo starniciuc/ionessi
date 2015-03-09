@@ -885,8 +885,18 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .filter-btn { font-size: 22px; font-weight: 300; font-family: "Open Sans", sans-serif; float: none; }
   .filter-btn i { margin-left: 15px; }
   .set-view-mode label { margin-bottom: 20px; }
-  .button-mobile-text { position: absolute; left: 40px; top: 33px; font-size: 16px; color: #007ECB; font-weight: 600; font-family: "Open Sans", sans-serif; } }
+  .button-mobile-text { position: absolute; left: 40px; top: 33px; font-size: 16px; color: #007ECB; font-weight: 600; font-family: "Open Sans", sans-serif; }
+  .set-view-mode .table-mode a, .set-view-mode .new-line-mob a { float: left !important; }
+  .view-produs .head-view-block .pagination-block.pull-right { float: left !important; }
+  .view .produs-img { height: auto; }
+  .view .produs-img span { height: auto; }
+  .set-view { margin-top: 20px; } }
 @media (max-width: 550px) { .view-produs.grid-mode-view .produs-block { width: 100%; margin-right: 0%; }
+  .backToList { top: 5px; }
+  .set-view { background: none; background-color: #E6EEF3; }
+  .view-tab li { width: 100%; }
+  .circle-white { display: none; }
+  .set-view-mode label { display: block; margin-bottom: 0; margin-top: 20px; }
   .view-produs.grid-mode-view .produs-block.active .cart-button, .view-produs.grid-mode-view .produs-block.active .foot-detail { position: relative; }
   .view-produs.grid-mode-view .produs-block.active .get-size-block { left: auto; right: auto; position: relative; top: 100%; width: 100%; border-top: 0; border-left: 2px solid #accfea; border-right: 2px solid #accfea; }
   .view-produs.grid-mode-view .produs-block.active .produs { border-left: 2px solid #accfea; border-right: 2px solid #accfea; border-bottom: 0; }
