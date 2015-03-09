@@ -664,6 +664,9 @@ p.text-description{
                 content: " ";
                 width: 20px;
                 height: 20px;
+				border: 3px solid #FFFFFF;
+				border-radius: 10px;
+				@include box-shadow(0 0 0 1px #CCCCCC);
                 position: absolute;
                 left: 0;
                 top: 1px;
@@ -1029,7 +1032,6 @@ ul.social-buttons{
     }
 }
 .bootstrap-select{
-
     .selectpicker.btn-default{
         border: 0;
         border-radius: 0;
@@ -1075,7 +1077,7 @@ ul.social-buttons{
                     font-family: $font-arial;
                     font-weight: normal;
                     font-size: 16px;
-                    text-transform: capitalize;
+                    /*text-transform: capitalize;*/
                     white-space: nowrap;
                     @include transition(all 0.35s);
 
@@ -1260,6 +1262,51 @@ table.list-table{
                 max-height: 90%;
                 vertical-align: bottom;
             }
+
+
+			.block-prev{
+				display: none;
+				position: absolute;
+				left: 82px;
+				width: auto;
+				height: 160px;
+				width: 160px;
+				text-align: center;
+				top: -40px;
+				background-color: #FFFFFF;
+				border: 1px solid #94a0a9;
+				z-index: 6;
+				margin-left:6px;
+				vertical-align: middle;
+
+				span{
+					vertical-align: middle;
+					display: inline-block;
+					height: 160px;
+				}
+				img{
+					max-height: 95%;
+					max-width: 95%;
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+				&:before{
+					content: " ";
+					position: absolute;
+					top: 0;
+					left: -10px;
+					width: 12px;
+					height: 100%;
+					background: url("../img/arr-hover.png") no-repeat 0 center;
+				}
+			}
+
+			&:hover{
+				.block-prev{
+					display: block;
+				}
+			}
         }
         .text{
             a{
@@ -1452,13 +1499,16 @@ table.list-table{
         height: auto;
         padding: 15px 50px;
         margin-top: 20px;
+		padding: 15px 50px;
         margin-bottom: 20px;
     }
 }
 
 .produs-block{
     margin-bottom: 30px;
-
+	a{
+		text-decoration: none;
+	}
     .produs-image{
         text-align: center;
         height: 225px;
@@ -3171,7 +3221,7 @@ table.list-table{
             &.open-block{
                 .close-grid-product{
                     position: absolute;
-                    top: 2px;
+                    top: 90px;
                     right: -7px;
                     display: block;
                     z-index: 50;
@@ -3563,4 +3613,7 @@ table.list-table{
             }
         }
     }
+}
+.single-price{
+	padding-top: 40px;
 }
