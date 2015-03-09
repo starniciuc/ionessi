@@ -244,8 +244,12 @@
 	}
 }
 @media(max-width:767px){
+		
     header, .slider-top{
         display: none;
+    }
+	 nav .menu li{
+        height: auto;
     }
      nav.nav-bar-menu{
         height: auto;

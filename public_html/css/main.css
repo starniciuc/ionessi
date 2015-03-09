@@ -848,6 +848,7 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .goToTop { display: none; }
   .view-produs.table-mode-view .produs-block .produs-link { padding-top: 20px; } }
 @media (max-width: 767px) { header, .slider-top { display: none; }
+  nav .menu li { height: auto; }
   nav.nav-bar-menu { height: auto; }
   nav .menu li .submenu { top: 0; }
   main .category .category-item { width: 49%; margin-bottom: 30px; }
