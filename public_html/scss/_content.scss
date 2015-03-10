@@ -664,9 +664,9 @@ p.text-description{
                 content: " ";
                 width: 20px;
                 height: 20px;
-				border: 3px solid #FFFFFF;
-				border-radius: 10px;
-				@include box-shadow(0 0 0 1px #CCCCCC);
+                border: 3px solid #FFFFFF;
+                border-radius: 10px;
+                @include box-shadow(0 0 0 1px #CCCCCC);
                 position: absolute;
                 left: 0;
                 top: 1px;
@@ -1184,7 +1184,7 @@ table.list-table{
     width: 100%;
     margin-bottom: 30px;
     .pad-lef-72{
-        padding-left: 80px;
+        padding-left: 103px;
     }
     tr.divider-tr{
         td{
@@ -1210,7 +1210,6 @@ table.list-table{
         border-top: 1px solid #bcc6c9;
         border-bottom: 1px solid #bcc6c9;
 
-
         .image-block{
             display: inline-block;
             margin-right: 15px;
@@ -1220,11 +1219,7 @@ table.list-table{
             height: 82px;
             background-color: #FFFFFF;
             text-align: center;
-            span{
-                display: inline-block;
-                vertical-align: bottom;
-                height: 82px;
-            }
+
             .icon{
                 position: absolute;
                 top: 0;
@@ -1258,55 +1253,46 @@ table.list-table{
                 left: 200px;
             }
             img{
-                max-width: 90%;
-                max-height: 90%;
-                vertical-align: bottom;
+                max-width: 100%;
+                max-height: 100%;
             }
 
+            .block-prev{
+                display: none;
+                position: absolute;
+                left: 82px;
+                width: auto;
+                height: 160px;
+                width: 160px;
+                text-align: center;
+                top: -40px;
+                background-color: #FFFFFF;
+                border: 1px solid #94a0a9;
+                z-index: 6;
+                margin-left:6px;
+                vertical-align: middle;
 
-			.block-prev{
-				display: none;
-				position: absolute;
-				left: 82px;
-				width: auto;
-				height: 160px;
-				width: 160px;
-				text-align: center;
-				top: -40px;
-				background-color: #FFFFFF;
-				border: 1px solid #94a0a9;
-				z-index: 6;
-				margin-left:6px;
-				vertical-align: middle;
+                img{
+                    max-height: 100%;
+                    max-width: 100%;
+                }
 
-				span{
-					vertical-align: middle;
-					display: inline-block;
-					height: 160px;
-				}
-				img{
-					max-height: 95%;
-					max-width: 95%;
-					display: inline-block;
-					vertical-align: middle;
-				}
+                &:before{
+                    content: " ";
+                    position: absolute;
+                    top: 0;
+                    left: -10px;
+                    width: 12px;
+                    height: 100%;
+                    background: url("../img/arr-hover.png") no-repeat 0 center;
+                }
+            }
 
-				&:before{
-					content: " ";
-					position: absolute;
-					top: 0;
-					left: -10px;
-					width: 12px;
-					height: 100%;
-					background: url("../img/arr-hover.png") no-repeat 0 center;
-				}
-			}
-
-			&:hover{
-				.block-prev{
-					display: block;
-				}
-			}
+            &:hover{
+                .block-prev{
+                    display: block;
+                }
+            }
         }
         .text{
             a{
@@ -1325,7 +1311,7 @@ table.list-table{
                 display: inline-block;
                 height: 100%;
                 vertical-align: middle;
-                margin-left: 10px;
+                margin-left: 0px;
                 color: #000000;
 
                 i{
@@ -1499,16 +1485,16 @@ table.list-table{
         height: auto;
         padding: 15px 50px;
         margin-top: 20px;
-		padding: 15px 50px;
+        padding: 15px 50px;
         margin-bottom: 20px;
     }
 }
 
 .produs-block{
     margin-bottom: 30px;
-	a{
-		text-decoration: none;
-	}
+    a{
+        text-decoration: none;
+    }
     .produs-image{
         text-align: center;
         height: 225px;
@@ -1883,18 +1869,13 @@ table.list-table{
         text-align: center;
         position: relative;
         height: 620px;
-        margin-top: 44px;
+        margin-top: 40px;
         text-align: center;
 
-        span{
-            height: 620px;
-            vertical-align: top;
-            display: inline-block;
-        }
         img{
-            max-height: 98%;
-            max-width: 98%;
-            vertical-align: top;
+            max-height: 100%;
+            max-width: 100%;
+            width: 100%;
         }
 
         .icon{
@@ -2132,7 +2113,14 @@ table.list-table{
     vertical-align : middle;
     vertical-align: top;
 }
-
+.star-rating span{
+    margin-left: 20px;
+    font-size: 29px;
+    font-family: $font-open;
+    font-weight: 300;
+    line-height: 40px;
+    color: #000000;
+}
 .star-rating.small i{
     width: 20px;
     height: 20px;
@@ -3068,7 +3056,6 @@ table.list-table{
                 margin-right: 20px;
                 float: left;
                 background-color: $white;
-                //overflow: hidden;
                 position: relative;
 
                 .icon{
@@ -3103,16 +3090,10 @@ table.list-table{
                 .icon + .icon + .icon{
                     left: 200px;
                 }
-                span{
-                    vertical-align: middle;
-                    display: inline-block;
-                    height: 82px;
-                }
                 img{
-                    max-height: 95%;
-                    max-width: 95%;
+                    max-height: 100%;
+                    max-width: 100%;
                     z-index: 1;
-                    vertical-align: middle;
                 }
 
                 .block-prev{
@@ -3130,16 +3111,9 @@ table.list-table{
                     margin-left:6px;
                     vertical-align: middle;
 
-                    span{
-                        vertical-align: middle;
-                        display: inline-block;
-                        height: 160px;
-                    }
                     img{
-                        max-height: 95%;
-                        max-width: 95%;
-                        display: inline-block;
-                        vertical-align: middle;
+                        max-height: 100%;
+                        max-width: 100%;
                     }
 
                     &:before{
@@ -3615,5 +3589,5 @@ table.list-table{
     }
 }
 .single-price{
-	padding-top: 40px;
+    padding-top: 40px;
 }

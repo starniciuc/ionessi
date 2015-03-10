@@ -95,7 +95,7 @@ $(".setColor").click(function () {
 
 $(".setSize").click(function () {
     if($(this).hasClass("disabled")){
-        return flase;
+        return false;
     }
     $(this).toggleClass("selected");
     $(this).next().prop("checked", $(this).hasClass("selected"));
@@ -246,6 +246,7 @@ function addZoom() {
             magnifiersize: [500, 620],
             scrollspeedanimate: 10,
             loopspeedanimate: 5,
+            rightoffset: 30,
             magnifierborder: '1px solid #CCCCCC',
             magnifiereffectanimate: "slideIn"
         });
