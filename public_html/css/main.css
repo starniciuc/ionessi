@@ -426,7 +426,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 
 .about { margin-bottom: 30px; }
 .about.view-mode { padding: 0; padding-top: 20px; padding-bottom: 0; margin-bottom: 0; }
-.about p { color: #000000; font-size: 16px; font-family: "Open Sans", sans-serif; font-weight: 300; }
+.about p { color: #000000; font-size: 16px; font-family: "Open Sans", sans-serif; font-weight: 300; margin-bottom: 7px; }
 .about p span { color: #878787; }
 
 .view .produs-img { text-align: center; position: relative; height: 620px; margin-top: 40px; text-align: center; }
@@ -783,26 +783,38 @@ footer .subscribe .submit-form { position: relative; }
 footer .subscribe .submit-form input.form-control { border: 0; height: 35px; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; padding-right: 100px; color: #91a3af; font-size: 16px; font-family: "Open Sans", sans-serif; }
 footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; top: 0; }
 
-@media screen and (max-width: 1500px) { .wrapper { background-size: 174px auto; }
-  .wrapper .ice-right { background-size: 174px auto; }
-  .wrapper.oseni { background-size: 174px auto; }
-  .wrapper.oseni .ice-right { background-size: 174px auto; }
-  .wrapper.leto { background-size: 174px auto; }
-  .wrapper.leto .ice-right { background-size: 174px auto; }
+@media screen and (max-width: 1600px) { .wrapper { background-size: 150px auto; }
+  .wrapper .ice-right { background-size: 150px auto; }
+  .wrapper.oseni { background-size: 150px auto; }
+  .wrapper.oseni .ice-right { background-size: 150px auto; }
+  .wrapper.leto { background-size: 150px auto; }
+  .wrapper.leto .ice-right { background-size: 150px auto; } }
+@media screen and (max-width: 1500px) { .wrapper { background-size: 130px auto; }
+  .wrapper .ice-right { background-size: 130px auto; }
+  .wrapper.oseni { background-size: 130px auto; }
+  .wrapper.oseni .ice-right { background-size: 130px auto; }
+  .wrapper.leto { background-size: 130px auto; }
+  .wrapper.leto .ice-right { background-size: 130px auto; }
   .goToTop { right: 45px; } }
-@media screen and (max-width: 1300px) { .wrapper { background-size: 100px auto; }
+@media screen and (max-width: 1400px) { .wrapper { background-size: 100px auto; }
   .wrapper .ice-right { background-size: 100px auto; }
   .wrapper.oseni { background-size: 100px auto; }
   .wrapper.oseni .ice-right { background-size: 100px auto; }
   .wrapper.leto { background-size: 100px auto; }
-  .wrapper.leto .ice-right { background-size: 100px auto; }
+  .wrapper.leto .ice-right { background-size: 100px auto; } }
+@media screen and (max-width: 1300px) { .wrapper { background-size: 40px auto; }
+  .wrapper .ice-right { background-size: 40px auto; }
+  .wrapper.oseni { background-size: 40px auto; }
+  .wrapper.oseni .ice-right { background-size: 40px auto; }
+  .wrapper.leto { background-size: 40px auto; }
+  .wrapper.leto .ice-right { background-size: 40px auto; }
   .goToTop { right: 0; } }
-@media screen and (max-width: 1200px) { .wrapper { background-size: 50px auto; }
-  .wrapper .ice-right { background-size: 50px auto; }
-  .wrapper.oseni { background-size: 50px auto; }
-  .wrapper.oseni .ice-right { background-size: 50px auto; }
-  .wrapper.leto { background-size: 50px auto; }
-  .wrapper.leto .ice-right { background-size: 50px auto; }
+@media screen and (max-width: 1200px) { .wrapper { background-size: 60px auto; }
+  .wrapper .ice-right { background-size: 60px auto; }
+  .wrapper.oseni { background-size: 60px auto; }
+  .wrapper.oseni .ice-right { background-size: 60px auto; }
+  .wrapper.leto { background-size: 60px auto; }
+  .wrapper.leto .ice-right { background-size: 60px auto; }
   nav .menu li { padding-right: 12px; }
   .logo img { max-width: 100%; }
   nav .menu li { padding-left: 2px; padding-right: 2px; }
@@ -817,6 +829,12 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .view-produs.table-mode-view .produs-block .produs-link { width: 230px; }
   .view-produs.table-mode-view .head-table-cat .name { width: 340px; }
   .view-produs.table-mode-view .head-table-cat .about { width: 250px; } }
+@media screen and (max-width: 1100px) { .wrapper { background-size: 40px auto; }
+  .wrapper .ice-right { background-size: 40px auto; }
+  .wrapper.oseni { background-size: 40px auto; }
+  .wrapper.oseni .ice-right { background-size: 40px auto; }
+  .wrapper.leto { background-size: 40px auto; }
+  .wrapper.leto .ice-right { background-size: 40px auto; } }
 @media screen and (max-width: 992px) { nav.nav-bar-menu { height: 45px; }
   nav .menu li { height: 44px; }
   nav .menu li .submenu { top: 44px; left: -1px; }
