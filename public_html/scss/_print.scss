@@ -1,0 +1,17 @@
+@media print {
+    .filter-block-big{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .set-view-mode{
+        display: none;
+    }
+    .pagination-block{
+        display: none;
+    }
+    .seo, .mega-btn{
+        display: none;
+    }
+}

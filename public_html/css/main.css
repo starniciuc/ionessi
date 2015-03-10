@@ -907,5 +907,10 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .view-produs.table-mode-view .produs-block .produs-image { display: block; float: none; } }
 @media (max-width: 400px) { main .item-news img { width: 100%; }
   .set-view-mode .grid-mode { display: block; } }
+@media print { .filter-block-big { display: none; }
+  footer { display: none; }
+  .set-view-mode { display: none; }
+  .pagination-block { display: none; }
+  .seo, .mega-btn { display: none; } }
 
 /*# sourceMappingURL=main.css.map */
