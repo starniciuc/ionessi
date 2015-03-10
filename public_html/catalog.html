@@ -107,8 +107,8 @@
                                                             <li><a href="#">Главная</a></li>
                                                             <li><a href="#">Каталог</a></li>
                                                         </ul>
-                                                
-                                                                                                                
+												
+																												
                                                     </div>
                                                 </div>-->
                         <div class="row">
@@ -357,9 +357,11 @@
                                         </div>
                                     </div>
                                     <div class="row head-table-cat hidden-sm hidden-xs">
-                                        <div class="col-md-5 text-center">Название</div>
-                                        <div class="col-md-4 text-center">Описание</div>
-                                        <div class="col-md-2 text-right">Цена</div>
+										<div class="col-lg-12">
+											<div class="name">Название</div>
+											<div class="about">Описание</div>
+											<div class="price">Цена</div>
+										</div>
                                     </div>
                                     <div class="produs-block">
                                         <button class="btn btn-close-modal close-grid-product"></button>
@@ -1591,20 +1593,20 @@
         <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
         <script>
-            $('#html5').noUiSlider({
-                start: [0, 89000],
-                connect: true,
-                range: {
-                    'min': 0,
-                    'max': 89000
-                }
-            });
+						$('#html5').noUiSlider({
+							start: [0, 89000],
+							connect: true,
+							range: {
+								'min': 0,
+								'max': 89000
+							}
+						});
 
-            $('#html5').Link('lower').to($('#input-select'), null, wNumb({
-                decimals: 0
-            }));
+						$('#html5').Link('lower').to($('#input-select'), null, wNumb({
+							decimals: 0
+						}));
 
-            $('#html5').Link('upper').to($('#input-number'));
+						$('#html5').Link('upper').to($('#input-number'));
         </script>
     </body>
 </html>

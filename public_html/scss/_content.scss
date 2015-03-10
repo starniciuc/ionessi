@@ -1253,8 +1253,8 @@ table.list-table{
                 left: 200px;
             }
             img{
-                max-width: 100%;
-                max-height: 100%;
+                width: 100%;
+                height: 100%;
             }
 
             .block-prev{
@@ -1858,6 +1858,7 @@ table.list-table{
         font-size: 16px;
         font-family: $font-open;  
         font-weight: 300;
+		margin-bottom: 7px;
 
         span{
             color: #878787;
@@ -3030,7 +3031,21 @@ table.list-table{
             display: block;
             color: #666;
             font-size: 14px;
-            padding-bottom: 10px;
+			padding-bottom: 10px;
+			
+			.name{
+				padding-left: 103px;
+				display: inline-block;
+				width: 412px;
+			}
+			.about{
+				display: inline-block;
+				width: 328px;
+				margin-bottom: 0;
+			}
+			.price{
+				display: inline-block;
+			}
         }
         .produs-block{
             width: 100%;
@@ -3486,8 +3501,8 @@ table.list-table{
     right: 0;
     background: none;
     background: url("../img/zoom.png") no-repeat 0 0;
-    width: 70px;
-    height: 70px;
+    width: 69px;
+    height: 69px;
     z-index: 4;
     box-shadow: none;
     text-indent: -9999px;
