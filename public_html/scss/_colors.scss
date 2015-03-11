@@ -13,7 +13,8 @@ $maro: #4c4648;
     width: 18px;
     height: 18px;
     vertical-align: middle;
-    
+    -webkit-print-color-adjust: exact !important; 
+	
     &.brown{
         background-color: $brown !important; 
 		-webkit-print-color-adjust: exact !important; 

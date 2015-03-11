@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic,cyrillic-ext);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic&subset=latin,cyrillic,cyrillic-ext);
 @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
-.color { display: inline-block; margin-left: 10px; margin-bottom: 3px; width: 18px; height: 18px; vertical-align: middle; }
+.color { display: inline-block; margin-left: 10px; margin-bottom: 3px; width: 18px; height: 18px; vertical-align: middle; -webkit-print-color-adjust: exact !important; }
 .color.brown { background-color: #b1825c !important; -webkit-print-color-adjust: exact !important; }
 .color.maro { background-color: #4c4648 !important; -webkit-print-color-adjust: exact !important; }
 .color.white { background-color: white !important; -webkit-print-color-adjust: exact !important; }
@@ -943,4 +943,5 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .navbar-header button { display: none; }
   .navbar-header .button-mobile-text.pull-left { float: right !important; right: 10px; left: auto; top: 10px; }
   i.color { background-color: #1a4567 !important; }
-  .produs-block { padding: 10px !important; } }
+  .produs-block { padding: 10px !important; }
+  .btn-cart { display: none; } }
