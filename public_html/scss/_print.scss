@@ -11,4 +11,21 @@
     .pagination-block, .seo, .mega-btn{
         display: none;
     }
+	a[href]:after {
+		content: none !important;
+	}
+	.navbar-header{
+		a{
+			i{
+				display: none !important;
+			}
+			display: none;
+			&.logo{
+				display: block;
+			}
+		}
+		button{
+			display: none;
+		}
+	}
 }
