@@ -4,10 +4,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic&subset=latin,cyrillic,cyrillic-ext);
 @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
 .color { display: inline-block; margin-left: 10px; margin-bottom: 3px; width: 18px; height: 18px; vertical-align: middle; }
-.color.brown { background-color: #b1825c; }
-.color.maro { background-color: #4c4648; }
-.color.white { background-color: white; }
-.color.red { background-color: #9a1d2a; }
+.color.brown { background-color: #b1825c !important; -webkit-print-color-adjust: exact !important; }
+.color.maro { background-color: #4c4648 !important; -webkit-print-color-adjust: exact !important; }
+.color.white { background-color: white !important; -webkit-print-color-adjust: exact !important; }
+.color.red { background-color: #9a1d2a !important; -webkit-print-color-adjust: exact !important; }
 
 a:link, a:active, a:hover, a:focus { outline: 0; }
 
@@ -772,6 +772,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 
 .single-price { padding-top: 40px; }
 
+.magnifier { top: 250px !important; }
+
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }
 footer p { color: #8295a1; font-size: 16px; font-family: "Open Sans", sans-serif; }
@@ -938,4 +940,7 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .navbar-header a { display: none; }
   .navbar-header a i { display: none !important; }
   .navbar-header a.logo { display: block; }
-  .navbar-header button { display: none; } }
+  .navbar-header button { display: none; }
+  .navbar-header .button-mobile-text.pull-left { float: right !important; right: 10px; left: auto; top: 10px; }
+  i.color { background-color: #1a4567 !important; }
+  .produs-block { padding: 10px !important; } }

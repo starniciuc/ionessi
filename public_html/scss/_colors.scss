@@ -15,18 +15,22 @@ $maro: #4c4648;
     vertical-align: middle;
     
     &.brown{
-        background-color: $brown;
+        background-color: $brown !important; 
+		-webkit-print-color-adjust: exact !important; 
     }
     
     &.maro{
-        background-color: $maro;
+        background-color: $maro !important; 
+		-webkit-print-color-adjust: exact !important; 
     }
     
     &.white{
-        background-color: $white;
+        background-color: $white !important; 
+		-webkit-print-color-adjust: exact !important; 
     }
     
     &.red{
-        background-color: $red;
+        background-color: $red !important; 
+		-webkit-print-color-adjust: exact !important; 
     }
 }

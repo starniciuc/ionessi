@@ -243,7 +243,7 @@ function addZoom() {
         $(".my-foto-zoom").imagezoomsl({
             //rightoffset: 100,
             zoomrange: [2.12, 12],
-            magnifiersize: [460, 620],
+            magnifiersize: [460, 660],
             scrollspeedanimate: 10,
             loopspeedanimate: 5,
             rightoffset: 30,
