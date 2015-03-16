@@ -774,6 +774,8 @@ table.list-table.after-remove { margin-bottom: 1px; }
 
 .magnifier { top: 250px !important; }
 
+.selecter-block { display: inline-block; }
+
 footer { background: #d5e2ec; padding-top: 30px; padding-bottom: 30px; }
 footer .logo { margin-bottom: 15px; }
 footer p { color: #8295a1; font-size: 16px; font-family: "Open Sans", sans-serif; }
@@ -830,7 +832,8 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .set-view-mode .new-line-mob:before { margin-top: 20px; width: 100%; display: table; content: " "; clear: both; }
   .view-produs.table-mode-view .produs-block .produs-link { width: 230px; }
   .view-produs.table-mode-view .head-table-cat .name { width: 340px; }
-  .view-produs.table-mode-view .head-table-cat .about { width: 250px; } }
+  .view-produs.table-mode-view .head-table-cat .about { width: 250px; }
+  .new-line-mob { display: inline-block; float: right; } }
 @media screen and (max-width: 1100px) { .wrapper { background-size: 40px auto; }
   .wrapper .ice-right { background-size: 40px auto; }
   .wrapper.oseni { background-size: 40px auto; }
@@ -871,9 +874,11 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .shop-list { padding-bottom: 60px; }
   .goToTop { display: none; }
   .view-produs.table-mode-view .produs-block .produs-link { padding-top: 20px; }
-  .set-view-mode label { display: block; margin-bottom: 0; margin-top: 20px; }
+  .set-view-mode label { display: block; margin-bottom: 0; margin-top: 0px; }
   .produs-block .produs-link { height: auto; }
-  .view-produs.table-mode-view .produs-block .produs-link { width: 300px; } }
+  .view-produs.table-mode-view .produs-block .produs-link { width: 300px; }
+  .selecter-block { display: inline-block; }
+  .view-produs.grid-mode-view .produs-block.active .get-size-block { height: 444px; } }
 @media (max-width: 767px) { header, .slider-top { display: none; }
   nav .menu li { height: auto; }
   nav.nav-bar-menu { height: auto; }
@@ -917,9 +922,11 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .view .produs-img { height: auto; }
   .view .produs-img span { height: auto; }
   .set-view { margin-top: 20px; }
+  .set-view-mode .new-line-mob { float: left; }
   .set-view-mode .new-line-mob a { float: left !important; }
   .produs-block .produs-link { height: auto; }
-  .view-produs.table-mode-view .produs-block .produs-link { width: 200px; } }
+  .view-produs.table-mode-view .produs-block .produs-link { width: 200px; }
+  .selecter-block { float: left; } }
 @media (max-width: 670px) { .view-produs.table-mode-view .produs-block .produs-link { width: 100%; } }
 @media (max-width: 550px) { .view-produs.grid-mode-view .produs-block { width: 100%; margin-right: 0%; }
   .backToList { top: 5px; }
