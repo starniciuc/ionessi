@@ -293,6 +293,7 @@ main{
                             position: absolute;
                             top: 10px;
                             right: 0;
+							pointer-events: none;
                         }
 
                         .icon + .icon{
@@ -975,7 +976,7 @@ ul.social-buttons{
     background-color: #e7edf2;
     padding: 15px;
     margin-bottom: 15px;
-
+	border: 1px solid #85B8D7;
     &:hover{
         background-color: #ddf2ff;
         cursor: pointer;
@@ -983,7 +984,7 @@ ul.social-buttons{
     a.name{
         color: #004e7c;
         font-family: $font-open;
-        font-size: 24px;
+        font-size: 19px;
 
         &:hover{
             text-decoration: underline;
@@ -1126,6 +1127,7 @@ ul.social-buttons{
     padding: 15px;
     margin-bottom: 5px;
     min-height: 170px;
+	border: 1px solid #85B8D7;
 
     p{
         color: #000000;
@@ -1224,6 +1226,7 @@ table.list-table{
                 position: absolute;
                 top: 0;
                 left: 82px;
+				pointer-events: none;
 
                 &.new{
                     background: url("../img//labels/1.png") no-repeat 0 0;
@@ -1505,7 +1508,7 @@ table.list-table{
             position: absolute;
             right: 5px;
             top: 10px;
-
+			pointer-events: none;
 
 
             &.new{
@@ -1690,7 +1693,7 @@ table.list-table{
             color: #000000;
             font-size: 24px;
             font-family: $font-open;
-            border-bottom: 1px dotted #000000;
+            //border-bottom: 1px dotted #000000;
             line-height: 26px;
             &:hover{
                 text-decoration: none;
@@ -1699,18 +1702,47 @@ table.list-table{
         }
 
         &.active{
-            border-top: 2px solid #94a0a9;
-            background-color: #aebdc8;
+            border: 1px solid #0E5783;
+            background-color: #E7EDF2;
 
             a{
-                color: #FFFFFF;
+                color: #0E5783;
                 border: 0;
             }
         }
     }
 }
 .order-list{
-    margin-bottom: 30px
+    margin-bottom: 30px;
+
+
+	table.list-table{
+		td:first-child{
+			background-color: #e7edf2;
+			width: auto;
+			font-weight: normal;
+			border: 0;
+			border-bottom: 1px solid #bcc6c9;
+		}
+
+		td{
+			border: 0;
+			border-bottom: 1px solid #bcc6c9;
+		}
+		tr:last-child{
+			td{
+				border: 0;
+			}
+		}
+	}
+	.bor{
+		border: 1px solid #94A0A9;
+		border-top: 0;
+	}
+	.remove-order{
+		border-top: 1px solid #94A0A9;
+
+	}
 }
 .produk-link{
     display: block;
@@ -1728,14 +1760,16 @@ table.list-table{
     }
 }
 .order-block{
-    margin-bottom: 1px;
+    margin-bottom: 0px;
     background-color: #e7edf2;
     padding: 15px;
+	border: 1px solid #94A0A9;
 
     h2{
         color: #004e7c;
         font-size: 24px;
         font-family: $font-open;
+		margin-top: 0;
 
         span{
             color: #000000;
@@ -1792,9 +1826,11 @@ table.list-table{
             }
         }
     }
+
+
 }
 .remove-order{
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     background-color: #e7edf2;
     padding: 15px;
 
@@ -1883,6 +1919,8 @@ table.list-table{
             position: absolute;
             top: -44px;
             right: 0;
+			pointer-events: none;
+
         }
         .icon + .icon{
             right: 110px;
@@ -1967,7 +2005,8 @@ table.list-table{
     background-size: 100% 100%;
     padding: 20px 20px 15px;
     margin-bottom: 10px;
-
+	width:90%;
+	
     h1{
         color: #000000;
         font-size: 40px;
@@ -2032,13 +2071,6 @@ table.list-table{
                 font-family: $font-open;
                 border: 1px solid #94a0a9;
                 text-align: center;
-            }
-            .change-size-block{
-
-                .btn-size-block{
-
-                    button{width: 19px;}
-                }
             }
         }
     }
@@ -2269,12 +2301,12 @@ table.list-table{
 }
 .query-view{
     border: 1px solid #b4b4b4;
-    padding: 10px;
+    padding: 5px 10px;
     /*margin-bottom: 10px;*/
 
     &.answer{
-        padding: 0;
-        padding-left: 66px;
+        padding: 5px 10px;
+        padding-left: 55px;
         position: relative;
         border-top: 0;
         margin-bottom: 10px;
@@ -2636,7 +2668,7 @@ table.list-table{
 
             input{
                 border: 0;
-                width: 50px;
+                width: 55px;
                 font-size: 16px;
                 font-weight: 300;
                 font-family: $font-open;
@@ -2753,6 +2785,7 @@ table.list-table{
                     position: absolute;
                     right: 8px;
                     top: -12px;
+					pointer-events: none;
 
                     &.new{
                         background: url("../img/labels/6.png") no-repeat 0 0;
@@ -2823,24 +2856,32 @@ table.list-table{
                         &.four{
                             .buttons-block-com{
                                 p{
-                                    padding: 10px 0px 0 10px;
+                                    padding: 10px 2px 0 10px;
                                 }
                             }
                         }
                         &.five{
                             .buttons-block-com{
                                 p{
-                                    padding: 10px 0px 0 10px;
+                                    padding: 10px 2px 0 10px;
                                 }
                             }
                         }
                         &.six{
                             .buttons-block-com{
                                 p{
-                                    padding: 10px 0px 0 10px;
+                                    padding: 10px 2px 0 10px;
                                 }
                             }
                         }
+
+/*						.change-size-block{
+
+							.btn-size-block{
+
+								button{width: 17px;}
+							}
+						}*/
                     }
                     .cart-button{
                         border-right: 0px solid #accfea;
@@ -2873,8 +2914,11 @@ table.list-table{
                     z-index: 2;
                     height: 456px;
                     padding-top: 60px;
+					padding-right: 0;
 
                     ul.size{
+						padding-right: 13px;
+
                         &.four{
                             padding-top: 65px;
                             li{
@@ -2910,6 +2954,13 @@ table.list-table{
                             padding: 0;
                         }
                     }
+/*					.change-size-block{
+
+						.btn-size-block{
+
+							button{width: 16px;}
+						}
+					}*/
                     &.four{
                         .buttons-block-com{
                             p{
@@ -3077,6 +3128,7 @@ table.list-table{
                     position: absolute;
                     top: 0;
                     left: 82px;
+					pointer-events: none;
 
                     &.new{
                         background: url("../img//labels/1.png") no-repeat 0 0;
@@ -3341,7 +3393,7 @@ table.list-table{
 }
 .right-side-view{
     float: left;
-    width: 60%;
+    width: 55%;
     padding-right: 20px;
     position: relative;
     height: 290px;
@@ -3360,10 +3412,10 @@ table.list-table{
 
     }
     button{
-        width: 93%;
+        width: 82%;
         position: absolute;
-        bottom: 40px;
-        left: 0;
+        bottom: 43px;
+        left: 10px;
         & + button{
             bottom: 0px;
         }
@@ -3371,7 +3423,7 @@ table.list-table{
 }
 .left-side-view{
     float: right;
-    width: 40%;
+    width: 45%;
     ul.size{
         &.four{
             padding-top: 65px;
@@ -3568,7 +3620,7 @@ table.list-table{
             position: absolute;
             top: 0;
             left:0;
-            width: 17px;
+            width: 18px;
             height: 50%;
             padding: 0;
             margin: 0;
@@ -3584,20 +3636,22 @@ table.list-table{
                 margin-top: 0px;
                 margin-right: -1px;
                 padding-bottom: 1px;
-                padding-left: 1px;
+                padding-left: 0px;
+				width: 19px;
             }
             & + button{
                 top: 50%;
                 &:hover{
                     background-color: #e7edf2;
-                    border-top: 0px;
+                    border-left: 0px;
                     border-right: 1px solid #94a0a9;
                     border-bottom: 1px solid #94a0a9;
                     margin-top: 0px;
                     margin-right: -1px;
                     margin-bottom: -1px;
-                    padding-left: 1px;
+                    padding-left: 0px;
                     padding-bottom: 0px;
+					width: 19px;
                 }
             }
         }
