@@ -452,7 +452,7 @@
                             <h4>Подписка на рассылку:</h4>
                             <div class="submit-form">
                                 <input type="text" class="form-control" placeholder="E-mail">
-                                <button class="btn btn-subscribe">Подписаться</button>
+                                <button class="btn btn-subscribe" data-target="#subscribeModal" data-toggle="modal"  data-backdrop="true">Подписаться</button>
                             </div>
                             <ul class="social-buttons">
                                 <li><a href="#"><i class="icon social vk"></i></a></li>
@@ -602,6 +602,17 @@
                     <button type="button" class="btn btn-delete" data-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-body text-center">
                         <h1>Ваше обращение успешно отправлено на модерацию</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade"  id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="btn btn-delete" data-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body text-center">
+                        <h1>Вы успешно подписались на нашу рассылку</h1>
                     </div>
                 </div>
             </div>

@@ -293,7 +293,7 @@ main{
                             position: absolute;
                             top: 10px;
                             right: 0;
-							pointer-events: none;
+                            pointer-events: none;
                         }
 
                         .icon + .icon{
@@ -976,7 +976,7 @@ ul.social-buttons{
     background-color: #e7edf2;
     padding: 15px;
     margin-bottom: 15px;
-	border: 1px solid #85B8D7;
+    border: 1px solid #85B8D7;
     &:hover{
         background-color: #ddf2ff;
         cursor: pointer;
@@ -1127,7 +1127,7 @@ ul.social-buttons{
     padding: 15px;
     margin-bottom: 5px;
     min-height: 170px;
-	border: 1px solid #85B8D7;
+    border: 1px solid #85B8D7;
 
     p{
         color: #000000;
@@ -1226,7 +1226,7 @@ table.list-table{
                 position: absolute;
                 top: 0;
                 left: 82px;
-				pointer-events: none;
+                pointer-events: none;
 
                 &.new{
                     background: url("../img//labels/1.png") no-repeat 0 0;
@@ -1508,7 +1508,7 @@ table.list-table{
             position: absolute;
             right: 5px;
             top: 10px;
-			pointer-events: none;
+            pointer-events: none;
 
 
             &.new{
@@ -1716,33 +1716,33 @@ table.list-table{
     margin-bottom: 30px;
 
 
-	table.list-table{
-		td:first-child{
-			background-color: #e7edf2;
-			width: auto;
-			font-weight: normal;
-			border: 0;
-			border-bottom: 1px solid #bcc6c9;
-		}
+    table.list-table{
+        td:first-child{
+            background-color: #e7edf2;
+            width: auto;
+            font-weight: normal;
+            border: 0;
+            border-bottom: 1px solid #bcc6c9;
+        }
 
-		td{
-			border: 0;
-			border-bottom: 1px solid #bcc6c9;
-		}
-		tr:last-child{
-			td{
-				border: 0;
-			}
-		}
-	}
-	.bor{
-		border: 1px solid #94A0A9;
-		border-top: 0;
-	}
-	.remove-order{
-		border-top: 1px solid #94A0A9;
+        td{
+            border: 0;
+            border-bottom: 1px solid #bcc6c9;
+        }
+        tr:last-child{
+            td{
+                border: 0;
+            }
+        }
+    }
+    .bor{
+        border: 1px solid #94A0A9;
+        border-top: 0;
+    }
+    .remove-order{
+        border-top: 1px solid #94A0A9;
 
-	}
+    }
 }
 .produk-link{
     display: block;
@@ -1763,13 +1763,13 @@ table.list-table{
     margin-bottom: 0px;
     background-color: #e7edf2;
     padding: 15px;
-	border: 1px solid #94A0A9;
+    border: 1px solid #94A0A9;
 
     h2{
         color: #004e7c;
         font-size: 24px;
         font-family: $font-open;
-		margin-top: 0;
+        margin-top: 0;
 
         span{
             color: #000000;
@@ -1856,7 +1856,8 @@ table.list-table{
     background-color: #e7edf2;
     padding: 15px;
     padding-bottom: 5px;
-
+    border: 1px solid #85B8D7;
+    
     &.after-block{
         margin-bottom: 1px;
     }
@@ -1894,7 +1895,7 @@ table.list-table{
         font-size: 16px;
         font-family: $font-open;  
         font-weight: 300;
-		margin-bottom: 7px;
+        margin-bottom: 6px;
 
         span{
             color: #878787;
@@ -1919,7 +1920,7 @@ table.list-table{
             position: absolute;
             top: -44px;
             right: 0;
-			pointer-events: none;
+            pointer-events: none;
 
         }
         .icon + .icon{
@@ -2005,8 +2006,8 @@ table.list-table{
     background-size: 100% 100%;
     padding: 20px 20px 15px;
     margin-bottom: 10px;
-	width:90%;
-	
+    width:90%;
+
     h1{
         color: #000000;
         font-size: 40px;
@@ -2785,7 +2786,7 @@ table.list-table{
                     position: absolute;
                     right: 8px;
                     top: -12px;
-					pointer-events: none;
+                    pointer-events: none;
 
                     &.new{
                         background: url("../img/labels/6.png") no-repeat 0 0;
@@ -2875,13 +2876,13 @@ table.list-table{
                             }
                         }
 
-/*						.change-size-block{
-
-							.btn-size-block{
-
-								button{width: 17px;}
-							}
-						}*/
+                        /*						.change-size-block{
+                        
+                                                                                .btn-size-block{
+                        
+                                                                                        button{width: 17px;}
+                                                                                }
+                                                                        }*/
                     }
                     .cart-button{
                         border-right: 0px solid #accfea;
@@ -2914,10 +2915,10 @@ table.list-table{
                     z-index: 2;
                     height: 456px;
                     padding-top: 60px;
-					padding-right: 0;
+                    padding-right: 0;
 
                     ul.size{
-						padding-right: 13px;
+                        padding-right: 13px;
 
                         &.four{
                             padding-top: 65px;
@@ -2954,13 +2955,13 @@ table.list-table{
                             padding: 0;
                         }
                     }
-/*					.change-size-block{
-
-						.btn-size-block{
-
-							button{width: 16px;}
-						}
-					}*/
+                    /*					.change-size-block{
+                    
+                                                                    .btn-size-block{
+                    
+                                                                            button{width: 16px;}
+                                                                    }
+                                                            }*/
                     &.four{
                         .buttons-block-com{
                             p{
@@ -3074,29 +3075,25 @@ table.list-table{
         ul.size li label{
             float: left;
         }
-
-        .change-size-block .btn-size-block{
-            width: 23px;
-        }
         .head-table-cat{
             display: block;
             color: #666;
             font-size: 14px;
-			padding-bottom: 10px;
+            padding-bottom: 10px;
 
-			.name{
-				padding-left: 103px;
-				display: inline-block;
-				width: 412px;
-			}
-			.about{
-				display: inline-block;
-				width: 328px;
-				margin-bottom: 0;
-			}
-			.price{
-				display: inline-block;
-			}
+            .name{
+                padding-left: 103px;
+                display: inline-block;
+                width: 412px;
+            }
+            .about{
+                display: inline-block;
+                width: 328px;
+                margin-bottom: 0;
+            }
+            .price{
+                display: inline-block;
+            }
         }
         .produs-block{
             width: 100%;
@@ -3128,7 +3125,7 @@ table.list-table{
                     position: absolute;
                     top: 0;
                     left: 82px;
-					pointer-events: none;
+                    pointer-events: none;
 
                     &.new{
                         background: url("../img//labels/1.png") no-repeat 0 0;
@@ -3637,7 +3634,7 @@ table.list-table{
                 margin-right: -1px;
                 padding-bottom: 1px;
                 padding-left: 0px;
-				width: 19px;
+                width: 19px;
             }
             & + button{
                 top: 50%;
@@ -3651,7 +3648,7 @@ table.list-table{
                     margin-bottom: -1px;
                     padding-left: 0px;
                     padding-bottom: 0px;
-					width: 19px;
+                    width: 19px;
                 }
             }
         }
@@ -3661,8 +3658,8 @@ table.list-table{
     padding-top: 40px;
 }
 .magnifier{
-	top: 250px !important;
+    top: 250px !important;
 }
 .selecter-block{
-	display: inline-block;
+    display: inline-block;
 }
