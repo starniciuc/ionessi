@@ -27,15 +27,17 @@ $(".thumbr ul").bxSlider({
     adaptiveHeight: true
 });
 
-$("#upload").change(function () {
-    var fullPath = document.getElementById('upload').value;
+$(".uploadInp").change(function () {
+    var fullPath = $(this).val();
     if (fullPath) {
         var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
         var filename = fullPath.substring(startIndex);
         if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
             filename = filename.substring(1);
         }
-        $("#nameFile").html("Загружено " + filename);
+				var $par = $(this).parents(".input-file");
+				var $name = $par.find(".nameFile");
+        $name.html("Загружено " + filename);
     }
 });
 $('html').click(function () {
