@@ -1045,6 +1045,7 @@ ul.social-buttons{
         box-shadow: none;
         text-shadow: none;
         border: 1px solid #94a0a9;
+        max-width: 185px;
     }
     .dropdown-menu{
         padding: 0;
@@ -1848,6 +1849,7 @@ table.list-table{
         border-radius: 0;
         resize: none;
         height: 35px;
+        border: 1px solid #85b8d7;
     }
 }
 
@@ -1857,7 +1859,7 @@ table.list-table{
     padding: 15px;
     padding-bottom: 5px;
     border: 1px solid #85B8D7;
-    
+
     &.after-block{
         margin-bottom: 1px;
     }
@@ -1876,6 +1878,7 @@ table.list-table{
         resize: none;
         height: 35px;
         margin-bottom: 10px;
+        border: 1px solid #85b8d7;
     }
     .btn-subscribe{
         width: 100%;
@@ -2830,7 +2833,8 @@ table.list-table{
 
             &.active{
                 z-index: 3;
-
+                height: 375px;
+                
                 .produs{
                     border-right: 2px solid #accfea;
                     border-top: 2px solid #accfea;
@@ -2913,7 +2917,7 @@ table.list-table{
                     padding: 15px;
                     background-color: $white;
                     z-index: 2;
-                    height: 456px;
+                    height: 455px;
                     padding-top: 60px;
                     padding-right: 0;
 
@@ -3580,6 +3584,7 @@ table.list-table{
 .new-line-mob {
     display: inline;
     margin-top: 10px;
+    width: 165px;
 }
 .rules{
     padding-top: 50px;

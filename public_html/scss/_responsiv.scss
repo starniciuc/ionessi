@@ -187,7 +187,7 @@
     }
     .new-line-mob{
         display: inline-block;
-        float: right;
+        float: left;
     }
     .set-view{
         width: 100%;
@@ -327,6 +327,7 @@
     }
     .new-line-mob {
         display: block;
+        float: none;
     }
     .block-range .range-input{
         width: 100%;
@@ -369,6 +370,25 @@
     .block-range .range-input{
         display: block;
         margin-bottom: 5px;
+    }
+    table.list-table td .text{
+        width: 110px;
+    }
+    table.list-table td .text a{
+        line-height: 14px;
+    }
+    .count-produs{
+        width: 105px;
+        margin-right: 5px;
+    }
+    table.list-table td .image-block{
+        margin-right: 5px;
+    } 
+    table.list-table td.price{
+        padding: 3px;
+    }
+    .view-produs.grid-mode-view .produs-block.active{
+        height: 364px;
     }
 }
 @media(max-width:767px){
@@ -617,6 +637,9 @@
     .view-produs.table-mode-view .produs-block .produs-image{
         display: block;
         float: none;
+    }
+    .view-produs.grid-mode-view .produs-block.active{
+        height: auto;
     }
 
 }
