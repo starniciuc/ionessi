@@ -836,11 +836,12 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   main section.slider-top .slide .info-slide { width: 600px; height: 300px; padding: 52px 59px 68px 110px; }
   main section.slider-top .bx-controls .bx-pager { width: 600px; bottom: 250px; }
   nav .menu li .submenu { top: 66px; left: -1px; }
-  .set-view-mode .new-line-mob:before { margin-top: 20px; width: 100%; display: table; content: " "; clear: both; }
+  .set-view-mode label { font-size: 13px; margin-right: 0; }
+  .set-view-mode .bootstrap-select .selectpicker.btn-default { font-size: 13px; }
+  .set-view-mode .bootstrap-select .selectpicker.btn-default { max-width: 140px; }
   .view-produs.table-mode-view .produs-block .produs-link { width: 230px; }
   .view-produs.table-mode-view .head-table-cat .name { width: 340px; }
   .view-produs.table-mode-view .head-table-cat .about { width: 250px; }
-  .new-line-mob { display: inline-block; float: left; }
   .set-view { width: 100%; } }
 @media screen and (max-width: 1100px) { .wrapper { background-size: 40px auto; }
   .wrapper .ice-right { background-size: 40px auto; }
@@ -876,13 +877,14 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .left-menu li { padding: 4px  10px; }
   .left-menu li a { font-size: 16px; line-height: 100%; }
   .view-produs.grid-mode-view .produs-block { width: 48%; margin-right: 1%; }
-  .new-line-mob { display: block; float: none; }
   .block-range .range-input { width: 100%; }
   .showZoom { display: none; }
   .shop-list { padding-bottom: 60px; }
   .goToTop { display: none; }
   .view-produs.table-mode-view .produs-block .produs-link { padding-top: 20px; }
-  .set-view-mode label { display: block; margin-bottom: 0; margin-top: 0px; }
+  .set-view-mode { margin-top: 25px; }
+  .set-view-mode label { display: block; margin-bottom: 0; margin-top: 0px; font-size: 14px; }
+  .set-view-mode .new-line-mob a { margin-top: 17px; }
   .produs-block .produs-link { height: auto; }
   .view-produs.table-mode-view .produs-block .produs-link { width: 300px; }
   .selecter-block { display: inline-block; }
@@ -933,13 +935,15 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .shop-list { padding-bottom: 60px; }
   .filter-btn { font-size: 22px; font-weight: 300; font-family: "Open Sans", sans-serif; float: none; }
   .filter-btn i { margin-left: 15px; }
-  .set-view-mode label { margin-bottom: 20px; }
+  .set-view-mode label { font-size: 13px; margin-bottom: 0px; }
+  .set-view-mode .bootstrap-select .selectpicker.btn-default { font-size: 13px; }
+  .set-view-mode .new-line-mob { float: right; }
+  .set-view-mode .new-line-mob a { margin-top: 7px; }
   .button-mobile-text { position: absolute; left: 40px; top: 33px; font-size: 16px; color: #007ECB; font-weight: 600; font-family: "Open Sans", sans-serif; }
   .view-produs .head-view-block .pagination-block.pull-right { float: left !important; }
   .view .produs-img { height: auto; }
   .view .produs-img span { height: auto; }
   .set-view { margin-top: 20px; }
-  .set-view-mode .new-line-mob { float: left; }
   .set-view-mode .new-line-mob a { float: left !important; }
   .produs-block .produs-link { height: auto; }
   .view-produs.table-mode-view .produs-block .produs-link { width: 200px; }
@@ -950,6 +954,8 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .set-view { background: none; background-color: #E6EEF3; }
   .view-tab li { width: 100%; }
   .circle-white { display: none; }
+  .set-view-mode .new-line-mob { float: left; width: 100%; }
+  .set-view-mode .new-line-mob:before { margin-top: 20px; width: 100%; display: table; content: " "; clear: both; }
   .view-produs.grid-mode-view .produs-block.active .cart-button, .view-produs.grid-mode-view .produs-block.active .foot-detail { position: relative; }
   .view-produs.grid-mode-view .produs-block.active .get-size-block { left: auto; right: auto; position: relative; top: 100%; width: 100%; border-top: 0; border-left: 2px solid #accfea; border-right: 2px solid #accfea; }
   .view-produs.grid-mode-view .produs-block.active .produs { border-left: 2px solid #accfea; border-right: 2px solid #accfea; border-bottom: 0; }
