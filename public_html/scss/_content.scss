@@ -252,6 +252,10 @@ main{
         margin-bottom: 20px;
         margin-top: 20px;
         color: #1c2c4b;
+        
+        &.shop-name{
+            margin-bottom: 40px;
+        }
     }
     .slider-product-side{
         position: relative;
@@ -1194,14 +1198,57 @@ table.list-table{
             padding-bottom: 5px;
             border:0;
             background: none;
+            height: auto;
         }
     }
+    &.list-mode{
+        td{
+            padding: 10px;
+            margin-bottom: 5px;
+            color: #33425D;
+            font-weight: normal;
+
+            &:first-child{
+                width: auto;
+                background-color: #e7edf2;
+                border-top: 1px solid #bcc6c9;
+                border-bottom: 1px solid #bcc6c9;
+                border-left: 1px solid #bcc6c9;
+                border-right: 0;
+
+            }
+            
+            .name{
+                font-weight: normal;
+            }
+
+            &:last-child{
+                text-align: left;
+            }
+            h3{
+               color: #33425D;
+               margin: 0;
+               margin-top: 5px;
+            }
+        }
+        tr.divider-tr{
+            td{
+                padding: 0;
+                padding-bottom: 5px;
+                border:0;
+                background: none;
+                height: auto;
+            }
+        }
+    }
+
     th{
         font-weight: 300;
         color: #808080;
         font-size: 14px;
         font-family: $font-open;
         padding-bottom: 10px;
+
     }
     td{
         font-size: 16px;
@@ -1275,6 +1322,7 @@ table.list-table{
                 z-index: 6;
                 margin-left:6px;
                 vertical-align: middle;
+                pointer-events: none;
 
                 img{
                     max-height: 100%;
@@ -1295,6 +1343,7 @@ table.list-table{
             &:hover{
                 .block-prev{
                     display: block;
+                    pointer-events: none;
                 }
             }
         }
@@ -1443,6 +1492,7 @@ table.list-table{
     &.order{
         td{
             font-size: 18px;  
+            height: 82px;
 
             &:last-child{
                 font-weight: 500;
@@ -1530,7 +1580,7 @@ table.list-table{
             }
         }
         img{
-            vertical-align: bottom;
+            vertical-align: middle;
             max-height: 100%;
             width: auto;
             position: relative;
@@ -1940,11 +1990,11 @@ table.list-table{
 
             li{
                 display: inline-block;
-                margin-right: 10px;
+                margin-right: 5px;
                 border:1px solid transparent;
                 @include transition(all 0.35s);
-                width: 110px;
-                height: 110px;
+                width: 105px;
+                height: 105px;
                 overflow: hidden;
                 cursor: pointer;
 
@@ -1988,6 +2038,10 @@ table.list-table{
             &:hover{
                 background-position: 0 -30px;   
             }
+
+            &.disabled{
+                display: none;
+            }
         }
         .bx-next{
             background-position: -20px 0; 
@@ -1995,6 +2049,10 @@ table.list-table{
 
             &:hover{
                 background-position: -20px -30px;   
+            }
+
+            &.disabled{
+                display: none;
             }
         }
     }
@@ -2834,7 +2892,7 @@ table.list-table{
             &.active{
                 z-index: 3;
                 height: 375px;
-                
+
                 .produs{
                     border-right: 2px solid #accfea;
                     border-top: 2px solid #accfea;
@@ -3178,6 +3236,7 @@ table.list-table{
                     z-index: 6;
                     margin-left:6px;
                     vertical-align: middle;
+                    pointer-events: none;
 
                     img{
                         max-height: 100%;
@@ -3640,6 +3699,7 @@ table.list-table{
                 padding-bottom: 1px;
                 padding-left: 0px;
                 width: 19px;
+                border-bottom: 1px solid #94a0a9;
             }
             & + button{
                 top: 50%;

@@ -17,13 +17,14 @@ $(".slider-product").bxSlider({
 
 $(".thumbr ul").bxSlider({
     pager: false,
-    controls: $(".thumbr ul li").length > 3 ? true : false,
+    controls: $(".thumbr ul li").length > 5 ? true : false,
     auto: false,
     infiniteLoop: false,
-    slideWidth: 110,
-    minSlides: 2,
-    maxSlides: 3,
-    slideMargin: 10,
+    hideControlOnEnd: true,
+    slideWidth: 105,
+    minSlides: 4,
+    maxSlides: 5,
+    slideMargin: 5,
     adaptiveHeight: true
 });
 
@@ -35,8 +36,8 @@ $(".uploadInp").change(function () {
         if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
             filename = filename.substring(1);
         }
-				var $par = $(this).parents(".input-file");
-				var $name = $par.find(".nameFile");
+        var $par = $(this).parents(".input-file");
+        var $name = $par.find(".nameFile");
         $name.html("Загружено " + filename);
     }
 });
@@ -96,7 +97,7 @@ $(".setColor").click(function () {
 });
 
 $(".setSize").click(function () {
-    if($(this).hasClass("disabled")){
+    if ($(this).hasClass("disabled")) {
         return false;
     }
     $(this).toggleClass("selected");
@@ -143,7 +144,8 @@ $(".open-cart").click(function (event) {
     $(".open-cart").removeClass("active");
     $(".grid-mode-view").removeClass("enabled");
     $(".zanaves").hide();
-
+    $(".produs-block").removeClass("left-elm");
+    
     if ($(".view-produs").hasClass("table-mode-view")) {
         var $par = $(this).parents(".produs-block");
         $(".produs-block").removeClass("open-block");
@@ -162,7 +164,7 @@ $(".open-cart").click(function (event) {
         $par.addClass("active");
         $(".grid-mode-view").removeClass("enabled");
         $(".zanaves").show();
-				var j = 0;
+        var j = 0;
         $(".produs-block").each(function (i, value) {
             var coef = 4;
             if ($(window).width() > 550) {
@@ -174,10 +176,11 @@ $(".open-cart").click(function (event) {
                     $par_b.addClass("left-elm");
                 }
             }
-						j++;
-						if($(value).next("h5").is("h5")){
-							j = 0;
-						};
+            j++;
+            if ($(value).next("h5").is("h5")) {
+                j = 0;
+            }
+            ;
         });
     }
 });
