@@ -377,7 +377,7 @@
 		font-size: 15px;
 	}
 	table.list-table td .text p{
-		font-size: 13px;
+		font-size: 11px;
 	}
 	.block-range .range-input{
 		display: block;
@@ -539,8 +539,8 @@
 	}
 	table.list-table.order td,
 	table.list-table td{
-		display: block;
-		width: 100%;
+		display: inline-block;
+		width: auto;
 		border: 0;
 		padding: 5px  10px;
                 height: auto;
@@ -550,6 +550,13 @@
 			margin-top: 10px;
 		}
 	}
+        table.list-table.order tr{
+            background-color: #e7edf2;
+            
+            &.divider-tr{
+                background-color: #FFFFFF;
+            }
+        }
 	table.list-table{
 		th{
 			display: none;
