@@ -1002,6 +1002,7 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .navbar-header .button-mobile-text.pull-left { float: right !important; right: 10px; left: auto; top: 10px; }
   i.color { background-color: #1a4567 !important; }
   .produs-block { padding: 10px !important; }
-  .btn-cart { display: none; } }
+  .btn-cart { display: none; }
+  .goToTop { display: none; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,37 +11,40 @@
     .pagination-block, .seo, .mega-btn{
         display: none;
     }
-	a[href]:after {
-		content: none !important;
-	}
-	.navbar-header{
-		a{
-			i{
-				display: none !important;
-			}
-			display: none;
-			&.logo{
-				display: block;
-			}
-		}
-		button{
-			display: none;
-		}
-		.button-mobile-text.pull-left{
-			float: right !important;
-			right: 10px;
-			left: auto;
-			top: 10px;
-		}
-	}
-	i.color{
-		background-color: #1a4567 !important;
-		
-	}
-	.produs-block{
-		padding: 10px !important;
-	}
-	.btn-cart{
-		display: none;
-	}
+    a[href]:after {
+        content: none !important;
+    }
+    .navbar-header{
+        a{
+            i{
+                display: none !important;
+            }
+            display: none;
+            &.logo{
+                display: block;
+            }
+        }
+        button{
+            display: none;
+        }
+        .button-mobile-text.pull-left{
+            float: right !important;
+            right: 10px;
+            left: auto;
+            top: 10px;
+        }
+    }
+    i.color{
+        background-color: #1a4567 !important;
+
+    }
+    .produs-block{
+        padding: 10px !important;
+    }
+    .btn-cart{
+        display: none;
+    }
+    .goToTop{
+        display: none;
+    }
 }
