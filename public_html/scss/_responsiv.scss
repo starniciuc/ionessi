@@ -556,26 +556,7 @@
     .query-block{
         padding: 10px 15px 0;
     }
-    table.list-table.order td,
-    table.list-table td{
-        display: inline-block;
-        width: auto;
-        border: 0;
-        padding: 5px  10px;
-        height: auto;
-
-        &:first-child{
-            width: 100%;
-            margin-top: 10px;
-        }
-    }
-    table.list-table.order tr{
-        background-color: #e7edf2;
-
-        &.divider-tr{
-            background-color: #FFFFFF;
-        }
-    }
+    
     table.list-table{
         th{
             display: none;
@@ -751,6 +732,33 @@
     .order-block h2{
         font-size: 18px;
     }
+	table.list-table.order td,
+    table.list-table td{
+        display: inline-block;
+        width: auto;
+        border: 0;
+        padding: 5px  10px;
+        height: auto;
+
+        &:first-child{
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    table.list-table.order tr{
+        background-color: #e7edf2;
+
+        &.divider-tr{
+            background-color: #FFFFFF;
+        }
+    }
+	.order-list table.list-table tr:first-child td:first-child{
+		border: 0 !important;
+	}
+	.order-list table.list-table td:first-child{
+		border-bottom: 0 !important;
+		border-top: 1px solid #94A0A9 !important;
+	}
 }
 @media(max-width:400px){
     main .item-news img{
