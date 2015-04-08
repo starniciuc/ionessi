@@ -247,7 +247,7 @@ function addZoom() {
     if ($("#image-view").hasClass("my-foto-zoom")) {
         $(".my-foto-zoom").imagezoomsl({
             //rightoffset: 100,
-            zoomrange: [2.12, 12],
+            zoomrange: [2, 2],
             magnifiersize: [460, 660],
             scrollspeedanimate: 10,
             loopspeedanimate: 5,
