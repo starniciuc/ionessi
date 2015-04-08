@@ -382,7 +382,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .produs-block .produs-code p { font-size: 20px; color: #d05c4c; font-family: "Open Sans", sans-serif; font-weight: 300; margin-bottom: 7px; }
 .produs-block .produs-code p .foot-detail { display: block; margin-top: 5px; width: 100%; text-align: center; color: #848484; font-family: "Open Sans",sans-serif; font-size: 14px; }
 .produs-block .produs-code p .foot-detail i { display: inline-block; vertical-align: middle; margin-right: 5px; }
-.produs-block .produs-price { text-align: center; height: 39px; }
+.produs-block .produs-price { text-align: center; height: 46px; }
 .produs-block .produs-price p { font-size: 20px; color: #000000; font-family: "Open Sans", sans-serif; font-weight: 300; }
 .produs-block .produs-price p strong { font-weight: 600; }
 .produs-block .produs-price p span { vertical-align: middle; margin-left: 20px; color: #808080; text-decoration: line-through; }
