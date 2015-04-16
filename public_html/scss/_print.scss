@@ -44,7 +44,10 @@
     .btn-cart{
         display: none;
     }
-    .goToTop{
+    .goToTop, header .cart-block, header .user-block, nav.nav-bar-menu{
         display: none;
+    }
+    .col-sm-9{
+        width: 100%;
     }
 }
