@@ -116,12 +116,12 @@ nav .menu li:hover .submenu { display: block; }
 
 a:focus, a:active, a:hover, a { outline: 0; }
 
-.wrapper { background: url("../img/ice-left.png") no-repeat 0 0; background-repeat: repeat-y; }
-.wrapper .ice-right { background: url("../img/ice-right.png") no-repeat right 0; background-repeat: repeat-y; }
-.wrapper.leto { background: url("../img/vesna-left.png") no-repeat 0 0; background-repeat: repeat-y; }
-.wrapper.leto .ice-right { background: url("../img/vesna.png") no-repeat right 0; background-repeat: repeat-y; }
-.wrapper.oseni { background: url("../img/oseni-left.png") no-repeat 0 0; background-repeat: repeat-y; }
-.wrapper.oseni .ice-right { background: url("../img/oseni.png") no-repeat right 0; background-repeat: repeat-y; }
+body { background: url("../img/ice-left.png") no-repeat 0 0; background-repeat: repeat-y; }
+body .wrapper { background: url("../img/ice-right.png") no-repeat right 0; background-repeat: repeat-y; }
+body.leto { background: url("../img/vesna-left.png") no-repeat 0 0; background-repeat: repeat-y; }
+body.leto .wrapper { background: url("../img/vesna.png") no-repeat right 0; background-repeat: repeat-y; }
+body.oseni { background: url("../img/oseni-left.png") no-repeat 0 0; background-repeat: repeat-y; }
+body.oseni .wrapper { background: url("../img/oseni.png") no-repeat right 0; background-repeat: repeat-y; }
 
 main section.slider-top { position: relative; }
 main section.slider-top .slide img { width: 100%; }
@@ -809,25 +809,25 @@ footer .subscribe .submit-form { position: relative; }
 footer .subscribe .submit-form input.form-control { border: 0; height: 35px; border-radius: 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; padding-right: 100px; color: #91a3af; font-size: 16px; font-family: "Open Sans", sans-serif; }
 footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; top: 0; }
 
-@media screen and (max-width: 1600px) { .wrapper { background-size: 150px auto; }
-  .wrapper .ice-right { background-size: 150px auto; }
-  .wrapper.oseni { background-size: 150px auto; }
-  .wrapper.oseni .ice-right { background-size: 150px auto; }
-  .wrapper.leto { background-size: 150px auto; }
-  .wrapper.leto .ice-right { background-size: 150px auto; } }
-@media screen and (max-width: 1500px) { .wrapper { background-size: 130px auto; }
-  .wrapper .ice-right { background-size: 130px auto; }
-  .wrapper.oseni { background-size: 130px auto; }
-  .wrapper.oseni .ice-right { background-size: 130px auto; }
-  .wrapper.leto { background-size: 130px auto; }
-  .wrapper.leto .ice-right { background-size: 130px auto; }
+@media screen and (max-width: 1600px) { body { background-size: 150px auto; }
+  body .wrapper { background-size: 150px auto; }
+  body.oseni { background-size: 150px auto; }
+  body.oseni .wrapper { background-size: 150px auto; }
+  body.leto { background-size: 150px auto; }
+  body.leto .wrapper { background-size: 150px auto; } }
+@media screen and (max-width: 1500px) { body { background-size: 130px auto; }
+  body .wrapper { background-size: 130px auto; }
+  body.oseni { background-size: 130px auto; }
+  body.oseni .wrapper { background-size: 130px auto; }
+  body.leto { background-size: 130px auto; }
+  body.leto .wrapper { background-size: 130px auto; }
   .goToTop { right: 45px; } }
-@media screen and (max-width: 1400px) { .wrapper { background-size: 100px auto; }
-  .wrapper .ice-right { background-size: 100px auto; }
-  .wrapper.oseni { background-size: 100px auto; }
-  .wrapper.oseni .ice-right { background-size: 100px auto; }
-  .wrapper.leto { background-size: 100px auto; }
-  .wrapper.leto .ice-right { background-size: 100px auto; } }
+@media screen and (max-width: 1400px) { body { background-size: 100px auto; }
+  body .wrapper { background-size: 100px auto; }
+  body.oseni { background-size: 100px auto; }
+  body.oseni .wrapper { background-size: 100px auto; }
+  body.leto { background-size: 100px auto; }
+  body.leto .wrapper { background-size: 100px auto; } }
 @media screen and (max-width: 1300px) { .wrapper { background-size: 40px auto; }
   .wrapper .ice-right { background-size: 40px auto; }
   .wrapper.oseni { background-size: 40px auto; }

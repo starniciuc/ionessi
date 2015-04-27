@@ -108,10 +108,10 @@ nav{
 a:focus, a:active, a:hover, a{
     outline: 0;
 }
-.wrapper{
+body{
     background: url("../img/ice-left.png") no-repeat 0 0;
     background-repeat: repeat-y;
-    .ice-right{
+    .wrapper{
         background: url("../img/ice-right.png") no-repeat right 0;
         background-repeat: repeat-y;
     }
@@ -119,7 +119,7 @@ a:focus, a:active, a:hover, a{
     &.leto{
         background: url("../img/vesna-left.png") no-repeat 0 0;
         background-repeat: repeat-y;
-        .ice-right{
+        .wrapper{
             background: url("../img/vesna.png") no-repeat right 0;
             background-repeat: repeat-y;
         }
@@ -128,7 +128,7 @@ a:focus, a:active, a:hover, a{
     &.oseni{
         background: url("../img/oseni-left.png") no-repeat 0 0;
         background-repeat: repeat-y;
-        .ice-right{
+        .wrapper{
             background: url("../img/oseni.png") no-repeat right 0;
             background-repeat: repeat-y;
         }

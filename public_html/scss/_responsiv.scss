@@ -1,15 +1,15 @@
 @media screen and (max-width: 1600px) {
-    .wrapper{
+    body{
         background-size: 150px auto;
 
-        .ice-right{
+        .wrapper{
             background-size: 150px auto;
         }
 
         &.oseni{
             background-size: 150px auto;
 
-            .ice-right{
+            .wrapper{
                 background-size: 150px auto;
             }
         }
@@ -17,24 +17,24 @@
         &.leto{
             background-size: 150px auto;
 
-            .ice-right{
+            .wrapper{
                 background-size: 150px auto;
             }
         }
     }
 }
 @media screen and (max-width: 1500px) {
-    .wrapper{
+    body{
         background-size: 130px auto;
 
-        .ice-right{
+       .wrapper{
             background-size: 130px auto;
         }
 
         &.oseni{
             background-size: 130px auto;
 
-            .ice-right{
+            .wrapper{
                 background-size: 130px auto;
             }
         }
@@ -42,7 +42,7 @@
         &.leto{
             background-size: 130px auto;
 
-            .ice-right{
+            .wrapper{
                 background-size: 130px auto;
             }
         }
@@ -52,17 +52,17 @@
     }
 }
 @media screen and (max-width: 1400px) {
-    .wrapper{
+    body{
         background-size: 100px auto;
 
-        .ice-right{
+        .wrapper{
             background-size: 100px auto;
         }
 
         &.oseni{
             background-size: 100px auto;
 
-            .ice-right{
+            .wrapper{
                 background-size: 100px auto;
             }
         }
@@ -70,7 +70,7 @@
         &.leto{
             background-size: 100px auto;
 
-            .ice-right{
+            .wrapper{
                 background-size: 100px auto;
             }
         }
