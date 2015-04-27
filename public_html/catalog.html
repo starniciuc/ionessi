@@ -108,8 +108,8 @@
                                                             <li><a href="#">Главная</a></li>
                                                             <li><a href="#">Каталог</a></li>
                                                         </ul>
-												
-																												
+                                                                                                
+                                                                                                                                                                                                        
                                                     </div>
                                                 </div>-->
                         <div class="row">
@@ -251,9 +251,9 @@
                                     <p>Цена:</p>
                                     <div class="block-range text-center">
                                         <div class="input-block clearfix">
-											<span class="visible-sm visible-xs text-left">от</span>
+                                            <span class="visible-sm visible-xs text-left">от</span>
                                             <input id="input-select" type="text" class="range-input pull-left"> <i class="hidden-sm hidden-xs">___</i>
-											<span class="visible-sm visible-xs text-left">до</span>
+                                            <span class="visible-sm visible-xs text-left">до</span>
                                             <input id="input-number" type="text" class="range-input pull-right">
                                         </div>
                                         <div class="sliders hidden-sm hidden-xs" id="html5"></div>
@@ -325,22 +325,22 @@
                             </div>                            
                             <div class="col-sm-9">
                                 <div class="set-view-mode clearfix">
-									<div class="selecter-block">
-										<label>Сортировать по:</label>
-										<select class="selectpicker">
-											<option>Популярности</option>
-											<option>Популярности Популярности</option>
-											<option>Популярности</option>
-											<option>Популярности</option>
-											<option>Популярности</option>
-										</select>
-									</div>
-									<div class="selecter-block">
-										<label>Группировать по:</label>
-										<select class="selectpicker">
-											<option>Типу</option>
-										</select>
-									</div>
+                                    <div class="selecter-block">
+                                        <label>Сортировать по:</label>
+                                        <select class="selectpicker">
+                                            <option>Популярности</option>
+                                            <option>Популярности Популярности</option>
+                                            <option>Популярности</option>
+                                            <option>Популярности</option>
+                                            <option>Популярности</option>
+                                        </select>
+                                    </div>
+                                    <div class="selecter-block">
+                                        <label>Группировать по:</label>
+                                        <select class="selectpicker">
+                                            <option>Типу</option>
+                                        </select>
+                                    </div>
                                     <div class="new-line-mob">
                                         <a href="#" class="pull-right m-l-5"><i class="icon pdf"></i></a>
                                         <a href="#" class="pull-right m-l-5"><i class="icon print"></i></a>
@@ -358,16 +358,17 @@
                                                 <li><a href="#">1</a></li>
                                                 <li class="active"><a href="#">2</a></li>
                                                 <li><a href="#">3</a></li>
+                                                <li class="separator">...</li>
                                                 <li><a href="#">Последняя</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="row head-table-cat hidden-sm hidden-xs">
-										<div class="col-lg-12">
-											<div class="name">Название</div>
-											<div class="about">Описание</div>
-											<div class="price">Цена</div>
-										</div>
+                                        <div class="col-lg-12">
+                                            <div class="name">Название</div>
+                                            <div class="about">Описание</div>
+                                            <div class="price">Цена</div>
+                                        </div>
                                     </div>
                                     <div class="produs-block">
                                         <button class="btn btn-close-modal close-grid-product"></button>
@@ -1599,20 +1600,20 @@
         <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
         <script>
-						$('#html5').noUiSlider({
-							start: [0, 89000],
-							connect: true,
-							range: {
-								'min': 0,
-								'max': 89000
-							}
-						});
+            $('#html5').noUiSlider({
+                start: [0, 89000],
+                connect: true,
+                range: {
+                    'min': 0,
+                    'max': 89000
+                }
+            });
 
-						$('#html5').Link('lower').to($('#input-select'), null, wNumb({
-							decimals: 0
-						}));
+            $('#html5').Link('lower').to($('#input-select'), null, wNumb({
+                decimals: 0
+            }));
 
-						$('#html5').Link('upper').to($('#input-number'));
+            $('#html5').Link('upper').to($('#input-number'));
         </script>
     </body>
 </html>

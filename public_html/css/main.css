@@ -195,6 +195,8 @@ main .pagination-block ul.pagination-list li a:hover { text-decoration: none; ba
 main .pagination-block ul.pagination-list li:first-child a { border-left: 1px solid #94a0a9; }
 main .pagination-block ul.pagination-list li.active a { background-color: #94C8E3; color: #000000; }
 main .pagination-block ul.pagination-list li.active a:hover { text-decoration: none; }
+main .pagination-block ul.pagination-list li.separator { padding: 0 5px; }
+main .pagination-block ul.pagination-list li.separator + li a { border-left: 1px solid #94a0a9; }
 main h5 { font-size: 24px; color: #000000; font-family: "Open Sans", sans-serif; }
 main .share-block { margin-bottom: 20px; }
 main .ask p { color: #000000; font-size: 16px; font-family: "Open Sans", sans-serif; font-weight: 300; }
