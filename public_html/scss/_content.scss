@@ -76,7 +76,7 @@ nav{
                         font-family: $font-arial;
                         font-weight: normal;
                         font-size: 16px;
-                        text-transform: capitalize;
+                        text-transform: none;
                         white-space: nowrap;
                         @include transition(all 0.35s);
 
