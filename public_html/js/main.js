@@ -246,14 +246,12 @@ function addZoom() {
     $(".showZoom").toggleClass("hideZoom");
     if ($("#image-view").hasClass("my-foto-zoom")) {
         $(".my-foto-zoom").imagezoomsl({
-            //rightoffset: 100,
             zoomrange: [2, 2],
             magnifiersize: [460, 660],
             scrollspeedanimate: 10,
             loopspeedanimate: 5,
             rightoffset: 30,
-            magnifierborder: '1px solid #CCCCCC',
-            magnifiereffectanimate: "slideIn"
+            magnifierborder: '1px solid #CCCCCC'
         });
     } else {
         $(".magnifier").remove();

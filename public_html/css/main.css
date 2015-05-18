@@ -295,6 +295,7 @@ ul.social-buttons li a:hover span { border: 0; }
 .info-section p.title { margin-bottom: 10px; color: #7c7c7c; }
 
 .shop-image img { width: 100%; }
+.shop-image .map { margin-top: 0; }
 
 p.date { color: #848484; font-size: 14px; font-family: "Open Sans", sans-serif; font-weight: 300; }
 
@@ -623,13 +624,13 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .view-produs.grid-mode-view .produs-block { display: inline-block; width: 30%; margin-right: 2%; margin-bottom: 20px; position: relative; }
 .view-produs.grid-mode-view .produs-block .produs-link a:hover { text-decoration: none; }
 .view-produs.grid-mode-view .produs-block .produs-image { height: auto; height: 225px; text-align: center; position: relative; padding-top: 0px; margin-top: 40px; background-color: #FFFFFF; }
-.view-produs.grid-mode-view .produs-block .produs-image .icon { position: absolute; right: 8px; top: -12px; pointer-events: none; }
+.view-produs.grid-mode-view .produs-block .produs-image .icon { position: absolute; right: 0px; top: -12px; pointer-events: none; }
 .view-produs.grid-mode-view .produs-block .produs-image .icon.new { background: url("../img/labels/6.png") no-repeat 0 0; width: 82px; height: 24px; }
 .view-produs.grid-mode-view .produs-block .produs-image .icon.next { background: url("../img//labels/4.png") no-repeat 0 0; width: 82px; height: 24px; }
 .view-produs.grid-mode-view .produs-block .produs-image .icon.sale { background: url("../img//labels/5.png") no-repeat 0 0px; width: 82px; height: 24px; }
 .view-produs.grid-mode-view .produs-block .produs-image img { vertical-align: middle; max-height: 90%; max-width: 90%; }
-.view-produs.grid-mode-view .produs-block .icon + .icon { right: 75px; }
-.view-produs.grid-mode-view .produs-block .icon + .icon + .icon { right: 150px; }
+.view-produs.grid-mode-view .produs-block .icon + .icon { right: 70px; }
+.view-produs.grid-mode-view .produs-block .icon + .icon + .icon { right: 145px; }
 .view-produs.grid-mode-view .produs-block .produs-code p { color: #d05c4c; }
 .view-produs.grid-mode-view .produs-block .produs-code .foot-detail { display: none; }
 .view-produs.grid-mode-view .produs-block.active { z-index: 3; height: 375px; }
@@ -928,7 +929,7 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .table.list-table td .text p { line-height: 19px; }
   table.list-table td:last-child .change-size .pop-size { right: 0; }
   .filter-block-big h1 { font-size: 40px; }
-  .set-view { max-width: 440px; } }
+  .set-view { margin-top: 15px; max-width: 440px; } }
 @media (max-width: 767px) { header, .slider-top { display: none; }
   nav .menu li { height: auto; }
   nav.nav-bar-menu { height: auto; }
