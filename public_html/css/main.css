@@ -828,19 +828,19 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   body.oseni .wrapper { background-size: 100px auto; }
   body.leto { background-size: 100px auto; }
   body.leto .wrapper { background-size: 100px auto; } }
-@media screen and (max-width: 1300px) { .wrapper { background-size: 40px auto; }
-  .wrapper .ice-right { background-size: 40px auto; }
-  .wrapper.oseni { background-size: 40px auto; }
-  .wrapper.oseni .ice-right { background-size: 40px auto; }
-  .wrapper.leto { background-size: 40px auto; }
-  .wrapper.leto .ice-right { background-size: 40px auto; }
+@media screen and (max-width: 1300px) { body { background-size: 40px auto; }
+  body .wrapper { background-size: 40px auto; }
+  body.oseni { background-size: 40px auto; }
+  body.oseni .wrapper { background-size: 40px auto; }
+  body.leto { background-size: 40px auto; }
+  body.leto .wrapper { background-size: 40px auto; }
   .goToTop { right: 0; } }
-@media screen and (max-width: 1200px) { .wrapper { background-size: 60px auto; }
-  .wrapper .ice-right { background-size: 60px auto; }
-  .wrapper.oseni { background-size: 60px auto; }
-  .wrapper.oseni .ice-right { background-size: 60px auto; }
-  .wrapper.leto { background-size: 60px auto; }
-  .wrapper.leto .ice-right { background-size: 60px auto; }
+@media screen and (max-width: 1200px) { body { background-size: 60px auto; }
+  body .wrapper { background-size: 60px auto; }
+  body.oseni { background-size: 60px auto; }
+  body.oseni .wrapper { background-size: 60px auto; }
+  body.leto { background-size: 60px auto; }
+  body.leto .wrapper { background-size: 60px auto; }
   nav .menu li { padding-right: 12px; }
   .logo img { max-width: 100%; }
   nav .menu li { padding-left: 2px; padding-right: 2px; }
@@ -860,12 +860,12 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .set-view { width: 100%; }
   table.list-table.order td { font-size: 15px; }
   table.list-table td .text p { font-size: 13px; } }
-@media screen and (max-width: 1100px) { .wrapper { background-size: 40px auto; }
-  .wrapper .ice-right { background-size: 40px auto; }
-  .wrapper.oseni { background-size: 40px auto; }
-  .wrapper.oseni .ice-right { background-size: 40px auto; }
-  .wrapper.leto { background-size: 40px auto; }
-  .wrapper.leto .ice-right { background-size: 40px auto; } }
+@media screen and (max-width: 1100px) { body { background-size: 40px auto; }
+  body .wrapper { background-size: 40px auto; }
+  body.oseni { background-size: 40px auto; }
+  body.oseni .wrapper { background-size: 40px auto; }
+  body.leto { background-size: 40px auto; }
+  body.leto .wrapper { background-size: 40px auto; } }
 @media screen and (max-width: 992px) { nav.nav-bar-menu { height: 45px; }
   nav .menu li { height: 44px; }
   nav .menu li .submenu { top: 44px; left: -1px; }
@@ -881,12 +881,12 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   header .user-block { margin-right: 5px; padding: 0; }
   header .cart-block .icon, header .user-block .icon { display: none; }
   header .cart-block .cart, header .user-block .login { font-size: 14px; }
-  .wrapper { background: none; }
-  .wrapper .ice-right { background: none; }
-  .wrapper.oseni { background: none; }
-  .wrapper.oseni .ice-right { background: none; }
-  .wrapper.leto { background: none; }
-  .wrapper.leto .ice-right { background: none; }
+  body { background: none; }
+  body .wrapper { background: none; }
+  body.oseni { background: none; }
+  body.oseni .wrapper { background: none; }
+  body.leto { background: none; }
+  body.leto .wrapper { background: none; }
   main .why a.title { font-size: 18px; }
   main .why p.descr { font-size: 14px; }
   main .slider-product-side .slider-product .slide .produc-element { width: 100%; }
@@ -926,7 +926,9 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .view-produs.table-mode-view .get-size-block .buttons-block-com .btn { width: 150px; }
   .view-produs.table-mode-view .get-size-block .buttons-block-com .btn + .btn { margin-top: 3px; }
   .table.list-table td .text p { line-height: 19px; }
-  table.list-table td:last-child .change-size .pop-size { right: 0; } }
+  table.list-table td:last-child .change-size .pop-size { right: 0; }
+  .filter-block-big h1 { font-size: 40px; }
+  .set-view { max-width: 440px; } }
 @media (max-width: 767px) { header, .slider-top { display: none; }
   nav .menu li { height: auto; }
   nav.nav-bar-menu { height: auto; }
