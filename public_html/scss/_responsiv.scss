@@ -454,6 +454,12 @@
         margin-top: 15px;
         max-width: 440px;
     }
+    .view-produs.table-mode-view .head-table-cat .name{
+        width: 180px
+    }
+    .view-produs.table-mode-view .head-table-cat .about{
+        width: 200px
+    }
 }
 @media(max-width:767px){
 
@@ -662,6 +668,13 @@
         border-top: 1px solid #bcc6c9;
         border-bottom: 1px solid #bcc6c9;
     }
+    .view-produs.table-mode-view .head-table-cat .name{
+        width: 50%;
+    }
+    .view-produs.table-mode-view .head-table-cat .price{
+        float: right;
+        margin-right: 20px;
+    }
 }
 @media(max-width:670px){
     .view-produs.table-mode-view .produs-block .produs-link{
@@ -768,6 +781,9 @@
 		border-bottom: 0 !important;
 		border-top: 1px solid #94A0A9 !important;
 	}
+    .view-produs.table-mode-view .head-table-cat{
+      display: none;
+    }
 }
 @media(max-width:400px){
     main .item-news img{

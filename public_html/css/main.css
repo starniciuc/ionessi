@@ -367,7 +367,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .check-order h3 { color: #000000; font-family: "Open Sans", sans-serif; font-size: 40px; line-height: 40px; padding: 0; margin: 0; font-weight: normal; }
 .check-order .mega-btn { font-size: 24px; height: auto; padding: 15px 50px; margin-top: 20px; padding: 15px 50px; margin-bottom: 20px; }
 
-.produs-block { margin-bottom: 30px; }
+.produs-block { margin-bottom: 30px; float: left; }
 .produs-block a { text-decoration: none; }
 .produs-block .produs-image { text-align: center; height: 225px; line-height: 225px; position: relative; }
 .produs-block .produs-image .icon { position: absolute; right: 5px; top: 10px; pointer-events: none; }
@@ -466,7 +466,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .slide-thumb { position: relative; padding: 0px 50px 0; margin-top: 10px; }
 
 .set-view { background: url("../img/bg-view.png") no-repeat 0 0; background-size: 100% 100%; padding: 10px 20px 10px; margin-bottom: 5px; width: 85%; }
-.set-view h1 { color: #000000; font-size: 40px; font-family: "Open Sans", sans-serif; font-weight: normal; margin: 0; margin-bottom: 10px; }
+.set-view h1 { color: #000000; font-size: 35px; font-family: "Open Sans", sans-serif; font-weight: normal; margin: 0; margin-bottom: 10px; }
 .set-view h1 small { font-size: 24px; color: #000000; }
 .set-view h1 span { text-decoration: line-through; font-size: 24px; margin-left: 20px; color: #838383; }
 .set-view p.code { color: #d05c4c; font-size: 16px; font-family: "Open Sans", sans-serif; margin-bottom: 15px; }
@@ -929,7 +929,9 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .table.list-table td .text p { line-height: 19px; }
   table.list-table td:last-child .change-size .pop-size { right: 0; }
   .filter-block-big h1 { font-size: 40px; }
-  .set-view { margin-top: 15px; max-width: 440px; } }
+  .set-view { margin-top: 15px; max-width: 440px; }
+  .view-produs.table-mode-view .head-table-cat .name { width: 180px; }
+  .view-produs.table-mode-view .head-table-cat .about { width: 200px; } }
 @media (max-width: 767px) { header, .slider-top { display: none; }
   nav .menu li { height: auto; }
   nav.nav-bar-menu { height: auto; }
@@ -979,7 +981,9 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   .view-produs.table-mode-view .produs-block .produs-link { width: 200px; }
   .selecter-block { float: left; }
   .view-produs.table-mode-view .produs-block.open-block .close-grid-product { top: 90px; }
-  table.list-table.list-mode td { display: table-cell; border-bottom: 1px solid #FFFFFF; background-color: #e7edf2; border-top: 1px solid #bcc6c9; border-bottom: 1px solid #bcc6c9; } }
+  table.list-table.list-mode td { display: table-cell; border-bottom: 1px solid #FFFFFF; background-color: #e7edf2; border-top: 1px solid #bcc6c9; border-bottom: 1px solid #bcc6c9; }
+  .view-produs.table-mode-view .head-table-cat .name { width: 50%; }
+  .view-produs.table-mode-view .head-table-cat .price { float: right; margin-right: 20px; } }
 @media (max-width: 670px) { .view-produs.table-mode-view .produs-block .produs-link { width: 100%; }
   .view-produs.table-mode-view .produs-block.open-block .close-grid-product { top: 210px; } }
 @media (max-width: 550px) { .view-produs.grid-mode-view .produs-block { width: 100%; margin-right: 0%; }
@@ -1002,7 +1006,8 @@ footer .subscribe .submit-form .btn-subscribe { position: absolute; right: 0; to
   table.list-table.order tr { background-color: #e7edf2; }
   table.list-table.order tr.divider-tr { background-color: #FFFFFF; }
   .order-list table.list-table tr:first-child td:first-child { border: 0 !important; }
-  .order-list table.list-table td:first-child { border-bottom: 0 !important; border-top: 1px solid #94A0A9 !important; } }
+  .order-list table.list-table td:first-child { border-bottom: 0 !important; border-top: 1px solid #94A0A9 !important; }
+  .view-produs.table-mode-view .head-table-cat { display: none; } }
 @media (max-width: 400px) { main .item-news img { width: 100%; }
   .set-view-mode .grid-mode { display: block; } }
 @media print { .filter-block-big { display: none; }
