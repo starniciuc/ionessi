@@ -367,7 +367,7 @@ table.list-table.after-remove { margin-bottom: 1px; }
 .check-order h3 { color: #000000; font-family: "Open Sans", sans-serif; font-size: 40px; line-height: 40px; padding: 0; margin: 0; font-weight: normal; }
 .check-order .mega-btn { font-size: 24px; height: auto; padding: 15px 50px; margin-top: 20px; padding: 15px 50px; margin-bottom: 20px; }
 
-.produs-block { margin-bottom: 30px; float: left; }
+.produs-block { margin-bottom: 30px; /*float: left;*/ }
 .produs-block a { text-decoration: none; }
 .produs-block .produs-image { text-align: center; height: 225px; line-height: 225px; position: relative; }
 .produs-block .produs-image .icon { position: absolute; right: 5px; top: 10px; pointer-events: none; }
